@@ -1,0 +1,17 @@
+{
+  "name": "gio-design",
+  "version": "0.0.1",
+  "description": "growingio react ui",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  }
+}

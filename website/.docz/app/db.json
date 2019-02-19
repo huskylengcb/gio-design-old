@@ -1,0 +1,44 @@
+{
+  "config": {
+    "title": "Docz Typescript",
+    "description": "website",
+    "menu": [],
+    "ordering": "descending",
+    "version": "0.0.1",
+    "repository": null,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "typescript": true
+  },
+  "entries": {
+    "src/index.mdx": {
+      "id": "6576455a124f9aaefd860597f03a8fe4",
+      "filepath": "src/index.mdx",
+      "link": null,
+      "slug": "src-index",
+      "route": "/src-index",
+      "name": "Index",
+      "order": 0,
+      "menu": null,
+      "headings": []
+    },
+    "src/components/home.mdx": {
+      "name": "Hello world",
+      "id": "34825acd69c198332d03faec50ce41f0",
+      "filepath": "src/components/home.mdx",
+      "link": null,
+      "slug": "src-components-home",
+      "route": "/src-components-home",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "hello-world",
+          "value": "Hello world"
+        }
+      ]
+    }
+  }
+}

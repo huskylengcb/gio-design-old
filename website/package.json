@@ -1,0 +1,16 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "website",
+  "main": "index.js",
+  "author": "growingio",
+  "license": "MIT",
+  "scripts": {
+    "start": "docz dev",
+    "build": "docz build"
+  },
+  "devDependencies": {
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7"
+  }
+}

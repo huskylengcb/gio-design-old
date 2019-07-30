@@ -1,0 +1,53 @@
+.gio-message {
+  position: fixed;
+  z-index: 2147483647;
+}
+.gio-message-notice {
+  position: relative;
+  height: 60px;
+  padding: 0 90px;
+  line-height: 60px;
+  box-shadow: 0 0 6px 0 rgba(36, 36, 36, 0.5);
+  border-radius: 2px;
+  min-width: 300px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #505050;
+  color: white;
+}
+.gio-message-notice a {
+  margin: 0 8px;
+  color: white;
+  text-decoration: underline;
+}
+.gio-message-notice a:hover {
+  color: #FD8569;
+}
+.gio-message-notice-icon {
+  margin-right: 15px;
+}
+.gio-message-notice-icon img {
+  width: 24px;
+  vertical-align: -7px;
+}
+.gio-message-notice-icon svg path {
+  fill: currentColor;
+}
+.gio-message-notice-icon.error {
+  fill: #9f9f9f;
+}
+.gio-message-notice-icon.success svg {
+  fill: #00cf9b;
+}
+.gio-message-notice-content div div {
+  display: inline-block;
+}
+.gio-message-notice-close {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.gio-message-notice-close svg {
+  fill: white;
+}

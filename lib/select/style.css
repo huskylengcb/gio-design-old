@@ -1,0 +1,148 @@
+.gio-select {
+  color: #333;
+}
+.gio-select.ant-select-open .ant-select-selection {
+  border-color: #220968;
+  box-shadow: 0 0 0 2px rgba(34, 9, 104, 0.2);
+}
+.gio-select.ant-select-focused .ant-select-selection,
+.gio-select .ant-select-selection:focus {
+  border-color: #220968;
+  box-shadow: 0 0 4px 0 rgba(102, 102, 102, 0.5);
+}
+.gio-select .ant-select-selection {
+  font-size: 14px;
+  min-height: 32px;
+  border: 1px solid #ebebeb;
+}
+.gio-select .ant-select-selection::-webkit-scrollbar {
+  width: 11px;
+}
+.gio-select .ant-select-selection::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px 10px transparent;
+  border: solid 3px transparent;
+}
+.gio-select .ant-select-selection::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px 10px #cfcfcf;
+  border-radius: 5px!important;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  background-color: initial!important;
+}
+.gio-select .ant-select-selection__rendered {
+  line-height: 28px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.gio-select .ant-select-selection:hover,
+.gio-select .ant-select-selection:focus {
+  border-color: #220968;
+}
+.gio-select .ant-select-selection.ant-select-selection--multiple {
+  max-height: 100px;
+  overflow-y: auto;
+}
+.gio-select .ant-select-selection.ant-select-selection--multiple .ant-select-selection__choice {
+  margin: 5px 5px 0 0;
+  height: 22px;
+  background-color: #f7f7f7;
+}
+.gio-select .ant-select-selection.ant-select-selection--multiple .ant-select-selection__choice__remove {
+  font-size: 18px;
+  right: 0;
+}
+.gio-select .ant-select-selection .ant-select-arrow {
+  font-size: 18px;
+  top: 40%;
+}
+.gio-select .ant-select-selection-selected-value {
+  font-weight: normal;
+}
+.gio-select.ant-select-disabled .ant-select-selection {
+  color: #c3c3c3;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+.gio-select-dropdown {
+  font-size: 14px;
+}
+.gio-select-dropdown .ant-select-dropdown-menu {
+  max-height: 265px;
+}
+.gio-select-dropdown .ant-select-dropdown-menu::-webkit-scrollbar {
+  width: 11px;
+}
+.gio-select-dropdown .ant-select-dropdown-menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px 10px transparent;
+  border: solid 3px transparent;
+}
+.gio-select-dropdown .ant-select-dropdown-menu::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px 10px #cfcfcf;
+  border-radius: 5px!important;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  background-color: initial!important;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item-group:not(:first-child) .ant-select-dropdown-menu-item-group-title {
+  border-top: 2px solid #E2E2E2;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item-group .ant-select-dropdown-menu-item-group-title,
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item-group .ant-select-dropdown-menu-item {
+  text-align: left;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item-group .ant-select-dropdown-menu-item-group-title {
+  margin: 5px 8px 0 16px;
+  padding: 12px 0 8px;
+  color: #7F7583;
+  font-weight: 500;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item-group .ant-select-dropdown-menu-item-group-title .gio-icon {
+  cursor: default!important;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item {
+  margin: 2px 0;
+  padding: 9px 8px 10px 16px;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item:hover {
+  background-color: #F2F2F2;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item.ant-select-dropdown-menu-item-selected {
+  font-weight: 500;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item .ant-checkbox-wrapper {
+  margin-right: 10px;
+}
+.gio-select-dropdown .ant-select-dropdown-menu .ant-select-dropdown-menu-item .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #3A9AFC;
+  border-color: #3A9AFC;
+}
+.gio-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:after,
+.gio-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover:after {
+  color: transparent;
+}
+.gio-select-dropdown.ant-select-dropdown--single .ant-select-dropdown-menu-item:not(.ant-select-dropdown-menu-item-disabled):after {
+  font-family: 'anticon';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E632";
+  color: transparent;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 10px \9;
+  -ms-transform: scale(0.83333333) rotate(0deg);
+  transform: scale(0.83333333) rotate(0deg);
+  zoom: 1;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+  font-weight: bold;
+  text-shadow: 0 0.1px 0, 0.1px 0 0, 0 -0.1px 0, -0.1px 0;
+}
+.gio-select-dropdown.ant-select-dropdown--single .ant-select-dropdown-menu-item:not(.ant-select-dropdown-menu-item-disabled).ant-select-dropdown-menu-item-selected:after,
+.gio-select-dropdown.ant-select-dropdown--single .ant-select-dropdown-menu-item:not(.ant-select-dropdown-menu-item-disabled) .ant-select-dropdown-menu-item-selected::after {
+  color: #ea6947;
+}

@@ -1,0 +1,8 @@
+{
+  "linters": {
+    "ts": {
+      "type": "tslint",
+      "include": "(src/.*\\.(ts|tsx)$)"
+    }
+  }
+}

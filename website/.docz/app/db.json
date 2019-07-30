@@ -2,41 +2,679 @@
   "config": {
     "title": "Docz Typescript",
     "description": "website",
-    "menu": [],
+    "menu": [
+      "快速开始",
+      {
+        "name": "GIODesign",
+        "menu": [
+          "giodesign/tag",
+          "giodesign/checkbox"
+        ]
+      }
+    ],
     "ordering": "descending",
     "version": "0.0.1",
     "repository": null,
     "native": false,
     "codeSandbox": true,
     "themeConfig": {},
-    "typescript": true
+    "typescript": true,
+    "src": "../src",
+    "plugins": [
+      {},
+      {}
+    ]
   },
   "entries": {
-    "src/index.mdx": {
-      "id": "6576455a124f9aaefd860597f03a8fe4",
-      "filepath": "src/index.mdx",
+    "components/avatar/index.mdx": {
+      "name": "giodesign/avatar",
+      "menu": "GIODesign",
+      "id": "595aa583749508b731aaaecdca82f87a",
+      "filepath": "components/avatar/index.mdx",
       "link": null,
-      "slug": "src-index",
-      "route": "/src-index",
-      "name": "Index",
+      "slug": "components-avatar-index",
+      "route": "/components-avatar-index",
       "order": 0,
-      "menu": null,
-      "headings": []
-    },
-    "src/components/home.mdx": {
-      "name": "Hello world",
-      "id": "34825acd69c198332d03faec50ce41f0",
-      "filepath": "src/components/home.mdx",
-      "link": null,
-      "slug": "src-components-home",
-      "route": "/src-components-home",
-      "order": 0,
-      "menu": null,
       "headings": [
         {
           "depth": 1,
-          "slug": "hello-world",
-          "value": "Hello world"
+          "slug": "avatar",
+          "value": "Avatar"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/button/index.mdx": {
+      "name": "giodesign/button",
+      "menu": "GIODesign",
+      "id": "ba4faf853e0a1eaf2a3877d32e44a137",
+      "filepath": "components/button/index.mdx",
+      "link": null,
+      "slug": "components-button-index",
+      "route": "/components-button-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "button",
+          "value": "Button"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/checkbox/index.mdx": {
+      "name": "giodesign/checkbox",
+      "menu": "GIODesign",
+      "id": "b5e5b99a9fc8cc73da3f835bb2430367",
+      "filepath": "components/checkbox/index.mdx",
+      "link": null,
+      "slug": "components-checkbox-index",
+      "route": "/components-checkbox-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "checkbox",
+          "value": "Checkbox"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/date-picker/index.mdx": {
+      "name": "giodesign/date-picker",
+      "menu": "GIODesign",
+      "id": "1374219e62dc9712e63b0807d61e10ab",
+      "filepath": "components/date-picker/index.mdx",
+      "link": null,
+      "slug": "components-date-picker-index",
+      "route": "/components-date-picker-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "datepicker",
+          "value": "DatePicker"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/err-msg/index.mdx": {
+      "name": "giodesign/err-msg",
+      "menu": "GIODesign",
+      "id": "7528c95972e134f84fa10c3c078f83b0",
+      "filepath": "components/err-msg/index.mdx",
+      "link": null,
+      "slug": "components-err-msg-index",
+      "route": "/components-err-msg-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "err-msg",
+          "value": "err-msg"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/greeting/index.mdx": {
+      "name": "giodesign/greeting",
+      "menu": "GIODesign",
+      "id": "a08d21d8ac68d5a4a887161ba5d4471d",
+      "filepath": "components/greeting/index.mdx",
+      "link": null,
+      "slug": "components-greeting-index",
+      "route": "/components-greeting-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "greeting",
+          "value": "Greeting"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/icon/index.mdx": {
+      "name": "giodesign/icon",
+      "menu": "GIODesign",
+      "id": "86ca367265bd2aa621c102abe94ad64b",
+      "filepath": "components/icon/index.mdx",
+      "link": null,
+      "slug": "components-icon-index",
+      "route": "/components-icon-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "icon",
+          "value": "Icon"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/input/index.mdx": {
+      "name": "giodesign/input",
+      "menu": "GIODesign",
+      "id": "f1c2dda36a1f59839de7a499cc78ab93",
+      "filepath": "components/input/index.mdx",
+      "link": null,
+      "slug": "components-input-index",
+      "route": "/components-input-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "input",
+          "value": "Input"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/list/index.mdx": {
+      "name": "giodesign/list",
+      "menu": "GIODesign",
+      "id": "e82383c5880112cb8bd7f74580a59eb2",
+      "filepath": "components/list/index.mdx",
+      "link": null,
+      "slug": "components-list-index",
+      "route": "/components-list-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "list",
+          "value": "List"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/message/index.mdx": {
+      "name": "giodesign/message",
+      "menu": "GIODesign",
+      "id": "ea6b150b732571e599998fd492192a8f",
+      "filepath": "components/message/index.mdx",
+      "link": null,
+      "slug": "components-message-index",
+      "route": "/components-message-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "message",
+          "value": "Message"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/modal/index.mdx": {
+      "name": "giodesign/modal",
+      "menu": "GIODesign",
+      "id": "3d511b5c29f66ea27e8f4b2be5abc4b7",
+      "filepath": "components/modal/index.mdx",
+      "link": null,
+      "slug": "components-modal-index",
+      "route": "/components-modal-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "modal",
+          "value": "Modal"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/option/index.mdx": {
+      "name": "giodesign/option",
+      "menu": "GIODesign",
+      "id": "17a767d66d14ec5f2490ec40fcfc125c",
+      "filepath": "components/option/index.mdx",
+      "link": null,
+      "slug": "components-option-index",
+      "route": "/components-option-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "option",
+          "value": "Option"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/popconfirm/index.mdx": {
+      "name": "giodesign/popconfirm",
+      "menu": "GIODesign",
+      "id": "09d8e305abf695fcef55c03b3c77b56e",
+      "filepath": "components/popconfirm/index.mdx",
+      "link": null,
+      "slug": "components-popconfirm-index",
+      "route": "/components-popconfirm-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "popconfirm",
+          "value": "popconfirm"
+        }
+      ]
+    },
+    "components/popover/index.mdx": {
+      "name": "giodesign/popover",
+      "menu": "GIODesign",
+      "id": "d7595f0d39fd6224c6104a094a6ee3b5",
+      "filepath": "components/popover/index.mdx",
+      "link": null,
+      "slug": "components-popover-index",
+      "route": "/components-popover-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "popover",
+          "value": "Popover"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/progress/index.mdx": {
+      "name": "giodesign/progress",
+      "menu": "GIODesign",
+      "id": "dafe1de59c5a59dba5821404f3d7a827",
+      "filepath": "components/progress/index.mdx",
+      "link": null,
+      "slug": "components-progress-index",
+      "route": "/components-progress-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "progress",
+          "value": "Progress"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/select/index.mdx": {
+      "name": "giodesign/select",
+      "menu": "GIODesign",
+      "id": "0b3909414b2ec08364f225e73d3d63ea",
+      "filepath": "components/select/index.mdx",
+      "link": null,
+      "slug": "components-select-index",
+      "route": "/components-select-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "select",
+          "value": "Select"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/textarea/index.mdx": {
+      "name": "giodesign/textarea",
+      "menu": "GIODesign",
+      "id": "90f325c94ece3fcd011da26d906e611a",
+      "filepath": "components/textarea/index.mdx",
+      "link": null,
+      "slug": "components-textarea-index",
+      "route": "/components-textarea-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "textarea",
+          "value": "Textarea"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/switch/index.mdx": {
+      "name": "giodesign/switch",
+      "menu": "GIODesign",
+      "id": "cbccd9164112e0a5870221fcca1a6867",
+      "filepath": "components/switch/index.mdx",
+      "link": null,
+      "slug": "components-switch-index",
+      "route": "/components-switch-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "switch",
+          "value": "Switch"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        }
+      ]
+    },
+    "components/time-picker/index.mdx": {
+      "name": "giodesign/timePicker",
+      "menu": "GIODesign",
+      "id": "a0b392cf494df23dcaee86b9f992103a",
+      "filepath": "components/time-picker/index.mdx",
+      "link": null,
+      "slug": "components-time-picker-index",
+      "route": "/components-time-picker-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "timepicker",
+          "value": "TimePicker"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/radio/index.mdx": {
+      "name": "giodesign/radio",
+      "menu": "GIODesign",
+      "id": "54b96ba65e5a7a4a2e0916f0a475ac42",
+      "filepath": "components/radio/index.mdx",
+      "link": null,
+      "slug": "components-radio-index",
+      "route": "/components-radio-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "radio",
+          "value": "Radio"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        }
+      ]
+    },
+    "components/tag/index.mdx": {
+      "name": "giodesign/tag",
+      "menu": "GIODesign",
+      "id": "fcf04a8450b1273314750aa2ae9f6aac",
+      "filepath": "components/tag/index.mdx",
+      "link": null,
+      "slug": "components-tag-index",
+      "route": "/components-tag-index",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "tag",
+          "value": "Tag"
+        },
+        {
+          "depth": 2,
+          "slug": "简介",
+          "value": "简介"
+        },
+        {
+          "depth": 2,
+          "slug": "examples",
+          "value": "Examples"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
         }
       ]
     }

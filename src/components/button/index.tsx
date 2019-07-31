@@ -47,7 +47,7 @@ class GIOButton extends React.PureComponent<ButtonProps, {}> {
     let button;
     if (this.props.withoutBg) {
       const classNames = classnames(
-        'gio-btn gio-btn-without-bg',
+        'gio-btn gio-btn-without-bg default-font-family',
         {['gio-btn-' + this.props.type]: !!this.props.type},
         {disabled: this.props.disabled},
         {undisabled: !this.props.disabled},
@@ -64,7 +64,7 @@ class GIOButton extends React.PureComponent<ButtonProps, {}> {
       )
     } else {
       const classNames = classnames(
-        'gio-btn gio-btn-with-bg',
+        'gio-btn gio-btn-with-bg default-font-family',
         {['gio-btn-' + this.props.type]: !!this.props.type},
         {rounded: this.props.rounded},
         {disabled: this.props.disabled},

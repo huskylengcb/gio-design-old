@@ -7,8 +7,8 @@ import 'brace/theme/github';
 // import Tag from './components/tag';
 // import Avatar from './components/avatar';
 // import Checkbox from './components/checkbox';
-// import Button from './components/button';
-import Icon from './components/icon';
+import Button from './components/button';
+// import Icon from './components/icon';
 // import DatePicker from './components/date-picker';
 // import Greeting from './components/greeting';
 // import Input from './components/input';
@@ -60,8 +60,8 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <h1>{this.props.title}</h1>
-        <div className='props'>props:</div>
-        <div className='editor'>
+        {/* <div className='props'>props:</div> */}
+        {/* <div className='editor'>
           <JsonEditor
             handleChange={this._handleChange}
             mode='tree'
@@ -71,15 +71,16 @@ class App extends React.Component {
             onChange={this._handleChange}
             ref={this._setRef}
           />
-        </div>
+        </div> */}
         <div className='playground'>
-          {/* <Button type='primary'>Button</Button><br/>
-          <Button type='secondery'>Button</Button><br/>
-          <Button type='auxiliary'>Button</Button> */}
-          <Icon name='gicon-copy' />
-          <Icon name='gicon-gioCombinedShape' />
-          <Icon name='gicon-edit' />
-          <Icon name='gicon-search' />
+          <Button type='primary'>Button</Button><br/>
+          <Button type='secondary'>Button</Button><br/>
+          <Button type='subtle'>Button</Button><br/>
+          <Button disabled type='primary'>Button</Button><br/>
+          <Button withoutBg type='primary'>Button</Button><br/>
+          <Button withoutBg type='secondary'>Button</Button><br/>
+          <Button withoutBg type='subtle'>Button</Button><br/>
+          <Button disabled withoutBg type='primary'>Button</Button><br/>
         </div>
       </React.Fragment>
     );

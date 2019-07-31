@@ -4,7 +4,7 @@ exports[`Button renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "ant-btn gio-btn gio-btn-with-bg gio-btn-primary undisabled ant-btn-primary ant-btn-lg",
+      "class": "ant-btn gio-btn gio-btn-with-bg default-font-family gio-btn-primary undisabled ant-btn-primary ant-btn-lg",
       "type": "button",
     },
     "children": Array [
@@ -78,7 +78,7 @@ initialize {
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "ant-btn gio-btn gio-btn-with-bg gio-btn-primary undisabled ant-btn-primary ant-btn-lg",
+          "class": "ant-btn gio-btn gio-btn-with-bg default-font-family gio-btn-primary undisabled ant-btn-primary ant-btn-lg",
           "type": "button",
         },
         "children": Array [
@@ -166,7 +166,7 @@ initialize {
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "gio-btn gio-btn-without-bg gio-btn-primary undisabled",
+          "class": "gio-btn gio-btn-without-bg default-font-family gio-btn-primary undisabled",
           "type": "primary",
         },
         "children": Array [

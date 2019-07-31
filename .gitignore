@@ -2,7 +2,7 @@ website/.docz/cache
 node_modules/
 yarn-error.log
 build/
-dist/
+lib/
 .rpt2_cache/
 junit.xml
 .vscode/

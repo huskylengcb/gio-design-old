@@ -84,7 +84,7 @@ export default class Icon extends React.Component<IconProps, {}> {
         {...omit(this.props, 'svgStyle', 'disablePointer', 'valign')}
         onClick={this.props.disabled ?  noop : this.props.onClick}
         style={this.props.style || {}}
-        className={classnames('gio-icon-wrapper', this.props.className)}
+        className={classnames('gio-icon-wrapper', this.props.className, 'x')}
       >
         {iconSvg}
       </span>

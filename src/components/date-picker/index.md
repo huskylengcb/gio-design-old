@@ -1,6 +1,6 @@
 ---
-name: giodesign/date-picker
-menu: GIODesign
+name: Date-picker
+menu: Components
 ---
 import { Playground } from 'docz'
 import DatePicker from './index'

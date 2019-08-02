@@ -1,4 +1,4 @@
-website/.docz/cache
+website/.docz/
 node_modules/
 yarn-error.log
 build/

@@ -1,8 +1,9 @@
-website/.docz/
-node_modules/
-yarn-error.log
+.DS_Store
+.docz/
+.rpt2_cache/
+.vscode/
 build/
 lib/
-.rpt2_cache/
+node_modules/
+yarn-error.log
 junit.xml
-.vscode/

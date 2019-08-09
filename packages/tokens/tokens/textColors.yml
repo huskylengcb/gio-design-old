@@ -1,0 +1,46 @@
+imports:
+  - ./palette.yml
+props:
+  color-text-primary:
+    value: '{!color-black-7}'
+  color-text-1:
+    value: '{!color-black-5}'
+  color-text-2:
+    value: '{!color-black-4}'
+  color-text-3:
+    value: '{!color-black-3}'
+  color-text-prompt:
+    value: '{!color-black-2}'
+  color-text-disable:
+    value: '{!color-black-1}'
+  color-text-brand-primary:
+    value: '#FFFFFF'
+  color-text-brand-second:
+    value: '#FFFFFF'
+  color-text-brand-orange:
+    value: '{!color-orange-4}'
+  color-text-brand-indigo:
+    value: '{!color-indigo-7}'
+  color-text-error:
+    value: '#F55252'
+  color-text-warning:
+    value: '{!color-yellow-5}'
+  color-text-info:
+    value: '{!color-indigo-6}'
+  color-text-input-prompt:
+    value: '{!color-black-1}'
+  color-text-input-dafault:
+    value: '{!color-black-5}'
+  color-text-inverse:
+    value: '#FFFFFF'
+  color-text-button-minor:
+    value: '{!color-purple-4}'
+  color-text-link:
+    value: '{!color-indigo-6}'
+  color-text-link-hover:
+    value: '{!color-indigo-7}'
+  color-text-link-active:
+    value: '#222F73'
+global:
+  type: color
+  category: textColor

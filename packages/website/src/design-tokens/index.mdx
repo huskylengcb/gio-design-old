@@ -1,0 +1,30 @@
+---
+name: Design Tokens
+route: /design-tokens
+---
+
+# Design Tokens
+
+import Tokens from './Tokens';
+
+## Usage
+
+```
+yarn add @gio-design/tokens
+```
+
+Less
+```
+@import '~@gio-design/tokens/dist/colors'; // less-loader
+
+h1 {
+  background-color: @color-primary;
+}
+```
+
+JavaScript
+```
+import { colors } from '@gio-design/tokens';
+```
+
+<Tokens />

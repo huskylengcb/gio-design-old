@@ -1,0 +1,10 @@
+imports:
+  - ./palette.yml
+props:
+  color-primary:
+    value: '{!color-orange-4}'
+  color-secondary:
+    value: '{!color-indigo-7}'
+global:
+  type: color
+  category: color

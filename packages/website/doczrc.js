@@ -8,6 +8,7 @@ module.exports = {
     'Overview',
     'Getting Started',
     'Design Language',
+    'Design Tokens',
     'Components',
     'Changelog'
   ],

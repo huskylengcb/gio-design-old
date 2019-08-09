@@ -1,0 +1,42 @@
+imports:
+  - ./palette.yml
+props:
+  color-background:
+    value: '#FFFFFF'
+  color-background-alt:
+   value: '{!color-gray-1}'
+  color-background-brand-primary:
+   value: '{!color-orange-4}'
+  color-background-brand-secondary:
+   value: '{!color-indigo-7}'
+  color-background-light:
+   value: '#FFFFFF'
+  color-background-table:
+   value: '#F7F8FA'
+  color-background-table-hover:
+   value: '{!color-gray-3}'
+  color-background-row-hover:
+   value: '{!color-gray-1}'
+  color-background-row-selected:
+   value: '{!color-orange-1}'
+  color-background-hover:
+   value: '{!color-indigo-1}'
+  color-background-selection:
+   value: '{!color-indigo-7}'
+  color-background-info:
+   value: '{!color-indigo-1}'
+  color-background-warning:
+   value: '{!color-yellow-1}'
+  color-background-error:
+   value: '{!color-orange-1}'
+  color-background-ui-success:
+   value: '{!color-green-3}'
+  color-background-ui-warning:
+   value: '{!color-yellow-3}'
+  color-background-ui-error:
+   value: '{!color-orange-5}'
+  color-background-label:
+   value: '{!color-gray-1}'
+global:
+  type: color
+  category: backgroundColor

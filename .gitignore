@@ -3,6 +3,7 @@
 .rpt2_cache/
 .vscode/
 build/
+dist/
 lib/
 node_modules/
 yarn-error.log

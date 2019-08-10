@@ -20,7 +20,7 @@
     "docz": "cd website && npm run start"
   },
   "keywords": [
-    "raect",
+    "react",
     "antd"
   ],
   "author": "fuhuan",

@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/tokens",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -13,5 +13,8 @@
     "gulp": "^4.0.2",
     "gulp-theo": "^2.0.0",
     "theo": "^8.1.4"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.infra.growingio.com/repository/npm-hosted/"
   }
 }

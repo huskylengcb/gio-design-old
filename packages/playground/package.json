@@ -10,5 +10,6 @@
   },
   "scripts": {
     "build": "lessc src/style.less dist/style.css"
-  }
+  },
+  "private": true
 }

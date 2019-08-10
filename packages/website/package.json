@@ -16,5 +16,6 @@
   },
   "dependencies": {
     "@gio-design/tokens": "0.0.1"
-  }
+  },
+  "private": true
 }

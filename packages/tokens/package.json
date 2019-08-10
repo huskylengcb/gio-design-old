@@ -1,13 +1,10 @@
 {
   "name": "@gio-design/tokens",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "gulp"
-  },
-  "dependencies": {
-    "gulp-theo": "^2.0.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

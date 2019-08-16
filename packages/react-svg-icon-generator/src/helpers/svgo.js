@@ -41,7 +41,6 @@ const svgo = new SVGOptim({
     'removeStyleElement',
     {
       removeAttrs: {
-        attrs: 'class',
       },
     },
   ],

@@ -15,6 +15,7 @@
     "docz-theme-default": "^0.13.7"
   },
   "dependencies": {
+    "@gio-design/icon": "0.0.0",
     "@gio-design/tokens": "^0.0.3"
   },
   "private": true

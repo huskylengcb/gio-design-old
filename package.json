@@ -18,6 +18,7 @@
     "start:website": "npx lerna run --scope website start --stream",
     "start:playground": "build:playground & open packages/playground/index.html",
     "build:playground": "yarn workspace playground build",
-    "build:tokens": "yarn workspace @gio-design/tokens build"
+    "build:tokens": "yarn workspace @gio-design/tokens build",
+    "build:icon": "yarn workspace @gio-design/icon build"
   }
 }

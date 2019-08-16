@@ -1,0 +1,41 @@
+---
+name: Icons
+route: /icons
+---
+
+import Icon from '@gio-design/icon';
+import icons from '@gio-design/icon/dist/icons';
+
+# Icons
+
+## Usage
+
+```
+import Icon from '@gio-design/icon';
+
+...
+<Icon type={'android'} />
+...
+```
+
+## List
+
+<div>
+  {
+    Object.keys(icons).map(category => {
+      return (
+        <div>
+          <h3>{category}</h3>
+          {
+            icons[category].sort().map(i => (
+              <span style={{ display: 'inline-block', margin: '0 10px 10px 0', width: 160, height: 30, padding: '5px 15px', background: '#FAFAFA' }}>
+                <Icon type={i} size='large' style={{ marginRight: 10 }} />
+                <span style={{ fontSize: 12, color: '#999' }}>{i}</span>
+              </span>
+            ))
+          }
+        </div>
+      )
+    })
+  }
+</div>

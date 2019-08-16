@@ -6,5 +6,6 @@ build/
 dist/
 lib/
 node_modules/
-yarn-error.log
+lerna-debug.log
 junit.xml
+yarn-error.log

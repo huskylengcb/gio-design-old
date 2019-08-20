@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/icon",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "GrowingIO Design System Icons",
   "keywords": [
     "gio-desing",
@@ -36,9 +36,9 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "rollup-plugin-babel": "^4.3.3",
     "@gio-design/react-svg-icon-generator": "^0.5.5",
-    "radium": "^0.25.2"
+    "radium": "^0.25.2",
+    "rollup-plugin-babel": "^4.3.3"
   },
   "gitHead": "85626d5efe0fd83e62f26a831827da9e89d726c1"
 }

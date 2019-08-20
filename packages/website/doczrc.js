@@ -3,7 +3,7 @@ import { css } from 'docz-plugin-css';
 module.exports = {
   title: 'GrowingIO Design System',
   typescript: true,
-  src: './src',
+  src: '../',
   menu: [
     'Overview',
     'Getting Started',

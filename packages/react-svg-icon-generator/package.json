@@ -51,5 +51,8 @@
     "nunjucks": "^2.4.0",
     "svgo": "^0.6.2",
     "yargs": "^6.6.0"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.infra.growingio.com/repository/npm-group/"
   }
 }

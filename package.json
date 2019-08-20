@@ -16,7 +16,7 @@
   "scripts": {
     "start": "npx lerna run --scope @gio-design/components start --stream",
     "start:website": "npx lerna run --scope website start --stream",
-    "start:playground": "build:playground & open packages/playground/index.html",
+    "start:playground": "npx lerna run --scope playground start --stream",
     "clean": "npx lerna clean",
     "build:playground": "yarn workspace playground build",
     "build:tokens": "yarn workspace @gio-design/tokens build",

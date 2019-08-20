@@ -6,10 +6,16 @@
   "dependencies": {
     "@gio-design/tokens": "^0.0.3",
     "bulma": "^0.7.5",
-    "less": "^3.9.0"
+    "less": "^3.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "scripts": {
+    "start": "parcel ./src/index.html",
     "build": "lessc src/style.less dist/style.css"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
 }

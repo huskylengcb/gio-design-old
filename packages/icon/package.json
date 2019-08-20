@@ -37,8 +37,10 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@gio-design/react-svg-icon-generator": "^0.5.5",
-    "radium": "^0.25.2",
     "rollup-plugin-babel": "^4.3.3"
+  },
+  "dependencies": {
+    "radium": "^0.25.2"
   },
   "gitHead": "85626d5efe0fd83e62f26a831827da9e89d726c1"
 }

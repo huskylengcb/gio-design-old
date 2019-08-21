@@ -1,0 +1,38 @@
+{
+  "name": "@gio-design/themes",
+  "version": "0.0.0",
+  "description": "GrowingIO Design System Themes",
+  "keywords": [
+    "growingio",
+    "theme"
+  ],
+  "author": "Zhang Yuxiang <zhangyuxiang@growingio.com>",
+  "homepage": "https://growingio.design/themes",
+  "license": "MIT",
+  "main": "lib/themes.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://nexus.infra.growingio.com/repository/npm-group/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://vcs-user@codes.growingio.com/diffusion/259/gio-design.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@gio-design/tokens": "^0.0.3",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-yaml": "^2.0.4"
+  }
+}

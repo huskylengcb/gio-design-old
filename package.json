@@ -7,7 +7,10 @@
   "private": true,
   "workspaces": {
     "packages": ["packages/*"],
-    "nohoist": ["**/@gio-design/tokens", "**/@gio-design/tokens/**"]
+    "nohoist": [
+      "**/@gio-design/tokens", "**/@gio-design/tokens/**",
+      "**/@gio-design/themes", "**/@gio-design/themes/**"
+    ]
   },
   "license": "MIT",
   "devDependencies": {
@@ -20,6 +23,7 @@
     "clean": "npx lerna clean",
     "build:playground": "yarn workspace playground build",
     "build:tokens": "yarn workspace @gio-design/tokens build",
+    "build:themes": "yarn workspace @gio-design/themes build",
     "build:icon": "yarn workspace @gio-design/icon build"
   }
 }

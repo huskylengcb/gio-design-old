@@ -48,7 +48,15 @@ yarn add -W [dependency]
 
 - website
 
+## Create
+
+lerna create [package-name]
+
 ## Publish
+
+```
+lerna publish
+```
 
 ## References
 

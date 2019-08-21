@@ -1,5 +1,1 @@
-{
-	"modifyVars": {
-	  "@color-primary": "yellowgreen",
-	}
-}
+{"modifyVars":{"@color-primary":"green"}}

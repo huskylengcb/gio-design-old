@@ -23,4 +23,10 @@ function commonJS() {
     .pipe(dest(dist))
 }
 
-exports.default = parallel(less, commonJS);
+function json() {
+  return src(sources)
+    .pipe(theo(getWebConfig('json')))
+    .pipe(dest(dist))
+}
+
+exports.default = parallel(less, commonJS, json);

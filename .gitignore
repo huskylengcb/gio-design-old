@@ -2,6 +2,7 @@
 .cache
 .docz
 .rpt2_cache
+.tmp
 .vscode
 build
 dist

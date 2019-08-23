@@ -7,7 +7,7 @@ initialize {
       "class": "ant-tag",
     },
     "children": Array [],
-    "name": "div",
+    "name": "span",
     "namespace": "http://www.w3.org/1999/xhtml",
     "next": null,
     "parent": null,

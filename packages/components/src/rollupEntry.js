@@ -7,6 +7,7 @@ import Greeting from './components/greeting';
 import Icon from './components/icon';
 import Input from './components/input';
 import List from './components/list';
+import Menu from './components/menu';
 import Message from './components/message';
 import Modal from './components/modal';
 import Option from './components/option';
@@ -31,6 +32,7 @@ export {
   Icon,
   Input,
   List,
+  Menu,
   Message,
   Modal,
   Option,

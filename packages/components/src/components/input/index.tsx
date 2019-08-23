@@ -15,7 +15,6 @@ export interface InputProps {
 
 export default class Input extends React.Component<InputProps, {}> {
   public render() {
-    const s = isNumber(123)
     return (
       <AntInput
         {...omit(this.props, ['error'])}

@@ -1,0 +1,80 @@
+---
+name: Themes
+route: /themes
+---
+
+# Themes
+
+import themes from '@gio-design/themes';
+
+## Usage
+
+Installation
+```
+yarn add @gio-design/themes
+```
+
+JavaScript
+```
+import { indigo } from '@gio-design/themes';
+
+...
+<div style={{ color: indigo.colorPrimary }}>
+...
+```
+
+React Context
+```
+export const ThemeContext = React.createContext({});
+```
+```
+import { indigo } from '@gio-design/themes';
+...
+  return (
+    <ThemeContext.Provider value={indigo}>
+...
+```
+
+
+```
+...
+  <ThemeContext.Consumer>
+    {
+      (theme) => (...)
+    }
+  </ThemeContext.Consumer>
+...
+```
+或使用 useContext
+```
+...
+  const theme = useContext(ThemeContext);
+...
+```
+
+Webpack
+```
+var indigo = require('@gio-design/themes/lib/indigo');
+
+...
+{
+  loader: 'less-loader',
+  options: {
+    'modifyVars': indigo
+  }
+}
+...
+```
+
+umiJS
+```
+var indigo = require('@gio-design/themes/lib/indigo');
+...
+theme: indigo
+...
+```
+
+Pacel
+```
+echo "{\"modifyVars\": $(cat node_modules/@gio-design/themes/lib/[THEME_NAME].json) }" > .lessrc
+```

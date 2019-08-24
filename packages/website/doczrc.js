@@ -9,8 +9,9 @@ module.exports = {
     'Getting Started',
     'Design Language',
     'Design Tokens',
-    'Components',
+    'Themes',
     'Icons',
+    'Components',
     'Changelog'
   ],
   plugins: [

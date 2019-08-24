@@ -1,14 +1,23 @@
-import React from 'react';
-import { colors } from '@gio-design/tokens';
+import React, { useContext } from 'react';
 import Icon from '@gio-design/icon';
-import { indigo } from '@gio-design/themes';
+import { ThemeContext } from './context';
+import styled from 'styled-components';
 
-const Hello = () => {
+const Hello = (props:any) => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <div style={{}}>
+    <Wrapper theme={theme}>
+      <button onClick={() => toggleTheme('origin')}>origin</button>
+      <button onClick={() => toggleTheme('indigo')}>indigo</button>
+      <br />
       <Icon type='wechat' />
-      Hello Parcel
-    </div>
+      GrowingIO Design System Themes
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  color: ${props => props.theme.colorPrimary}
+`;
+
 export default Hello;

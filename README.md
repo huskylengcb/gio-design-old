@@ -52,6 +52,12 @@ yarn add -W [dependency]
 
 lerna create [package-name]
 
+## Build
+```
+yarn install
+yarn build
+```
+
 ## Publish
 
 ```

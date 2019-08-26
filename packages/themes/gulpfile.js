@@ -43,7 +43,7 @@ function build(done) {
   const template = handlebars.compile(templateFile);
   fs.writeFileSync('lib/index.js', template({ themes }));
 
-  const originJson = fs.readFileSync('lib/origin.json', 'utf-8');
+  const originJson = fs.readFileSync('.tmp/origin.json', 'utf-8');
   const origin = JSON.parse(originJson);
   const props = Object.keys(origin);
   const dtsTemplateFile = fs.readFileSync('src/index.d.ts.hbs', 'utf-8');

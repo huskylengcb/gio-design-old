@@ -5,7 +5,12 @@
 .tmp
 .vscode
 build
-dist
+**/dist/*.html
+**/dist/*.js
+**/dist/*.json
+**/dist/*.less
+**/dist/*.css
+**/dist/*.map
 lib
 node_modules
 lerna-debug.log

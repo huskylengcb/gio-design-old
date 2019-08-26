@@ -6,6 +6,11 @@ route: /themes
 # Themes
 
 import themes from '@gio-design/themes';
+import ThemeList from './ThemeList';
+
+## Themes
+
+<ThemeList />
 
 ## Usage
 
@@ -54,7 +59,7 @@ import { indigo } from '@gio-design/themes';
 
 Webpack
 ```
-var indigo = require('@gio-design/themes/lib/indigo');
+var indigo = require('@gio-design/themes/lib/indigo-less');
 
 ...
 {
@@ -67,8 +72,10 @@ var indigo = require('@gio-design/themes/lib/indigo');
 ```
 
 umiJS
+
+.umirc.ts
 ```
-var indigo = require('@gio-design/themes/lib/indigo');
+const indigo = require('@gio-design/themes/lib/indigo-less');
 ...
 theme: indigo
 ...
@@ -76,5 +83,5 @@ theme: indigo
 
 Pacel
 ```
-echo "{\"modifyVars\": $(cat node_modules/@gio-design/themes/lib/[THEME_NAME].json) }" > .lessrc
+echo "{\"modifyVars\": $(cat node_modules/@gio-design/themes/lib/[THEME_NAME]-less.json) }" > .lessrc
 ```

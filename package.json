@@ -22,6 +22,7 @@
     "start:playground": "npx lerna run --scope playground start --stream",
     "clean": "npx lerna clean",
     "build:playground": "yarn workspace playground build",
+    "build:website": "yarn workspace website build",
     "build:tokens": "yarn workspace @gio-design/tokens build",
     "build:themes": "yarn workspace @gio-design/themes build",
     "build:icon": "yarn workspace @gio-design/icon build"

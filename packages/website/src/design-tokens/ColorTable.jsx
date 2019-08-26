@@ -56,7 +56,7 @@ const ColorTable = ({
             <th>JS</th>
             <th>hex</th>
             <th>rgb</th>
-            <th></th>
+            <th>Theme: origin</th>
           </tr>
         </thead>
         <tbody style={{ fontSize: 14 }}>

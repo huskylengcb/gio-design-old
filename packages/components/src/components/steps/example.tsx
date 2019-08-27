@@ -19,7 +19,7 @@ const steps = [
   },
 ];
 
-class App extends React.Component<{}, {current: number}> {
+class StepsExample extends React.Component<{}, {current: number}> {
   constructor({}) {
     super({});
     this.state = {
@@ -68,3 +68,5 @@ class App extends React.Component<{}, {current: number}> {
     );
   }
 }
+
+export default StepsExample;

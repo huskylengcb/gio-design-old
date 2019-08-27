@@ -16,6 +16,7 @@ import Popover from './components/popover';
 import Progress from './components/progress';
 import Radio from './components/radio';
 import Select from './components/select';
+import Steps from './components/steps';
 import Switch from './components/switch';
 import Tag from './components/tag';
 import Textarea from './components/textarea';
@@ -41,6 +42,7 @@ export {
   Progress,
   Radio,
   Select,
+  Steps,
   Switch,
   Tag,
   Textarea,

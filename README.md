@@ -62,7 +62,7 @@ yarn build
 
 ```
 yarn build
-lerna publish
+(npx) lerna publish
 ```
 
 ## References

@@ -58,7 +58,15 @@ yarn install
 yarn build
 ```
 
-## Publish
+## Publish component
+
+```
+cd packages/components
+yarn build
+(npx) lerna publish
+```
+
+## Publish icon/token/theme
 
 ```
 yarn build

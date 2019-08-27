@@ -61,6 +61,7 @@ yarn build
 ## Publish
 
 ```
+yarn build
 lerna publish
 ```
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/lib/menu/style/index';
 import { Menu as AntMenu } from 'antd'
 import { MenuProps } from 'antd/lib/menu'
 import 'antd/lib/menu/style/index.css';

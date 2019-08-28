@@ -1,9 +1,8 @@
 import React from 'react';
-import './index.less';
-// import cn from 'classnames';
 import 'antd/lib/menu/style/index';
 import { Menu as AntMenu } from 'antd'
 import { MenuProps } from 'antd/lib/menu'
+import 'antd/lib/menu/style/index.css';
 
 export interface GioMenuProps {
   [key: string]: any,

@@ -1,12 +1,12 @@
 ---
-name: Radio
+name: Popover
 menu: Components
 ---
 import { Playground } from 'docz';
-import Radio from './index';
+import Popover from '@gio-design/components/lib/popover'
 
 
-# Radio
+# Popover
 
 ## 简介
 
@@ -14,9 +14,7 @@ import Radio from './index';
 
 ## Examples
 <Playground>
-  <Radio>a</Radio>
-  <Radio>b</Radio>
-  <Radio>c</Radio>
+    <Popover title='title' content={<div>content</div>}>trigger</Popover>
 </Playground>
 
 ## API

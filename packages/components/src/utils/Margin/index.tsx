@@ -1,7 +1,4 @@
-import React, {
-  SFC,
-} from 'react';
-import pure from '../HOC/pure';
+import * as React from 'react';
 
 interface P {
   top?: number | string,
@@ -12,7 +9,7 @@ interface P {
   classname?: string,
 }
 
-const Margin: SFC<P> = ({
+const Margin: React.FC<P> = ({
   top = 0,
   bottom = 0,
   right = 'auto',
@@ -35,4 +32,5 @@ const Margin: SFC<P> = ({
   </div>
 );
 
-export  default pure(Margin);
+// const Margin =  pure(Margin);
+export default Margin

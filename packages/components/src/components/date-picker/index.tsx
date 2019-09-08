@@ -1,5 +1,4 @@
 // import React from 'react';
-import * as React from 'react';
 import 'antd/lib/calendar/style/index.css';
 import 'antd/lib/date-picker/style/index.css';
 import 'antd/lib/tooltip/style/index.less';

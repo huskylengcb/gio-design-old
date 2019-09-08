@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Menu as AntMenu } from 'antd'
 import { MenuProps } from 'antd/lib/menu'
 import 'antd/lib/menu/style/index.css';
@@ -9,11 +9,11 @@ export interface GioMenuProps {
 
 const { Divider, Item, ItemGroup, SubMenu } = AntMenu
 
-export default class Menu extends React.Component<GioMenuProps & MenuProps, {}> {
-  public static Divider: typeof Divider = Divider;
-  public static Item: typeof Item = Item;
-  public static SubMenu: typeof SubMenu = SubMenu;
-  public static ItemGroup: typeof ItemGroup = ItemGroup;
+class Menu extends React.Component<GioMenuProps & MenuProps> {
+  public static Divider = Divider;
+  public static Item = Item;
+  public static SubMenu = SubMenu;
+  public static ItemGroup = ItemGroup;
   public render() {
     return (
       <AntMenu
@@ -22,3 +22,5 @@ export default class Menu extends React.Component<GioMenuProps & MenuProps, {}> 
     );
   }
 }
+
+export default Menu

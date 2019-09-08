@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Moment } from 'moment';
 import DatePicker from '../../common/DatePicker';
 import moment from 'moment';

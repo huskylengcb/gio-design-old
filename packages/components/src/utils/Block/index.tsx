@@ -1,6 +1,4 @@
-import React, {
-  SFC,
-} from 'react';
+import * as React from 'react';
 import cn from 'classnames';
 import { noop } from 'lodash';
 import pure from '../HOC/pure';
@@ -15,7 +13,7 @@ interface ClassArray extends Array<ClassValue> {
 
 }
 
-interface P {
+interface BlockProps {
   top?: number
   bottom?: number
   right?: number
@@ -27,7 +25,7 @@ interface P {
   classNames?: ClassArray
 }
 
-const Block: SFC<P> = ({
+const Block: React.FC<BlockProps> = ({
   top = 0,
   bottom = 0,
   right = 0,
@@ -55,4 +53,4 @@ const Block: SFC<P> = ({
   </div>
 );
 
-export  default pure(Block);
+export  default Block;

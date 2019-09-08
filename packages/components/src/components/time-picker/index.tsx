@@ -1,5 +1,4 @@
-import React from 'react';
-
+import * as React from 'react';
 import 'antd/lib/time-picker/style/index.css';
 import './index.less'
 

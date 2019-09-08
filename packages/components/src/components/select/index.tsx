@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Select as AntSelect } from 'antd';
 import classnames from 'classnames';
 import isContain from '../../utils/pinyinHelper';

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Tooltip as AtndTooltip } from 'antd';
 
 import 'antd/lib/tooltip/style/index.css';

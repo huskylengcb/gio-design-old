@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Table } from 'antd';
 import 'antd/lib/table/style/index.css';
 import 'antd/lib/pagination/style/index.css';

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Popconfirm as AntdPopconfirm } from 'antd';
 import { PopconfirmProps } from 'antd/lib/popconfirm';
 import 'antd/lib/popconfirm/style/css.js';

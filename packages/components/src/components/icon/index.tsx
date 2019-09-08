@@ -40,7 +40,7 @@ export interface IconProps {
   disabled?: boolean
 }
 
-export default class Icon extends React.Component<IconProps, {}> {
+class Icon extends React.Component<IconProps> {
   public static defaultProps = {
     name: '',
     size: 'middle',
@@ -91,3 +91,5 @@ export default class Icon extends React.Component<IconProps, {}> {
     );
   }
 }
+
+export default Icon

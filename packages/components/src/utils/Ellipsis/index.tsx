@@ -1,15 +1,11 @@
-import React, {
-  SFC,
-  ReactNode,
-  PureComponent
-} from 'react';
+import * as React from 'react';
 import { Tooltip } from 'antd';
 import pure from '../HOC/pure';
 import './index.less';
 
 interface P {
   line?: number
-  title?: ReactNode,
+  title?: React.ReactNode,
   maxWidth?: string,
   style?: object,
   placement?: 'top' | 'left' | 'right' | 'bottom' | 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRight' | 'leftTop' | 'leftBottom' | 'rightTop' | 'rightBottom',
@@ -19,7 +15,7 @@ interface S {
   tooltip: boolean
 }
 
-class Ellipsis extends PureComponent<P> {
+class Ellipsis extends React.PureComponent<P> {
   public state = {
     tooltip: false
   }

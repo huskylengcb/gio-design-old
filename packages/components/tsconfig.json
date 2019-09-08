@@ -2,11 +2,26 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "sourceMap": true,
+  　"module": "ES6",
+    "removeComments": true,
+    "preserveConstEnums": false,
     "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es5",
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
     "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "keyofStringsOnly": true,
+    "declaration": true,
     "esModuleInterop": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "exclude": ["./lib", "./node_modules"],
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2
   },
   "include": [
     "./src/**/*.ts",

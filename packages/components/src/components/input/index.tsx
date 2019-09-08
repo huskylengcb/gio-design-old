@@ -1,33 +1,36 @@
-import React from 'react';
+import * as React from 'react';
 import { Input as AntInput } from 'antd';
-import cn from 'classnames';
+import classnames from 'classnames';
 import { omit } from 'lodash';
-import { isNumber } from '../../utils/helpers'
 import 'antd/lib/input/style/index.css';
 import './index.less';
 
 export interface InputProps {
   className?: string,
   disabled?: boolean,
+  size?: 'large' | 'small'
   [key: string]: any,
   error?: boolean
 };
 
-export default class Input extends React.Component<InputProps, {}> {
+class Input extends React.Component<InputProps> {
   public render() {
+    const className = classnames(
+      'gio-input',
+      this.props.className,
+      {
+        ['gio-input--error']: this.props.error,
+        large: this.props.size === 'large',
+        small: this.props.size === 'small'
+      }
+    )
     return (
       <AntInput
         {...omit(this.props, ['error'])}
-        className={cn(
-          'gio-input',
-          this.props.className,
-          {
-            ['gio-input--error']: this.props.error,
-            large: this.props.size === 'large',
-            small: this.props.size === 'small'
-          }
-        )}
+        className={className}
       />
     );
   }
 }
+
+export default Input

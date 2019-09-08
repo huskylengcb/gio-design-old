@@ -1,14 +1,9 @@
-import React, {
-  PureComponent,
-  SFC,
-  ComponentType,
-} from 'react';
+import * as React from 'react';
+type GetDisplayName = (x: React.ComponentType) => string;
 
-type GetDisplayName = (x: ComponentType) => string;
+export const getDisplayName: GetDisplayName = (Component: React.ComponentClass) => Component.displayName || Component.name || 'Component';
 
-export const getDisplayName: GetDisplayName = (Component) => Component.displayName || Component.name || 'Component';
-
-export default function pure<P>(Component: SFC<P>) {
+function pure<P>(Component: React.FC<P>): React.ComponentClass {
   class HOC extends React.PureComponent<P, undefined> {
     public static displayName: string
     public render() {
@@ -18,3 +13,5 @@ export default function pure<P>(Component: SFC<P>) {
   HOC.displayName = `withPure(${getDisplayName(Component)})`;
   return HOC;
 }
+
+export default pure

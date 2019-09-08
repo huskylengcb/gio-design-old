@@ -1,7 +1,4 @@
-import React, {
-  PureComponent,
-  SFC,
-} from 'react';
+import * as React from 'react';
 import Block from '../../../utils/Block';
 import './index.less';
 
@@ -9,7 +6,7 @@ interface P  {
   label: React.ReactNode
 }
 
-const OptionGroup: SFC<P> = ({
+const OptionGroup: React.FC<P> = ({
   children,
   label
 }) => (

@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import * as React from 'react';
 import { Modal as AntModal } from 'antd';
 import Button from '../button';
 import Icon from '../icon';
@@ -34,38 +34,49 @@ export interface ModalProps {
   minWidth?: number,
   size?: 'large' | 'middle' | 'small',
   okButtonClassName?: string,
-  style?: CSSProperties,
+  style?: React.CSSProperties,
   zIndex?: number,
   getContainer?: () => HTMLElement,
   locale?: string
 };
 
-const Modal: React.SFC<ModalProps> = ({
-  overflowY,
+const Modal: React.FC<ModalProps> = ({
   minWidth,
   onBack,
   backable,
   okButtonClassName,
   style = {},
+  visible = false,
+  closable =  true,
+  className = '',
+  title = '',
+  okText = '',
+  cancelText = '',
+  disableOk = false,
+  showCancel = true,
+  onCancel = noop,
+  onOk = noop,
+  confirmLoading = false,
+  overflowY = 'visible',
   ...props
 }) => {
   const locale = props.locale;
   const footer = (
     <div className='gio-modal-footer'>
-      {props.showCancel && <Button size={props.size} type={props.cancelButtonType || 'subtle'} onClick={props.onCancel}>{props.cancelText ? props.cancelText : (locale === 'en' ? 'Cancel' : '取消')}</Button>}
-      <Button size={props.size} type={props.okButtonType || 'secondary'} loading={props.confirmLoading} disabled={props.disableOk ? true : false} onClick={props.onOk} className={okButtonClassName}>
-        {props.okText ? props.okText : (locale === 'en' ? 'Confirm' : '确定')}
+      {showCancel && <Button size={props.size} type={props.cancelButtonType || 'subtle'} onClick={onCancel}>{cancelText ? cancelText : (locale === 'en' ? 'Cancel' : '取消')}</Button>}
+      <Button size={props.size} type={props.okButtonType || 'secondary'} loading={confirmLoading} disabled={disableOk ? true : false} onClick={onOk} className={okButtonClassName}>
+        {okText ? okText : (locale === 'en' ? 'Confirm' : '确定')}
       </Button>
     </div>
   );
-  const className = cn('gio-modal', props.className, {
+  const cls = cn('gio-modal', className, {
     ['gio-modal--overflow-y-scroll']: overflowY === 'scroll'
   });
   return (
     <AntModal
       {...props}
       footer={props.footer !== undefined ? props.footer : footer}
-      className={className}
+      className={cls}
       style={{
         minWidth, ...style
       }}
@@ -76,22 +87,6 @@ const Modal: React.SFC<ModalProps> = ({
       </div>
     </AntModal>
   );
-}
-
-Modal.defaultProps = {
-  visible: false,
-  closable: true,
-  className: '',
-  title: '',
-  okText: '',
-  cancelText: '',
-  disableOk: false,
-  showCancel: true,
-  onCancel: noop,
-  onOk: noop,
-  footer: undefined,
-  confirmLoading: false,
-  overflowY: 'visible'
 }
 
 export default Modal;

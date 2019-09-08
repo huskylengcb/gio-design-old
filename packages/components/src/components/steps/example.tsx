@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Button, message } from 'antd';
-import Steps from './index';
-
-const { Step } = Steps;
+import Steps, { Step } from './index';
 
 const steps = [
   {
@@ -27,17 +25,7 @@ class StepsExample extends React.Component<{}, {current: number}> {
     };
   }
 
-  next() {
-    const current = this.state.current + 1;
-    this.setState({ current });
-  }
-
-  prev() {
-    const current = this.state.current - 1;
-    this.setState({ current });
-  }
-
-  render() {
+  public render() {
     const { current } = this.state;
     return (
       <div>
@@ -46,15 +34,15 @@ class StepsExample extends React.Component<{}, {current: number}> {
             <Step key={item.title} title={item.title} />
           ))}
         </Steps>
-        <div className="steps-content">{steps[current].content}</div>
-        <div className="steps-action">
+        <div className='steps-content'>{steps[current].content}</div>
+        <div className='steps-action'>
           {current < steps.length - 1 && (
-            <Button type="primary" onClick={() => this.next()}>
+            <Button type='primary' onClick={() => this.next()}>
               Next
             </Button>
           )}
           {current === steps.length - 1 && (
-            <Button type="primary" onClick={() => message.success('Processing complete!')}>
+            <Button type='primary' onClick={() => message.success('Processing complete!')}>
               Done
             </Button>
           )}
@@ -66,6 +54,16 @@ class StepsExample extends React.Component<{}, {current: number}> {
         </div>
       </div>
     );
+  }
+
+  private next() {
+    const current = this.state.current + 1;
+    this.setState({ current });
+  }
+
+  private prev() {
+    const current = this.state.current - 1;
+    this.setState({ current });
   }
 }
 

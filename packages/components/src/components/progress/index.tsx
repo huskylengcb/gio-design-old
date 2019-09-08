@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Progress as AtndProgress } from 'antd';
 import 'antd/lib/progress/style/index.css';
 

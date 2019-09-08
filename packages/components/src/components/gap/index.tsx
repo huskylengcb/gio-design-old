@@ -6,15 +6,11 @@ export interface GapProps {
   float?: 'left' | 'right';
 }
 
-export default class Gap extends React.Component<GapProps, {}> {
+class Gap extends React.Component<GapProps> {
   public static defaultProps = {
     width: 0,
     height: 0
   };
-
-  constructor(props: GapProps) {
-    super(props);
-  }
 
   public render() {
     let height = this.props.height;
@@ -33,3 +29,5 @@ export default class Gap extends React.Component<GapProps, {}> {
     );
   }
 }
+
+export default Gap

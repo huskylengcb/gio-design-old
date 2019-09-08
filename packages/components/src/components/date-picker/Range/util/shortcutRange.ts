@@ -163,9 +163,9 @@ const getRangeFromKey = (key: string): string => map[key] ? map[key].range || to
 const formatRange = (range: string): {
     type: string,
     dateRange: number[]
-} => {
+} | undefined => {
     if (!/^[a-zA-Z]+\:((\d+\,\d+)|((prev)?))/.test(range)) {
-        return
+        return undefined
     }
     const rangeArray = range.split(':')
     const type = rangeArray[0]

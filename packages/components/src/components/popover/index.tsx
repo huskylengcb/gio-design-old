@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Popover as AtndPopover } from 'antd';
 import 'antd/lib/popover/style/index.css';
 

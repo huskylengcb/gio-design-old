@@ -12,6 +12,6 @@ const Steps = (props: PropsType) => {
   return <AntdSteps {...props} />;
 };
 
-Steps.Step = Step;
+// Steps.Step = Step;
 
 export default Steps;

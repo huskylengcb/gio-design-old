@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Icon from '../icon';
 import { noop } from 'lodash';
 import Block from '../../utils/Block';
@@ -6,7 +6,7 @@ import Margin from '../../utils/Margin';
 
 import './index.less';
 
-interface P  {
+interface OptionProps  {
   checked?: boolean
   onClick?: (value: any) => void
   value: any
@@ -14,7 +14,7 @@ interface P  {
   bottom?: number
 }
 
-class Option extends React.PureComponent<P> {
+class Option extends React.PureComponent<OptionProps> {
   public static defaultProps: any
   public render() {
     const {
@@ -41,7 +41,7 @@ class Option extends React.PureComponent<P> {
           ]}
         >
           {children}
-          {checked ? <Icon name='gicon-check1' fill='#F48267'/> : null}
+          {checked ? <Icon name='gicon-check1' fill='#F48267' /> : null}
         </Block>
       </Margin>
     );
@@ -56,9 +56,5 @@ Option.defaultProps = {
 }
 
 export default Option;
-export {
-  default as OptionGroup
-} from './OptionGroup';
-export {
-  default as CheckOption
-} from './CheckOption';
+export { default as OptionGroup } from './OptionGroup';
+export { default as CheckOption } from './CheckOption';

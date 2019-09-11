@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import App from './App';
 import ThemesDemo from './ThemesDemo';
+import './style.less'
 
 const Index = () => (
   <Router>

@@ -2,6 +2,10 @@ import React, { useContext } from 'react';
 import Icon from '@gio-design/icon';
 import { ThemeContext } from './context';
 import styled from 'styled-components';
+import Input from '@gio-design/components/lib/input';
+import Button from '@gio-design/components/lib/button';
+
+const Search = Input.Search;
 
 const Hello = (props:any) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -12,6 +16,9 @@ const Hello = (props:any) => {
       <br />
       <Icon type='wechat' />
       GrowingIO Design System Themes
+      <Input />
+      <Search />
+      <Button>hello</Button>
     </Wrapper>
   );
 }

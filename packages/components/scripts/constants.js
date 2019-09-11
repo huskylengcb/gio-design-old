@@ -1,5 +1,15 @@
 // 默认的外部引用库
-const defaultExternalArr = ['react', 'react-dom', 'antd', 'lodash', 'rc-calendar', 'moment', 'rc-notification', 'classnames'];
+const defaultExternalArr = [
+    'react',
+    'react-dom',
+    'antd',
+    'lodash',
+    'rc-calendar',
+    'moment',
+    'rc-notification',
+    'classnames',
+    './input.less'
+];
 
 // 补充外部引用文件
 const extraExternalArr = ['antd/lib/style/index.css'];

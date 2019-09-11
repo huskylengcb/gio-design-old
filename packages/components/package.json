@@ -10,14 +10,15 @@
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "npm run compile_bundle && npm run compile_lib",
+    "build": "npm run compile_bundle && npm run compile_lib && yarn copy-less",
     "compile_bundle": "NODE_ENV=build rollup --config ./scripts/rollup.config.bundle.js",
     "compile_lib": "npm run compile_js_file_to_lib && npm run compile_css_file_to_lib && node scripts/clearTrash.js",
     "compile_js_file_to_lib": "NODE_ENV=build rollup --config ./scripts/rollup.config.lib.js",
     "compile_css_file_to_lib": "NODE_ENV=build node ./scripts/rollup_Build_CSS_file.js",
     "test": "jest",
     "test:xunit": "JEST_JUNIT_CLASSNAME=\"{filename}\" jest --ci --testResultsProcessor=jest-junit",
-    "docz": "cd website && npm run start"
+    "docz": "cd website && npm run start",
+    "copy-less": "gulp"
   },
   "keywords": [
     "react",
@@ -25,10 +26,10 @@
   ],
   "author": "fuhuan",
   "dependencies": {
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.2",
     "@types/classnames": "^2.2.9",
     "@types/lodash": "^4.14.136",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.2",
     "antd": "^3.20.5",
     "classnames": "^2.2.6",
     "lodash": "^4.17.14",
@@ -59,6 +60,9 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "file-loader": "^4.0.0",
+    "gulp": "^4.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
     "jest": "^24.8.0",
     "jest-junit": "^3.4.1",
     "jsoneditor": "^5.32.5",

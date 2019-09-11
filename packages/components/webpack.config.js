@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -50,7 +51,13 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Playground for @gio-design/components',
+      inject: false,
+      template: require('html-webpack-template'),
+      bodyHtmlSnippet: '<div id="app"></div>',
+    })
   ],
   devServer: {
     contentBase: './dist',

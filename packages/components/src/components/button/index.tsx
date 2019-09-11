@@ -1,10 +1,10 @@
 import * as React from 'react';
-import 'antd/lib/button/style/index.less';
-import 'antd/lib/tooltip/style/index.less';
 import pickEventProps from '../../utils/pickEventProps';
 import classnames from 'classnames';
 import { Button, Tooltip } from 'antd';
 
+import 'antd/lib/button/style/index.css';
+import 'antd/lib/tooltip/style/index.css';
 import './style.less';
 
 export const Group = Button.Group;

@@ -21,12 +21,13 @@
     "start:website": "npx lerna run --scope website start --stream",
     "start:playground": "npx lerna run --scope playground start --stream",
     "clean": "npx lerna clean",
-    "build": "yarn build:tokens && yarn build:themes && yarn build:icon && yarn build:components",
+    "build": "yarn build:tokens && yarn build:themes && yarn build:icon-generator && yarn build:icon && yarn build:components",
     "build:playground": "yarn workspace playground build",
     "build:website": "yarn workspace website build",
     "build:tokens": "yarn workspace @gio-design/tokens build",
     "build:themes": "yarn workspace @gio-design/themes build",
     "build:icon": "yarn workspace @gio-design/icon build",
-    "build:components": "yarn workspace @gio-design/components build"
+    "build:components": "yarn workspace @gio-design/components build",
+    "build:icon-generator": "yarn workspace @gio-design/react-svg-icon-generator build"
   }
 }

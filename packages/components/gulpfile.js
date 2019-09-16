@@ -5,6 +5,7 @@ function copyLess() {
   //  .pipe(dest('lib/'))
   return src('src/components/input/input.less')
     .pipe(dest('lib/input'))
+    .pipe(dest('build/components/input'))
 }
 
 exports.default = copyLess;

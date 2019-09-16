@@ -1,7 +1,9 @@
-const { src, dest, parallel } = require('gulp');
+const fs = require('fs');
+const { src, dest, parallel, series } = require('gulp');
 const theo = require('gulp-theo');
+const handlebars = require('handlebars');
 
-const sources = ['tokens/*.yml', '!tokens/palette.yml'];
+const sources = ['src/tokens/*.yml', '!src/tokens/palette.yml'];
 const getWebConfig = (format = 'less') => {
   return {
     transform: { type: 'web' },
@@ -29,4 +31,22 @@ function json() {
     .pipe(dest(dist))
 }
 
-exports.default = parallel(less, commonJS, json);
+function generateEntry(done) {
+  let tokenList = [];
+  if (fs.existsSync(dist)) {
+    const tokenFiles = fs.readdirSync(dist);
+    tokenList = tokenFiles.reduce((tl, file) => {
+      if (/\.common\.js$/.test(file)) {
+        const tokenSet = file.slice(0, file.indexOf('.'));
+        return [...tl, tokenSet];
+      }
+      return tl;
+    }, [])
+  }
+  const templateFile = fs.readFileSync('src/index.js.hbs', 'utf-8');
+  const template = handlebars.compile(templateFile);
+  fs.writeFileSync('index.js', template({ tokenList }));
+  done();
+}
+
+exports.default = series(parallel(less, commonJS, json), generateEntry);

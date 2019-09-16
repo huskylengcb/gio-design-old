@@ -17,5 +17,8 @@
   },
   "publishConfig": {
     "registry": "http://nexus.infra.growingio.com/repository/npm-hosted/"
+  },
+  "dependencies": {
+    "handlebars": "^4.1.2"
   }
 }

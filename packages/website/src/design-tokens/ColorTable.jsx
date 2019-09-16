@@ -1,4 +1,5 @@
 import React from 'react';
+import { convertToken } from './helper';
 
 const rgb2hex = (rgb) => 
   rgb && '#' + rgb
@@ -7,8 +8,6 @@ const rgb2hex = (rgb) =>
     .map(s => parseInt(s).toString(16))
     .join('')
     .toUpperCase();
-
-const convertToken = (token) => token.replace(/[A-Z]/g, (match) => '-' + match.toLowerCase());
 
 const ColorBlock = ({ value }) => (
   <span

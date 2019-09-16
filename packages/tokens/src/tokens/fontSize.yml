@@ -1,0 +1,24 @@
+props:
+  font-size-1:
+    value: '10px'
+  font-size-2:
+    value: '12px'
+  font-size-3:
+    value: '14px'
+  font-size-4:
+    value: '16px'
+  font-size-5:
+    value: '18px'
+  font-size-6:
+    value: '20pxr'
+  font-size-7:
+    value: '24px'
+  font-size-8:
+    value: '28px'
+  font-size-9:
+    value: '32px'
+  font-size-10:
+    value: '42px'
+global:
+  type: fontSize
+  category: fontSize

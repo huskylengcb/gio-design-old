@@ -1,0 +1,1 @@
+export const convertToken = (token) => token.replace(/[A-Z]/g, (match) => '-' + match.toLowerCase());

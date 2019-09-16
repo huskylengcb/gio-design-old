@@ -1,0 +1,16 @@
+props:
+  shadow-drop-down:
+    value: '0 2px 6px 0 #D8E0EB'
+  shadow-card:
+    value: '0 0 4px 0 #D8E0EB'
+  shadow-card-display:
+    value: '0 0 10px 0 #D8E0EB'
+  shadow-drag:
+    value: '0 0 6px 0 #D8E0EB'
+  shadow-hover:
+    value: '0 0 6px 0 #D8E0EB'
+  shadow-selection:
+    value: '0 0 6px 0 #D8E0EB'
+global:
+  type: shadow
+  category: shadow

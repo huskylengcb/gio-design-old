@@ -8,7 +8,8 @@ const defaultExternalArr = [
     'moment',
     'rc-notification',
     'classnames',
-    './input.less'
+    './input.less',
+    './button.less'
 ];
 
 // 补充外部引用文件

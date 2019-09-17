@@ -5,7 +5,7 @@ import { Button, Tooltip } from 'antd';
 
 import 'antd/lib/button/style/index.css';
 import 'antd/lib/tooltip/style/index.css';
-import './style.less';
+import './button.less';
 
 export const Group = Button.Group;
 export interface ButtonProps {

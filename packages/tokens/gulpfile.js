@@ -31,6 +31,10 @@ function json() {
     .pipe(dest(dist))
 }
 
+const entries = [
+  { src: 'src/index.js.hbs', dest: 'index.js' },
+  { src: 'src/index.less.hbs', dest: 'dist/index.less' }
+];
 function generateEntry(done) {
   let tokenList = [];
   if (fs.existsSync(dist)) {
@@ -43,9 +47,13 @@ function generateEntry(done) {
       return tl;
     }, [])
   }
-  const templateFile = fs.readFileSync('src/index.js.hbs', 'utf-8');
-  const template = handlebars.compile(templateFile);
-  fs.writeFileSync('index.js', template({ tokenList }));
+
+  entries.forEach((entry) => {
+    const templateFile = fs.readFileSync(entry.src, 'utf-8');
+    const template = handlebars.compile(templateFile);
+    fs.writeFileSync(entry.dest, template({ tokenList }));
+  })
+
   done();
 }
 

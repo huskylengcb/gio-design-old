@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "website",
   "main": "index.js",
   "author": "growingio",
@@ -15,7 +15,7 @@
     "docz-theme-default": "^0.13.7"
   },
   "dependencies": {
-    "@gio-design/components": "^0.0.13",
+    "@gio-design/components": "^0.0.14",
     "@gio-design/icon": "^0.0.8",
     "@gio-design/tokens": "^0.0.5"
   },

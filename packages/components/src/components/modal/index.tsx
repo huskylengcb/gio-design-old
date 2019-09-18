@@ -73,12 +73,12 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <AntModal
       {...props}
-      visible
-      closable
-      title
-      okText
-      cancelText
-      confirmLoading
+      visible={visible}
+      closable={closable}
+      title={title}
+      okText={okText}
+      cancelText={cancelText}
+      confirmLoading={confirmLoading}
       footer={props.footer !== undefined ? props.footer : footer}
       className={cls}
       style={{

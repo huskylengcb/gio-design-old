@@ -42,10 +42,10 @@ export interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({
   minWidth,
-  onBack,
-  backable,
-  okButtonClassName,
   style = {},
+  backable,
+  onBack,
+  okButtonClassName,
   visible = false,
   closable =  true,
   className = '',
@@ -54,8 +54,6 @@ const Modal: React.FC<ModalProps> = ({
   cancelText = '',
   disableOk = false,
   showCancel = true,
-  onCancel = noop,
-  onOk = noop,
   confirmLoading = false,
   overflowY = 'visible',
   ...props
@@ -63,8 +61,8 @@ const Modal: React.FC<ModalProps> = ({
   const locale = props.locale;
   const footer = (
     <div className='gio-modal-footer'>
-      {showCancel && <Button size={props.size} type={props.cancelButtonType || 'subtle'} onClick={onCancel}>{cancelText ? cancelText : (locale === 'en' ? 'Cancel' : '取消')}</Button>}
-      <Button size={props.size} type={props.okButtonType || 'secondary'} loading={confirmLoading} disabled={disableOk ? true : false} onClick={onOk} className={okButtonClassName}>
+      {showCancel && <Button size={props.size} type={props.cancelButtonType || 'subtle'} onClick={props.onCancel}>{cancelText ? cancelText : (locale === 'en' ? 'Cancel' : '取消')}</Button>}
+      <Button size={props.size} type={props.okButtonType || 'secondary'} loading={confirmLoading} disabled={disableOk ? true : false} onClick={props.onOk} className={okButtonClassName}>
         {okText ? okText : (locale === 'en' ? 'Confirm' : '确定')}
       </Button>
     </div>
@@ -75,6 +73,12 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <AntModal
       {...props}
+      visible
+      closable
+      title
+      okText
+      cancelText
+      confirmLoading
       footer={props.footer !== undefined ? props.footer : footer}
       className={cls}
       style={{

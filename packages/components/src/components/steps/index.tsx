@@ -8,10 +8,13 @@ export interface PropsType {
   [key: string]: any
 }
 
-const Steps = (props: PropsType) => {
-  return <AntdSteps {...props} />;
+class Steps extends React.Component<PropsType> {
+  static Step: typeof Step;
+  public render() {
+    return <AntdSteps {...this.props} />;
+  }
 };
 
-// Steps.Step = Step;
+Steps.Step = Step;
 
 export default Steps;

@@ -1,8 +1,8 @@
+import Ellipsis from './components/ellipsis';
 import Avatar from './components/avatar';
 import Button from './components/button';
 import Checkbox from './components/checkbox';
 import DatePicker from './components/date-picker';
-import Ellipsis from './components/ellipsis';
 import ErrMsg from './components/err-msg';
 import Gap from './components/gap';
 import Greeting from './components/greeting';
@@ -26,11 +26,11 @@ import TimePicker from './components/time-picker';
 import Tooltip from './components/tooltip';
 
 export {
+  Ellipsis,
   Avatar,
   Button,
   Checkbox,
   DatePicker,
-  Ellipsis,
   ErrMsg,
   Gap,
   Greeting,

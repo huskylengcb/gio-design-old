@@ -12,7 +12,6 @@ import {
 } from '@gio-design/tokens';
 
 const Tokens = () => {
-  console.info(shadow)
   return (
     <div>
       <ColorTable type='Colors' colors={colors} />

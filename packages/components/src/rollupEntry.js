@@ -2,6 +2,7 @@ import Avatar from './components/avatar';
 import Button from './components/button';
 import Checkbox from './components/checkbox';
 import DatePicker from './components/date-picker';
+import Dropdown from './components/dropdown';
 import Ellipsis from './components/ellipsis';
 import ErrMsg from './components/err-msg';
 import Gap from './components/gap';
@@ -30,6 +31,7 @@ export {
   Button,
   Checkbox,
   DatePicker,
+  Dropdown,
   Ellipsis,
   ErrMsg,
   Gap,

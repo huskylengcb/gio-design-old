@@ -59,7 +59,7 @@ lerna create [package-name]
 yarn install
 yarn build
 ```
-
+gst
 ## Publish component
 
 ```

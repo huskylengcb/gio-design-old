@@ -19,6 +19,7 @@ import Popover from './components/popover';
 import Progress from './components/progress';
 import Radio from './components/radio';
 import Select from './components/select';
+import SidePanel from './components/side-panel';
 import Steps from './components/steps';
 import Switch from './components/switch';
 import Tag from './components/tag';
@@ -48,6 +49,7 @@ export {
   Progress,
   Radio,
   Select,
+  SidePanel,
   Steps,
   Switch,
   Tag,

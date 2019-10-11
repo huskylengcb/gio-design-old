@@ -9,7 +9,8 @@ const defaultExternalArr = [
     'rc-notification',
     'classnames',
     './input.less',
-    './button.less'
+    './button.less',
+    './custom-style.less'
 ];
 
 // 补充外部引用文件

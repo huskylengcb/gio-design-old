@@ -1,7 +1,7 @@
 // import React from 'react';
 import 'antd/lib/calendar/style/index.css';
 import 'antd/lib/date-picker/style/index.css';
-import 'antd/lib/tooltip/style/index.less';
+import 'antd/lib/tooltip/style/index.css';
 import DatePickerDecorator from './DatePickerDecorator';
 import OverlayType from './common/OverlayType'
 import Range, { RangeDatePickerProps } from './Range';

@@ -38,6 +38,9 @@ export interface ModalProps {
   zIndex?: number,
   getContainer?: () => HTMLElement,
   locale?: string
+  transitionName: string
+  maskTransitionName: string
+  mask: boolean
 };
 
 const Modal: React.FC<ModalProps> = ({

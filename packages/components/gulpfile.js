@@ -5,7 +5,8 @@ function copyLess() {
   //  .pipe(dest('lib/'))
   return src([
     'src/components/input/input.less',
-    'src/components/button/button.less'
+    'src/components/button/button.less',
+    'src/components/**/custom-style.less'
   ], { base: 'src/components'})
     .pipe(dest('lib'))
     .pipe(dest('build/components'))

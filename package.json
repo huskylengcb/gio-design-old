@@ -29,6 +29,6 @@
     "build:icon": "yarn workspace @gio-design/icon build",
     "build:components": "yarn workspace @gio-design/components build",
     "build:icon-generator": "yarn workspace @gio-design/react-svg-icon-generator build",
-    "publish": "npx lerna publish --registry http://nexus.infra.growingio.com/repository/npm-hosted"
+    "publish": "npx lerna publish --registry http://nexus.growingio.com/repository/npm-hosted"
   }
 }

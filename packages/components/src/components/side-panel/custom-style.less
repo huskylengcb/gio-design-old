@@ -4,7 +4,11 @@
   position: static;
   
   .gio-side-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 0;
+    height: 100%;
     z-index: @z-index-modal;
 
     &.rightIn-enter {
@@ -30,7 +34,8 @@
     .btn-close {
       position: absolute;
       right: 20px;
-      top: 20px;
+      top: 25px;
+      cursor: pointer;
     }
 
     .ant-modal-content {

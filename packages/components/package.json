@@ -107,6 +107,6 @@
     "test"
   ],
   "publishConfig": {
-    "registry": "http://nexus.infra.growingio.com/repository/npm-hosted/"
+    "registry": "http://nexus.growingio.com/repository/npm-hosted/"
   }
 }

@@ -11,6 +11,7 @@
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "npm run compile_bundle && npm run compile_lib && yarn copy-less",
+    "prepublish": "yarn build",
     "compile_bundle": "NODE_ENV=build rollup --config ./scripts/rollup.config.bundle.js",
     "compile_lib": "npm run compile_js_file_to_lib && npm run compile_css_file_to_lib && node scripts/clearTrash.js",
     "compile_js_file_to_lib": "NODE_ENV=build rollup --config ./scripts/rollup.config.lib.js",

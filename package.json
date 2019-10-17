@@ -6,10 +6,15 @@
   "author": "Zhang Yuxiang <zhangyuxiang@growingio.com>",
   "private": true,
   "workspaces": {
-    "packages": ["packages/*"],
+    "packages": [
+      "packages/*"
+    ],
     "nohoist": [
-      "**/@gio-design/tokens", "**/@gio-design/tokens/**",
-      "**/@gio-design/themes", "**/@gio-design/themes/**"
+      "**/@gio-design/tokens",
+      "**/@gio-design/tokens/**",
+      "**/@gio-design/themes",
+      "**/@gio-design/themes/**",
+      "website/"
     ]
   },
   "license": "MIT",

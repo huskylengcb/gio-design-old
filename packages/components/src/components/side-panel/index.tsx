@@ -3,7 +3,7 @@ import Modal from '../modal';
 
 import './custom-style.less';
 
-export interface Props {
+interface SidePanelProps {
   children: Element
   content: Element
   visible: boolean
@@ -14,7 +14,7 @@ export interface Props {
 };
 
 
-const SidePanel = (props: Props) => {
+const SidePanel = (props: SidePanelProps) => {
   return (
     <React.Fragment>
       <Modal

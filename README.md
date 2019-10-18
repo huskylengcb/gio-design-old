@@ -1,4 +1,6 @@
 # GrowingIO Design System
+## 私有NPM仓库使用指南
+> https://growingio.atlassian.net/wiki/spaces/FEW/pages/887784903/NPM
 
 ## Getting Started
 

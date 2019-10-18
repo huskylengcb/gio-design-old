@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/tokens",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "index.js",
   "license": "MIT",
   "files": [
@@ -21,5 +21,5 @@
   "dependencies": {
     "handlebars": "^4.1.2"
   },
-  "gitHead": "4cd6dc4da3ec169ead0f492db4ee2f8df9459a9c"
+  "gitHead": "b69496396683e222e8c62a1b3198d9b40e4f2f64"
 }

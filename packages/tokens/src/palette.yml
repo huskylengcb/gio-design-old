@@ -1,0 +1,103 @@
+color:
+  orange:
+    1:
+      value: '#FFEDEA'
+    2:
+      value: '#FFC3BB'
+    3:
+      value: '#FF8867'
+    4:
+      value: '#FC5F3A'
+    5:
+      value: '#DD4A3A'
+    6:
+      value: '#BA3C3C'
+    7:
+      value: '#8C2121'
+  indigo:
+    1:
+      value: '#F2F4FC'
+    2:
+      value: '#E3E7FC'
+    3:
+      value: '#CCD3F1'
+    4:
+      value: '#AFB8E2'
+    5:
+      value: '#7986CB'
+    6:
+      value: '#5C6BB5'
+    7:
+      value: '#3F4F9F'
+    8:
+      value: '#222F73'
+  black:
+    1:
+      value: '#CCCCCC'
+    2:
+      value: '#979797'
+    3:
+      value: '#666666'
+    4:
+      value: '#444444'
+    5:
+      value: '#333333'
+    6:
+      value: '#222222'
+    7:
+      value: '#111111'
+  gray:
+    1:
+      value: '#FAFAFA'
+    2:
+      value: '#F2F2F2'
+    3:
+      value: '#EBEBEB'
+    4:
+      value: '#E3E3E3'
+    5:
+      value: '#D6D6D6'
+  green:
+    1:
+      value: '#97EDCD'
+    2:
+      value: '#52E0B1'
+    3:
+      value: '#00CF9B'
+    4:
+      value: '#00BC8F'
+    5:
+      value: '#23A57E'
+  yellow:
+    1:
+      value: '#FFE0A9'
+    2:
+      value: '#FFD488'
+    3:
+      value: '#FFD15B'
+    4:
+      value: '#F8AF48'
+    5:
+      value: '#ED9014'
+  blue:
+    1:
+      value: '#A4DFFF'
+    2:
+      value: '#20B4FF'
+    3:
+      value: '#0090FF'
+    4:
+      value: '#0F84D3'
+    5:
+      value: '#1271A5'
+  purple:
+    1:
+      value: '#F0ECF2'
+    2:
+      value: '#ADA1B2'
+    3:
+      value: '#716576'
+    4:
+      value: '#5C4E61'
+    5:
+      value: '#4E4153'

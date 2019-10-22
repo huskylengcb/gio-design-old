@@ -9,21 +9,6 @@ const rgb2hex = (rgb) =>
     .join('')
     .toUpperCase();
 
-const ColorBlock = ({ value }) => (
-  <span
-    style={{
-      display: 'inline-block',
-      verticalAlign: 'middle',
-      marginLeft: '10px',
-      width: '60px',
-      height: '20px',
-      backgroundColor: value,
-      borderRadius: '4px',
-      boxShadow: '0 0 3px 1px #EEE'
-    }}
-  />
-);
-
 const ColorTable = ({
   type,
   colors

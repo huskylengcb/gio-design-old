@@ -1,24 +1,23 @@
 {
   "name": "@gio-design/tokens",
   "version": "0.0.12",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "files": [
+    "README.md",
     "index.js",
-    "dist"
+    "tokens.less"
   ],
   "scripts": {
-    "build": "gulp"
+    "build": "rm -r tmp ||: && npx gulp && npx style-dictionary build && npx tsc --declaration dist/index.ts"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-theo": "^2.0.0",
-    "theo": "^8.1.4"
+    "gulp-yaml": "^2.0.4",
+    "style-dictionary": "^2.8.2",
+    "typescript": "^3.6.3"
   },
   "publishConfig": {
     "registry": "http://repo.growingio.com/repository/npm-hosted/"
-  },
-  "dependencies": {
-    "handlebars": "^4.1.2"
   }
 }

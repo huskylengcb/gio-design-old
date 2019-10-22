@@ -1,9 +1,0 @@
-{{#each tokenList}}
-const {{this}} = require('./dist/{{this}}.common.js');
-{{/each}}
-
-module.exports = {
-{{#each tokenList}}
-  {{this}},
-{{/each}}
-};

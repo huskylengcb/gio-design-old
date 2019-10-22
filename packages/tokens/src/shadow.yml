@@ -1,0 +1,13 @@
+shadow:
+  drop-down:
+    value: '0 2px 6px 0 #D8E0EB'
+  card:
+    value: '0 0 4px 0 #D8E0EB'
+  card-display:
+    value: '0 0 10px 0 #D8E0EB'
+  drag:
+    value: '0 0 6px 0 #D8E0EB'
+  hover:
+    value: '0 0 6px 0 #D8E0EB'
+  selection:
+    value: '0 0 6px 0 #D8E0EB'

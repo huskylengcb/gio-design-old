@@ -1,13 +1,11 @@
-@import '~@gio-design/tokens/dist/borderColors.less';
-@import '~@gio-design/tokens/dist/textColors.less';
-@import '~@gio-design/tokens/dist/shadow.less';
+@import '~@gio-design/tokens/dist/tokens.less';
 
 input.gio-input,
 .gio-input input {
   /*.gio-input类名可以施加在一个span元素上，input是他的子元素，比如搜索输入框。也可以施加在一个input元素上，比如普通的输入框。 */
   padding: 9px 10px;
   font-family: "PingFang SC";
-  border: 1px solid @color-border;
+  border: 1px solid @color-border-base;
   color: @color-text-input-default;
   height: 32px;
   font-size: 14px;
@@ -22,10 +20,10 @@ input.gio-input,
     padding: 9px 10px;
   }
   &:disabled {
-    border-color: @color-border!important;
+    border-color: @color-border-base!important;
 
     &:hover {
-      border-color: @color-border!important;
+      border-color: @color-border-base!important;
     }
   }
   &:hover:not(:disabled) {

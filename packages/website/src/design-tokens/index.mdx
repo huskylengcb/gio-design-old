@@ -15,19 +15,18 @@ yarn add @gio-design/tokens
 
 Less
 ```
-@import '~@gio-design/tokens/dist/colors'; // less-loader
+@import '~@gio-design/tokens/dist/tokens.less'; // less-loader
 
 h1 {
   background-color: @color-primary;
 }
 ```
 
-`@gio-design/tokens/dist/index` 包含所有 less token
-
-
 JavaScript
 ```
-import { colors } from '@gio-design/tokens';
+import tokens from '@gio-design/tokens';
+
+let color = tokens.colorPrimary;
 ```
 
 <Tokens />

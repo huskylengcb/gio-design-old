@@ -17,6 +17,14 @@
         "destination": "index.ts",
         "format": "javascript/es6"
       }]
+    },
+    "json": {
+      "transformGroup": "less",
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "tokens.json",
+        "format": "json/flat"
+      }]
     }
   }
 }

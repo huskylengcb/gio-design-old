@@ -18,7 +18,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://nexus.growingio.com/repository/npm-hosted/"
+    "registry": "http://repo.growingio.com/repository/npm-hosted/"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,5 @@
     "gulp-replace": "^1.0.0",
     "gulp-yaml": "^2.0.4",
     "handlebars": "^4.1.2"
-  },
-  "gitHead": "f709876a4cce8d9a43a0e413f4e8f72d509d7f55"
+  }
 }

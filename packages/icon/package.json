@@ -20,7 +20,7 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://nexus.growingio.com/repository/npm-hosted/"
+    "registry": "http://repo.growingio.com/repository/npm-hosted/"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,5 @@
   },
   "dependencies": {
     "radium": "^0.25.2"
-  },
-  "gitHead": "f709876a4cce8d9a43a0e413f4e8f72d509d7f55"
+  }
 }

@@ -16,10 +16,9 @@
     "theo": "^8.1.4"
   },
   "publishConfig": {
-    "registry": "https://nexus.growingio.com/repository/npm-hosted/"
+    "registry": "http://repo.growingio.com/repository/npm-hosted/"
   },
   "dependencies": {
     "handlebars": "^4.1.2"
-  },
-  "gitHead": "f709876a4cce8d9a43a0e413f4e8f72d509d7f55"
+  }
 }

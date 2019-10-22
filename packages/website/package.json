@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "website",
   "main": "index.js",
   "author": "growingio",
@@ -17,9 +17,9 @@
     "react-dom": "^16.10.2"
   },
   "dependencies": {
-    "@gio-design/components": "^0.0.25",
-    "@gio-design/icon": "^0.0.13",
-    "@gio-design/tokens": "^0.0.11"
+    "@gio-design/components": "^0.0.26",
+    "@gio-design/icon": "^0.0.14",
+    "@gio-design/tokens": "^0.0.12"
   },
   "private": true
 }

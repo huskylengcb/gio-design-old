@@ -1,12 +1,11 @@
 {
   "name": "@gio-design/tokens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
     "README.md",
-    "index.js",
-    "tokens.less"
+    "dist"
   ],
   "scripts": {
     "build": "rm -r tmp ||: && npx gulp && npx style-dictionary build && npx tsc --declaration dist/index.ts"

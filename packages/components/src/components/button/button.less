@@ -2,7 +2,7 @@
 
 .gio-btn{
   font-size: @font-size-3;
-  color: @color-text-inverse;
+  color: @color-inverse;
   cursor: pointer;
   border-radius: @border-radius-small;
   &.gio-btn-with-bg{
@@ -19,20 +19,20 @@
       height: 28px;
     }
     &.gio-btn-primary{
-      background-color: @color-background-primary;
-      border: @color-background-primary;
+      background-color: @background-color-primary;
+      border: @background-color-primary;
       &:hover{
         background-color: #FF8867;
         border: #FF8867;
-        color: @color-text-inverse;
+        color: @color-inverse;
       }
       &:active{
         background-color: #DD4A3A;
         border: #DD4A3A;
-        color: @color-text-inverse;
+        color: @color-inverse;
       }
       &:focus{
-        color: @color-text-inverse;
+        color: @color-inverse;
       }
     }
     &.gio-btn-secondary{
@@ -41,15 +41,15 @@
       &:hover{
         background-color: #716576;
         border: #716576;
-        color: @color-text-inverse;
+        color: @color-inverse;
       }
       &:active{
         background-color: #4E4153;
         border: #4E4153;
-        color: @color-text-inverse;
+        color: @color-inverse;
       }
       &:focus{
-        color: @color-text-inverse;
+        color: @color-inverse;
       }
     }
     &.gio-btn-subtle{
@@ -60,8 +60,8 @@
         padding: 0px 15px;
       }
       &:hover{
-        background-color: @color-background-table-hover;
-        border: @color-background-table-hover;
+        background-color: @background-color-table-hover;
+        border: @background-color-table-hover;
         color: #716576;
       }
       &:active{
@@ -73,27 +73,27 @@
       }
     }
     &.disabled{
-      color: @color-text-disable;
+      color: @color-disable;
       background-color: #F2F2F2;
       border: #F2F2F2;
       &:hover{
         background-color: #F2F2F2;
         border: #F2F2F2;
-        color: @color-text-disable;
+        color: @color-disable;
       }
       &:active{
         background-color: #F2F2F2;
         border: #F2F2F2;
-        color: @color-text-disable;
+        color: @color-disable;
       }
       &:focus{
-        color: @color-text-disable;
+        color: @color-disable;
       }
     }
   }
   &.gio-btn-without-bg{
     &.gio-btn-primary{
-      color: @color-background-primary;
+      color: @background-color-primary;
       &:hover{
         color:  #FF8867;
       }
@@ -111,13 +111,13 @@
       }
     }
     &.disabled{
-      color: @color-text-disable;
+      color: @color-disable;
       cursor: not-allowed;
       &:hover{
-        color: @color-text-disable;
+        color: @color-disable;
       }
       &:active{
-        color: @color-text-disable;
+        color: @color-disable;
       }
     }
   }

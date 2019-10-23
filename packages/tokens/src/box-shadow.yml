@@ -1,4 +1,4 @@
-shadow:
+box-shadow:
   drop-down:
     value: '0 2px 6px 0 #D8E0EB'
   card:

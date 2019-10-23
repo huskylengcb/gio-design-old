@@ -1,16 +1,16 @@
-color-text:
-  primary:
-    value: '{color.black.7.value}'
-  1:
-    value: '{color.black.5.value}'
-  2:
-    value: '{color.black.4.value}'
-  3:
-    value: '{color.black.3.value}'
-  prompt:
-    value: '{color.black.2.value}'
+color:
   disable:
     value: '{color.black.1.value}'
+  error:
+    value: '#F55252'
+  warning:
+    value: '{color.yellow.5.value}'
+  info:
+    value: '{color.indigo.6.value}'
+  primary:
+    value: '{color.black.7.value}'
+  prompt:
+    value: '{color.black.2.value}'
   brand-primary:
     value: '#FFFFFF'
   brand-second:
@@ -19,19 +19,13 @@ color-text:
     value: '{color.orange.4.value}'
   brand-indigo:
     value: '{color.indigo.7.value}'
-  error:
-    value: '#F55252'
-  warning:
-    value: '{color.yellow.5.value}'
-  info:
-    value: '{color.indigo.6.value}'
+  inverse:
+    value: '#FFFFFF'
   input:
     prompt:
       value: '{color.black.1.value}'
     default:
       value: '{color.black.5.value}'
-  inverse:
-    value: '#FFFFFF'
   button:
     minor:
       value: '{color.purple.4.value}'

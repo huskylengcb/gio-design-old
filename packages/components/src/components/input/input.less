@@ -5,8 +5,8 @@ input.gio-input,
   /*.gio-input类名可以施加在一个span元素上，input是他的子元素，比如搜索输入框。也可以施加在一个input元素上，比如普通的输入框。 */
   padding: 9px 10px;
   font-family: "PingFang SC";
-  border: 1px solid @color-border-base;
-  color: @color-text-input-default;
+  border: 1px solid @border-color-base;
+  color: @color-input-default;
   height: 32px;
   font-size: 14px;
   vertical-align: middle;
@@ -20,43 +20,43 @@ input.gio-input,
     padding: 9px 10px;
   }
   &:disabled {
-    border-color: @color-border-base!important;
+    border-color: @border-color-base!important;
 
     &:hover {
-      border-color: @color-border-base!important;
+      border-color: @border-color-base!important;
     }
   }
   &:hover:not(:disabled) {
-    border-color: @color-border-hover!important;
+    border-color: @border-color-hover!important;
   }
   &:focus,
   &:active:not(:disabled) {
-    border-color: @color-border-active!important;
-    box-shadow: @shadow-card;
+    border-color: @border-color-active!important;
+    box-shadow: @box-shadow-card;
   }
  
   &.gio-input--error {
-    border-color: @color-text-error!important;
+    border-color: @color-error!important;
     &:hover {
-      border-color: @color-text-error!important;
+      border-color: @color-error!important;
     }
     &:focus,
     &:active {
-      border-color: @color-text-error!important;
-      box-shadow: @shadow-card;
+      border-color: @color-error!important;
+      box-shadow: @box-shadow-card;
     }
   }
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: @color-text-prompt!important;
+    color: @color-prompt!important;
   }
   &::-moz-placeholder { /* Firefox 19+ */
-    color: @color-text-prompt!important;
+    color: @color-prompt!important;
   }
   &:-ms-input-placeholder { /* IE 10+ */
-    color: @color-text-prompt!important;
+    color: @color-prompt!important;
   }
   &:-moz-placeholder { /* Firefox 18- */
-    color: @color-text-prompt!important;
+    color: @color-prompt!important;
   }
 }
 
@@ -70,23 +70,23 @@ input.gio-input,
 }
 
 .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
-  border-color: @color-border-hover;
+  border-color: @border-color-hover;
 }
 .ant-input-affix-wrapper .ant-input:focus:not(.ant-input-disabled) {
-  border-color: @color-border-active;
-  box-shadow: @shadow-card;
+  border-color: @border-color-active;
+  box-shadow: @box-shadow-card;
 }
 
 /* 对应了使用antd提供的Form组件的情况。当输入出错时input元素的一个父元素会被加上一个‘has-error’类 */
 .has-error input.gio-input{
-  border-color: @color-text-error;
+  border-color: @color-error;
   &:hover {
-    border-color: @color-text-error;
+    border-color: @color-error;
   }
   &:focus,
   &:active {
-    border-color: @color-border-error!important;
-    box-shadow: @shadow-card;
+    border-color: @border-color-error!important;
+    box-shadow: @box-shadow-card;
   }
 }
 

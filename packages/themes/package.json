@@ -36,5 +36,6 @@
     "gulp-replace": "^1.0.0",
     "gulp-yaml": "^2.0.4",
     "handlebars": "^4.1.2"
-  }
+  },
+  "gitHead": "c76e7eeb1cdd40a077c4c64e6d4ab62f5e91ff42"
 }

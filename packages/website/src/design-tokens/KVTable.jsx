@@ -1,5 +1,6 @@
 import React from 'react';
 import { convertToken } from './helper';
+import Tooltip from '@gio-design/components/lib/tooltip';
 import { Col } from 'antd';
 
 const KVTable = ({ type, data }) => {
@@ -33,18 +34,20 @@ const KVTable = ({ type, data }) => {
 }
 
 const ColorBlock = ({ value }) => (
-  <span
-    style={{
-      display: 'inline-block',
-      verticalAlign: 'middle',
-      marginLeft: '10px',
-      width: '60px',
-      height: '20px',
-      backgroundColor: value,
-      borderRadius: '4px',
-      boxShadow: '0 0 3px 1px #EEE'
-    }}
-  />
+  <Tooltip title={value}>
+    <span
+      style={{
+        display: 'inline-block',
+        verticalAlign: 'middle',
+        marginLeft: '10px',
+        width: '60px',
+        height: '20px',
+        backgroundColor: value,
+        borderRadius: '4px',
+        boxShadow: '0 0 3px 1px #EEE'
+      }}
+    />
+  </Tooltip>
 );
 
 export default KVTable;

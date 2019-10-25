@@ -1,5 +1,23 @@
-@import "../../stylesheet/variables";
-@import '../../stylesheet/theme';
+@color-primary: #ea6947;
+
+.scrollbar-mixin() {
+  &::-webkit-scrollbar {
+    width: 11px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px transparent;
+    border: solid 3px transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px #cfcfcf;
+    border-radius: 5px!important;
+    border-left: solid 3px transparent;
+    border-right: solid 3px transparent;
+    background-color: initial!important;
+  }
+}
 
 .gio-select {
   @font-color: #333;
@@ -10,6 +28,7 @@
   @bg-light-color: #f7f7f7;
   @light-gray: #ebebeb;
 
+  min-width: 64px;
   color: @font-color;
 
   &.ant-select-open .ant-select-selection {
@@ -57,8 +76,8 @@
     }
 
     .ant-select-arrow {
-      font-size: 18px;
-      top: 40%;
+      font-size: 16px;
+      top: 42%;
     }
   }
 
@@ -115,6 +134,10 @@
     .ant-select-dropdown-menu-item {
       margin: 2px 0;
       padding: 9px 8px 10px 16px;
+
+      &-active:not(.ant-select-dropdown-menu-item-disabled) {
+        background-color: #fafafa;
+      }
 
       &:hover {
         background-color: @menu-hover-color;
@@ -173,7 +196,7 @@
 
       &.ant-select-dropdown-menu-item-selected:after,
       .ant-select-dropdown-menu-item-selected::after {
-        color: @gr-primary-color;
+        color: @color-primary;
       }
     }
   }

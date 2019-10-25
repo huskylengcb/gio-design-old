@@ -6,7 +6,7 @@ import { blurActiveElement } from '../../utils/helpers';
 
 import 'antd/lib/select/style/index.css';
 import 'antd/lib/style/index.css';
-import './index.less';
+import './custom-style.less';
 
 export const OptGroup = AntSelect.OptGroup;
 export const Option = AntSelect.Option;

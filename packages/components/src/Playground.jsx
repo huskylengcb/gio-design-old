@@ -75,14 +75,16 @@ class App extends React.Component {
           />
         </div> */}
         <div className='playground'>
-          <Button type='primary'>Button</Button><br/>
-          <Button type='secondary'>Button</Button><br/>
-          <Button type='subtle'>Button</Button><br/>
-          <Button disabled type='primary'>Button</Button><br/>
-          <Button withoutBg type='primary'>Button</Button><br/>
-          <Button withoutBg type='secondary'>Button</Button><br/>
-          <Button withoutBg type='subtle'>Button</Button><br/>
-          <Button disabled withoutBg type='primary'>Button</Button><br/>
+          <div>
+            <h1>Button</h1>
+            <Button>Default</Button>
+            <Button disabled>Default Disabled</Button>
+            <Button size='large'>Large</Button>
+            <br />
+            <Button type='primary'>Primary</Button>
+            <Button type='primary' disabled>Primary Disabled</Button>
+            <Button type='primary' size='large'>Primary Large</Button>
+          </div>
         </div>
         {/* <div>
           <Menu

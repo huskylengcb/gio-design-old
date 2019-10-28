@@ -1,17 +1,17 @@
 border:
   color:
     base:
-      value: '{color.gray.3.value}'
+      value: '{palette.gray.3.value}'
     hover:
-      value: '{color.indigo.8.value}'
+      value: '{palette.indigo.8.value}'
     active:
-      value: '{color.indigo.8.value}'
+      value: '{palette.indigo.8.value}'
     error:
       value: '#F55252'
     warning:
-      value: '{color.yellow.4.value}'
+      value: '{palette.yellow.4.value}'
     info:
-      value: '{color.indigo.7.value}'
+      value: '{palette.indigo.7.value}'
   radius:
     circle:
       value: '50%'

@@ -3,38 +3,53 @@ background:
     base:
       value: '#FFFFFF'
     alt:
-      value: '{color.gray.1.value}'
+      value: '{palette.gray.1.value}'
     primary:
-      value: '{color.orange.4.value}'
+      value: '{palette.orange.4.value}'
     secondary:
-      value: '{color.indigo.7.value}'
+      value: '{palette.indigo.7.value}'
     light:
       value: '#FFFFFF'
     hover:
-      value: '{color.indigo.1.value}'
+      value: '{palette.indigo.1.value}'
     selection:
-      value: '{color.indigo.7.value}'
+      value: '{palette.indigo.7.value}'
     info:
-      value: '{color.indigo.1.value}'
+      value: '{palette.indigo.1.value}'
     warning:
-      value: '{color.yellow.1.value}'
+      value: '{palette.yellow.1.value}'
     error:
-      value: '{color.orange.1.value}'
+      value: '{palette.orange.1.value}'
     ui-success:
-      value: '{color.green.3.value}'
+      value: '{palette.green.3.value}'
     ui-warning:
-      value: '{color.yellow.3.value}'
+      value: '{palette.yellow.3.value}'
     ui-error:
-      value: '{color.orange.5.value}'
+      value: '{palette.orange.5.value}'
     label:
-      value: '{color.gray.1.value}'
+      value: '{palette.gray.1.value}'
     table:
       base:
         value: '#F7F8FA'
       hover:
-        value: '{color.gray.3.value}'
+        value: '{palette.gray.3.value}'
     row:
       hover:
-        value: '{color.gray.1.value}'
+        value: '{palette.gray.1.value}'
       selected:
-        value: '{color.orange.1.value}'
+        value: '{palette.orange.1.value}'
+    button:
+      default:
+        base:
+          value: '{palette.background.3.value}'
+        hover:
+          value: '{palette.background.2.value}'
+        active:
+          value: '{palette.background.4.value}'
+      primary:
+        base:
+          value: '{palette.primary.2.value}'
+        hover:
+          value: '{palette.primary.1.value}'
+        active:
+          value: '{palette.primary.3.value}'

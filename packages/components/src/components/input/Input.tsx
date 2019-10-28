@@ -4,7 +4,7 @@ import { SearchProps } from 'antd/lib/input';
 import classnames from 'classnames';
 import { omit } from 'lodash';
 import 'antd/lib/input/style/index.css';
-import './input.less';
+import './custom-style.less';
 
 export interface InputProps {
   className?: string,

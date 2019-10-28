@@ -1,38 +1,43 @@
 color:
   disable:
-    value: '{color.black.1.value}'
+    value: '{palette.black.1.value}'
   error:
     value: '#F55252'
   warning:
-    value: '{color.yellow.5.value}'
+    value: '{palette.yellow.5.value}'
   info:
-    value: '{color.indigo.6.value}'
+    value: '{palette.indigo.6.value}'
   primary:
-    value: '{color.black.7.value}'
+    value: '#1248E9'
   prompt:
-    value: '{color.black.2.value}'
+    value: '{palette.black.2.value}'
   brand-primary:
     value: '#FFFFFF'
   brand-second:
     value: '#FFFFFF'
   brand-orange:
-    value: '{color.orange.4.value}'
+    value: '{palette.orange.4.value}'
   brand-indigo:
-    value: '{color.indigo.7.value}'
+    value: '{palette.indigo.7.value}'
   inverse:
     value: '#FFFFFF'
   input:
     prompt:
-      value: '{color.black.1.value}'
+      value: '{palette.black.1.value}'
     default:
-      value: '{color.black.5.value}'
+      value: '{palette.black.5.value}'
   button:
     minor:
-      value: '{color.purple.4.value}'
+      value: '{palette.purple.4.value}'
+    default:
+      base:
+        value: '{palette.font.3.value}'
+      hover:
+        value: '{palette.font.4.value}'
   link:
     base:
-      value: '{color.indigo.6.value}'
+      value: '{palette.indigo.6.value}'
     hover:
-      value: '{color.indigo.7.value}'
+      value: '{palette.indigo.7.value}'
     active:
       value: '#222F73'

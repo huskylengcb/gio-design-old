@@ -24,15 +24,15 @@ export interface ModalProps {
   children: React.ReactNode,
   confirmLoading?: boolean,
   wrapClassName?: string,
-  okButtonType?: 'primary' | 'secondary' | 'subtle';
-  cancelButtonType?: 'primary' | 'secondary' | 'subtle';
+  okButtonType?: 'primary' | undefined;
+  cancelButtonType?: 'primary' | undefined;
   maskClosable?: boolean,
   backable?: boolean,
   onBack?: () => void,
   onVisibleChange?: (visible: boolean) => void,
   overflowY?: 'scroll' | 'visible', // 如果内容高于屏幕容器的高度，scroll为屏幕内滚动，visible为溢出屏幕
   minWidth?: number,
-  size?: 'large' | 'middle' | 'small',
+  size?: 'large' | undefined,
   okButtonClassName?: string,
   style?: React.CSSProperties,
   zIndex?: number,
@@ -64,8 +64,23 @@ const Modal: React.FC<ModalProps> = ({
   const locale = props.locale;
   const footer = (
     <div className='gio-modal-footer'>
-      {showCancel && <Button size={props.size} type={props.cancelButtonType || 'subtle'} onClick={props.onCancel}>{cancelText ? cancelText : (locale === 'en' ? 'Cancel' : '取消')}</Button>}
-      <Button size={props.size} type={props.okButtonType || 'secondary'} loading={confirmLoading} disabled={disableOk ? true : false} onClick={props.onOk} className={okButtonClassName}>
+      {
+        showCancel && (
+          <Button
+            size={props.size}
+            type={props.cancelButtonType}
+            onClick={props.onCancel}
+          >
+            {cancelText ? cancelText : (locale === 'en' ? 'Cancel' : '取消')}
+          </Button>
+        )
+      }
+      <Button
+        size={props.size}
+        type={props.okButtonType}
+        loading={confirmLoading}
+        disabled={disableOk ? true : false} onClick={props.onOk} className={okButtonClassName}
+      >
         {okText ? okText : (locale === 'en' ? 'Confirm' : '确定')}
       </Button>
     </div>

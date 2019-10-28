@@ -8,8 +8,6 @@ const defaultExternalArr = [
     'moment',
     'rc-notification',
     'classnames',
-    './input.less',
-    './button.less',
     './custom-style.less'
 ];
 

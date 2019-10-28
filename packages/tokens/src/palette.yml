@@ -1,4 +1,4 @@
-color:
+palette:
   orange:
     1:
       value: '#FFEDEA'
@@ -57,6 +57,8 @@ color:
       value: '#E3E3E3'
     5:
       value: '#D6D6D6'
+    6:
+      value: '#D8E0EB'
   green:
     1:
       value: '#97EDCD'
@@ -101,3 +103,50 @@ color:
       value: '#5C4E61'
     5:
       value: '#4E4153'
+  primary:
+    1:
+      value: '#3867F4'
+    2:
+      value: '#1248E9'
+    3:
+      value: '#002DB3'
+    4:
+      value: '#EDF2FC'
+  background:
+    1:
+      value: '#FFFFFF'
+    2:
+      value: '#F7F8FC'
+    3:
+      value: '#EBEDF5'
+    4:
+      value: '#DFE2ED'
+  font:
+    1:
+      value: '#DCE0F2'
+    2:
+      value: '#A3ADC8'
+    3:
+      value: '#313E75'
+    4:
+      value: '#242E59'
+  illustration:
+    1:
+      value: '#F6F8FF'
+    2:
+      value: '#3867F4'
+    3:
+      value: '#E95912'
+    4:
+      value: '#213367'
+  line:
+    1:
+      value: '#E7EAF9'
+    2:
+      value: '#DCDFED'
+  error:
+    value: '#DCDFED'
+  warning:
+    value: '#ECB013'
+  success:
+    value: '#13ECAE'

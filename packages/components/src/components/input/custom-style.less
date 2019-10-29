@@ -1,40 +1,38 @@
 @import '~@gio-design/tokens/dist/tokens.less';
 
-input.gio-input,
-.gio-input input {
+.gio-input {
   /*.gio-input类名可以施加在一个span元素上，input是他的子元素，比如搜索输入框。也可以施加在一个input元素上，比如普通的输入框。 */
-  padding: 9px 10px;
-  font-family: "PingFang SC";
-  border: 1px solid @border-color-base;
-  color: @color-input-default;
-  height: 32px;
+  padding: 0 16px;
+  border: 1px solid @border-color-input-default-base;
+  color: @color-input-default-base;
+  height: 40px;
   font-size: 14px;
   vertical-align: middle;
 
-  &.large {
-    height: 40px;
-    padding: 13px 10px;
-  }
-  &.small {
+  &-small {
     height: 32px;
-    padding: 9px 10px;
+    padding: 0 12px;
   }
-  &:disabled {
-    border-color: @border-color-base!important;
 
-    &:hover {
-      border-color: @border-color-base!important;
-    }
+  &:disabled {
+    opacity: .4;
   }
-  &:hover:not(:disabled) {
-    border-color: @border-color-hover!important;
+
+  &:hover {
+    box-shadow: @box-shadow-input-default-base;
+    border-color: @border-color-input-default-base;
   }
+
   &:focus,
   &:active:not(:disabled) {
-    border-color: @border-color-active!important;
-    box-shadow: @box-shadow-card;
+    box-shadow: @box-shadow-input-default-base;
+    border-color: @border-color-input-default-active;
   }
  
+  &-inverse {
+    background-color: @background-color-input-inverse-base;
+  }
+
   &.gio-input--error {
     border-color: @color-error!important;
     &:hover {
@@ -58,15 +56,6 @@ input.gio-input,
   &:-moz-placeholder { /* Firefox 18- */
     color: @color-prompt!important;
   }
-}
-
-.gio-input.large input {
-  height: 40px;
-  padding: 13px 10px;
-}
-.gio-input.small input {
-  height: 32px;
-  padding: 9px 10px;
 }
 
 .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {

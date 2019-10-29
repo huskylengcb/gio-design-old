@@ -12,6 +12,14 @@ border:
       value: '{palette.yellow.4.value}'
     info:
       value: '{palette.indigo.7.value}'
+    input:
+      default:
+        base:
+          value: '{palette.line.2.value}'
+        active:
+          value: '{palette.primary.2.value}'
+        focus:
+          value: '{palette.primary.2.value}'
   radius:
     circle:
       value: '50%'

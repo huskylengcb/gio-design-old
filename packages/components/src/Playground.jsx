@@ -11,7 +11,7 @@ import Button from './components/button';
 // import Icon from './components/icon';
 // import DatePicker from './components/date-picker';
 // import Greeting from './components/greeting';
-// import Input from './components/input';
+import Input from './components/input';
 // import ErrMsg from './components/err-msg';
 // import List from './components/list';
 // import Message from './components/message';
@@ -84,6 +84,14 @@ class App extends React.Component {
             <Button type='primary'>Primary</Button>
             <Button type='primary' disabled>Primary Disabled</Button>
             <Button type='primary' size='large'>Primary Large</Button>
+          </div>
+          <div style={{ width: 300 }}>
+            <h1>Input</h1>
+            <Input value='Default' />
+            <Input value='Default Disabled' disabled />
+            <Input value='Inverse' inverse />
+            <Input value='Inverse Disabled' disabled />
+            <Input value='Default Small' size='small' />
           </div>
         </div>
         {/* <div>

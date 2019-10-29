@@ -53,3 +53,7 @@ background:
           value: '{palette.primary.1.value}'
         active:
           value: '{palette.primary.3.value}'
+    input:
+      inverse:
+        base:
+          value: '{palette.background.2.value}'

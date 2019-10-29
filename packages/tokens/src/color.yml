@@ -25,7 +25,8 @@ color:
     prompt:
       value: '{palette.black.1.value}'
     default:
-      value: '{palette.black.5.value}'
+      base:
+        value: '{palette.font.2.value}'
   button:
     minor:
       value: '{palette.purple.4.value}'

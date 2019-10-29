@@ -6,11 +6,12 @@ import { omit } from 'lodash';
 import 'antd/lib/input/style/index.css';
 import './custom-style.less';
 export interface InputProps {
-  className?: string,
-  disabled?: boolean,
-  size?: 'large' | 'small'
-  [key: string]: any,
-  error?: boolean
+  className?: string;
+  disabled?: boolean;
+  size?: 'large' | 'small';
+  [key: string]: any;
+  error?: boolean;
+  inverse?: boolean;
 };
 
 class Input extends React.Component<InputProps> {
@@ -20,9 +21,9 @@ class Input extends React.Component<InputProps> {
       'gio-input',
       this.props.className,
       {
-        ['gio-input--error']: this.props.error,
-        large: this.props.size === 'large',
-        small: this.props.size === 'small'
+        [`gio-input-${this.props.size}`]: this.props.size,
+        'gio-input--error': this.props.error,
+        'gio-input-inverse': this.props.inverse
       }
     )
     return (

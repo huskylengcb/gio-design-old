@@ -19,7 +19,7 @@ class Input extends React.Component<InputProps> {
   public render() {
     const className = classnames(
       'gio-input',
-      this.props.className,
+      this.props.className || '',
       {
         [`gio-input-${this.props.size}`]: this.props.size,
         'gio-input--error': this.props.error,

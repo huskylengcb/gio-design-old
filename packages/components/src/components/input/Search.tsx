@@ -1,11 +1,16 @@
 import React, { ChangeEvent } from 'react';
 import { Input } from 'antd';
 import { SearchProps } from 'antd/lib/input';
+import classnames from 'classnames';
 
 const SearchInput = Input.Search;
 
-export default class Search extends React.Component<SearchProps> {
-  public static defaultProps: Partial<SearchProps> = {
+interface Props extends SearchProps {
+  inverse?: boolean
+}
+
+export default class Search extends React.Component<Props> {
+  public static defaultProps: Partial<Props> = {
     onSearch: (v: string) => void 0
   }
 
@@ -18,7 +23,15 @@ export default class Search extends React.Component<SearchProps> {
       {...this.props}
       onChange={this.handleSearch}
       onSearch={void 0}
-      className={`gio-input-search ${this.props.className}`}
+      className={classnames(
+        'gio-input',
+        'gio-input-search',
+        {
+          'gio-input-inverse': this.props.inverse,
+          'gio-input-disabled': this.props.disabled,
+          [`${this.props.className}`]: this.props.className
+        }
+      )}
     />
     )
   }

@@ -90,8 +90,11 @@ class App extends React.Component {
             <Input value='Default' />
             <Input value='Default Disabled' disabled />
             <Input value='Inverse' inverse />
-            <Input value='Inverse Disabled' disabled />
+            <Input value='Inverse Disabled' disabled inverse />
             <Input value='Default Small' size='small' />
+            <Input.Search value='Search' />
+            <Input.Search value='Search' inverse />
+            <Input.Search value='Search Disabled' disabled />
           </div>
         </div>
         {/* <div>

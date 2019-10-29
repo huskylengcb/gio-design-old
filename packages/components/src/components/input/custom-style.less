@@ -1,8 +1,10 @@
 @import '~@gio-design/tokens/dist/tokens.less';
 
+.gio-input input,
 .gio-input {
   /*.gio-input类名可以施加在一个span元素上，input是他的子元素，比如搜索输入框。也可以施加在一个input元素上，比如普通的输入框。 */
   padding: 0 16px;
+  border-radius: @border-radius-medium;
   border: 1px solid @border-color-input-default-base;
   color: @color-input-default-base;
   height: 40px;
@@ -14,8 +16,14 @@
     padding: 0 12px;
   }
 
-  &:disabled {
-    opacity: .4;
+  &-disabled {
+    pointer-events: none;
+  }
+
+  &[disabled] {
+    color: @color-input-default-base;
+    background-color: #FFF;
+    opacity: @opacity-disabled;
   }
 
   &:hover {
@@ -30,7 +38,9 @@
   }
  
   &-inverse {
-    background-color: @background-color-input-inverse-base;
+    &, &[disabled] {
+      background-color: @background-color-input-inverse-base;
+    }
   }
 
   &.gio-input--error {
@@ -58,14 +68,6 @@
   }
 }
 
-.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
-  border-color: @border-color-hover;
-}
-.ant-input-affix-wrapper .ant-input:focus:not(.ant-input-disabled) {
-  border-color: @border-color-active;
-  box-shadow: @box-shadow-card;
-}
-
 /* 对应了使用antd提供的Form组件的情况。当输入出错时input元素的一个父元素会被加上一个‘has-error’类 */
 .has-error input.gio-input{
   border-color: @color-error;
@@ -80,6 +82,35 @@
 }
 
 .gio-input-search {
+  padding: 0;
+  border: none;
+
+  input {
+    &,
+    &:hover,
+    &:focus {
+      padding: 0 30px 0 16px;
+      height: 100%;
+      color: @color-input-default-base;
+    }
+  }
+
+  &:hover input {
+    & {
+      border-color: @border-color-input-default-base!important;
+    }
+    &:focus {
+      border-color: @border-color-input-default-focus!important;
+    }
+  }
+
+  &.gio-input-disabled,
+  &.gio-input-inverse {
+    input {
+      background-color: @background-color-input-inverse-base;
+    }
+  }
+
   .ant-input-suffix .anticon {
     display: block;
   }

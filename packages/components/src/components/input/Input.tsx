@@ -5,7 +5,6 @@ import classnames from 'classnames';
 import { omit } from 'lodash';
 import 'antd/lib/input/style/index.css';
 import './custom-style.less';
-
 export interface InputProps {
   className?: string,
   disabled?: boolean,
@@ -36,3 +35,4 @@ class Input extends React.Component<InputProps> {
 }
 
 export default Input
+export const TextArea = AntInput.TextArea

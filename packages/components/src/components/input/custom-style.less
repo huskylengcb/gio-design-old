@@ -16,14 +16,19 @@
     padding: 0 12px;
   }
 
+  &[readOnly],
   &-disabled {
     pointer-events: none;
+  }
+
+  &[readOnly] {
+    opacity: @opacity-input-readOnly;
   }
 
   &[disabled] {
     color: @color-input-default-base;
     background-color: #FFF;
-    opacity: @opacity-disabled;
+    opacity: @opacity-input-disabled;
   }
 
   &:hover {

@@ -1,3 +1,6 @@
 opacity:
-  disabled:
-    value: 0.4
+  input:
+    disabled:
+      value: 0.4
+    readOnly:
+      value: 0.8

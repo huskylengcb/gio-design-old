@@ -89,6 +89,7 @@ class App extends React.Component {
             <h1>Input</h1>
             <Input value='Default' />
             <Input value='Default Disabled' disabled />
+            <Input value='Default ReadOnly' readOnly />
             <Input value='Inverse' inverse />
             <Input value='Inverse Disabled' disabled inverse />
             <Input value='Default Small' size='small' />

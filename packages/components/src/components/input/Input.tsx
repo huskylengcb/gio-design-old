@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Input as AntInput } from 'antd';
-import { SearchProps } from 'antd/lib/input';
+import { SearchProps, TextAreaProps } from 'antd/lib/input';
 import classnames from 'classnames';
 import { omit } from 'lodash';
 import 'antd/lib/input/style/index.css';
@@ -16,6 +16,7 @@ export interface InputProps {
 
 class Input extends React.Component<InputProps> {
   public static Search: React.ClassType<SearchProps, any, any>
+  public static TextArea: React.ClassType<TextAreaProps, any, any>
   public render() {
     const className = classnames(
       'gio-input',
@@ -35,5 +36,5 @@ class Input extends React.Component<InputProps> {
   }
 }
 
-export default Input
 export const TextArea = AntInput.TextArea
+export default Input

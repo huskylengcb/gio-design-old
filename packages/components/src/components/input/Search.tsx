@@ -17,19 +17,25 @@ export default class Search extends React.Component<Props> {
   public handleSearch = (e: ChangeEvent<HTMLInputElement>) => this.props.onSearch(e.target.value);
 
   public render() {
+    const {
+      className,
+      disabled,
+      inverse,
+      ...props
+    } = this.props;
     return (
     <SearchInput
       size='large'
-      {...this.props}
+      {...props}
       onChange={this.handleSearch}
       onSearch={void 0}
       className={classnames(
         'gio-input',
         'gio-input-search',
         {
-          'gio-input-inverse': this.props.inverse,
-          'gio-input-disabled': this.props.disabled,
-          [`${this.props.className}`]: this.props.className
+          'gio-input-inverse': inverse,
+          'gio-input-disabled': disabled,
+          [`${className}`]: className
         }
       )}
     />

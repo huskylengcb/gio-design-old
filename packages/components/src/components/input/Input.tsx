@@ -29,7 +29,7 @@ class Input extends React.Component<InputProps> {
     )
     return (
       <AntInput
-        {...omit(this.props, ['error'])}
+        {...omit(this.props, ['error', 'inverse'])}
         className={className}
       />
     );

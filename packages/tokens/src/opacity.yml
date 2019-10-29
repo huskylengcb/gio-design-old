@@ -2,5 +2,5 @@ opacity:
   input:
     disabled:
       value: 0.4
-    readOnly:
+    read-only:
       value: 0.8

@@ -22,7 +22,7 @@
   }
 
   &[readOnly] {
-    opacity: @opacity-input-readOnly;
+    opacity: @opacity-input-read-only;
   }
 
   &[disabled] {
@@ -107,6 +107,10 @@
     &:focus {
       border-color: @border-color-input-default-focus!important;
     }
+  }
+
+  &.gio-input-disabled input {
+    opacity: @opacity-input-disabled;
   }
 
   &.gio-input-disabled,

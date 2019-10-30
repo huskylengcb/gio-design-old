@@ -20,6 +20,11 @@ border:
           value: '{palette.primary.2.value}'
         focus:
           value: '{palette.primary.2.value}'
+    select:
+      base:
+        value: '{palette.line.2.value}'
+      focus:
+        value: '{palette.primary.2.value}'
   radius:
     circle:
       value: '50%'

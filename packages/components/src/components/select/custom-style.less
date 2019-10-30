@@ -1,4 +1,4 @@
-@color-primary: #ea6947;
+@import '~@gio-design/tokens/dist/tokens.less';
 
 .scrollbar-mixin() {
   &::-webkit-scrollbar {
@@ -20,7 +20,6 @@
 }
 
 .gio-select {
-  @font-color: #333;
   @secondary-color: #220968;
   @input-box-shadow: rgba(102, 102, 102, .5);
   @secondary-color-20-pct: fade(@secondary-color, 20);
@@ -29,16 +28,16 @@
   @light-gray: #ebebeb;
 
   min-width: 64px;
-  color: @font-color;
+  color: @color-select-base;
 
   &.ant-select-open .ant-select-selection {
-    border-color: @secondary-color;
+    border-color: @border-color-select-base;
     box-shadow: 0 0 0 2px @secondary-color-20-pct;
   }
 
   &.ant-select-focused .ant-select-selection,
   .ant-select-selection:focus {
-    border-color: @secondary-color;
+    border-color: @border-color-select-focus;
     box-shadow: 0 0 4px 0 @input-box-shadow;
   }
 
@@ -55,8 +54,12 @@
       margin-right: 7px;
     }
 
-    &:hover, &:focus {
-      border-color: @secondary-color;
+    &:hover {
+      border-color: @border-color-select-base;
+    }
+
+    &:focus {
+      border-color: @border-color-select-focus;
     }
 
     &.ant-select-selection--multiple {
@@ -78,6 +81,7 @@
     .ant-select-arrow {
       font-size: 16px;
       top: 42%;
+      color: @color-select-base;
     }
   }
 
@@ -90,6 +94,16 @@
       color: @disabled-font-color;
       background-color: @light-gray;
       border-color: @light-gray;
+    }
+  }
+
+  &-ghost {
+    .ant-select-selection {
+      border: none;
+
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
 }
@@ -197,7 +211,7 @@
 
       &.ant-select-dropdown-menu-item-selected:after,
       .ant-select-dropdown-menu-item-selected::after {
-        color: @color-primary;
+        color: @palette-primary-1;
       }
     }
   }

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Select as AntSelect } from 'antd';
+import { SelectProps } from 'antd/lib/select';
 import classnames from 'classnames';
 import isContain from '../../utils/pinyinHelper';
 import { blurActiveElement } from '../../utils/helpers';
@@ -11,11 +12,9 @@ import './custom-style.less';
 export const OptGroup = AntSelect.OptGroup;
 export const Option = AntSelect.Option;
 
-interface SelectProps {
-  className?: string,
-  dropdownClassName?: string,
-  isAutoBlurAfterSelect?: boolean,
-  [key: string]: any
+interface Props extends SelectProps {
+  isAutoBlurAfterSelect?: boolean;
+  type?: 'ghost'
 };
 
 const filterOption = (input: string, child: any): boolean => {
@@ -23,7 +22,7 @@ const filterOption = (input: string, child: any): boolean => {
   return isContain(option.toString(), input);
 };
 
-export default class Select extends React.Component<SelectProps, {}> {
+export default class Select extends React.Component<Props, {}> {
   public static OptGroup: any
   public static Option: any
 
@@ -35,6 +34,7 @@ export default class Select extends React.Component<SelectProps, {}> {
       isAutoBlurAfterSelect = false,
       onChange,
       onSelect,
+      type,
       ...props
     } = this.props;
 
@@ -60,7 +60,15 @@ export default class Select extends React.Component<SelectProps, {}> {
 
     return (
       <AntSelect
-        className={classnames('gio-select', { [className]: !!className })}
+        className={
+          classnames(
+            'gio-select',
+            {
+              [`gio-select-${type}`]: type,
+              [className]: !!className
+            }
+          )
+        }
         dropdownClassName={classnames('gio-select-dropdown', {
           [dropdownClassName]: !!dropdownClassName
         })}

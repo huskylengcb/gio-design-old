@@ -22,7 +22,7 @@ import Input from './components/input';
 // import Popover from './components/popover';
 // import Progress from './components/progress';
 // import Radio from './components/radio';
-// import Select from './components/select';
+import Select from './components/select';
 // import Switch from './components/switch';
 // import Textarea from './components/textarea';
 // import TimePicker from './components/time-picker';
@@ -96,6 +96,50 @@ class App extends React.Component {
             <Input.Search value='Search' />
             <Input.Search value='Search' inverse />
             <Input.Search value='Search Disabled' disabled />
+          </div>
+          <div>
+            <h1>Select</h1>
+            <div>
+              <Select value='Select' style={{ width: 100 }}>
+                {
+                  [...Array(7).keys()].map(i => (
+                    <Select.Option key={`select-1-${i}`} value={i}>{i}</Select.Option>
+                  ))
+                }
+              </Select>
+            </div>
+            <div>
+              <Select value='Group Select' style={{ width: 200 }}>
+                {
+                  [...Array(3).keys()].map(i => (
+                    <Select.OptGroup label={'label: ' + i}>
+                      {
+                        [...Array(3).keys()].map(j => (
+                          <Select.Option value={i + '' + j}>{'item: ' + j}</Select.Option>
+                        ))
+                      }
+                    </Select.OptGroup>
+                  ))
+                }
+              </Select>
+            </div>
+            <div>
+              <Select
+                value='Ghost'
+                style={{
+                  minWidth: 85,
+                  maxWidth: 185
+                }}
+                dropdownStyle={{ width: '200px' }}
+                type='ghost'
+              >
+                {
+                  [...Array(7).keys()].map(i => (
+                    <Select.Option key={`select-1-${i}`} value={i}>{i}</Select.Option>
+                  ))
+                }
+              </Select>
+            </div>
           </div>
         </div>
         {/* <div>

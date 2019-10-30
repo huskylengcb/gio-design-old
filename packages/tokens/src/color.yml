@@ -42,3 +42,6 @@ color:
       value: '{palette.indigo.7.value}'
     active:
       value: '#222F73'
+  select:
+    base:
+      value: '{palette.font.3.value}'

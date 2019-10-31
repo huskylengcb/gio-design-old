@@ -77,7 +77,7 @@ const Modal: React.FC<ModalProps> = ({
       }
       <Button
         size={props.size}
-        type={props.okButtonType}
+        type={props.okButtonType || 'primary'}
         loading={confirmLoading}
         disabled={disableOk ? true : false} onClick={props.onOk} className={okButtonClassName}
       >

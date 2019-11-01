@@ -15,8 +15,18 @@ import 'antd/lib/input/style/index.css';
 
 ## Examples
 <Playground>
-  <Input style={{marginBottom: '10px'}}/>
-  <Input addonBefore="Http://" addonAfter=".com" />
+  <h4>Default</h4>
+  <Input value='Default' />
+  <Input value='Default Disabled' disabled />
+  <Input value='Default ReadOnly' readOnly />
+  <h4>Inverse</h4>
+  <Input value='Inverse' inverse />
+  <Input value='Inverse Disabled' disabled inverse />
+  <Input value='Default Small' size='small' />
+  <h4>Search</h4>
+  <Input.Search value='Search' />
+  <Input.Search value='Search' inverse />
+  <Input.Search value='Search Disabled' disabled />
 </Playground>
 
 ## API

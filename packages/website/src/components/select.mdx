@@ -14,7 +14,25 @@ import Select from '@gio-design/components/lib/select'
 
 ## Examples
 <Playground>
-  <Select style={{ width: '120px' }}>
+  <h4>Default</h4>
+  <Select
+    style={{ width: 120 }}
+    value='lily'
+  >
+    <Select.OptGroup label='group-1'>
+      <Select.Option value="lucy">lucy</Select.Option>
+      <Select.Option value="lily">lily</Select.Option>
+    </Select.OptGroup>
+    <Select.OptGroup label='group-2'>
+      <Select.Option value="agnes">agnes</Select.Option>
+    </Select.OptGroup>
+  </Select>
+  <h4>Ghost</h4>
+  <Select
+    type='ghost'
+    style={{ width: 120 }}
+    value='lucy'
+  >
     <Select.Option value="lucy">lucy</Select.Option>
     <Select.Option value="lily">lily</Select.Option>
     <Select.Option value="agnes">agnes</Select.Option>

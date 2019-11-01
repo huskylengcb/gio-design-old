@@ -36,3 +36,5 @@ border:
       value: '8px'
     pill:
       value: '240px'
+    message:
+      value: '7px'

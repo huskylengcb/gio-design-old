@@ -57,3 +57,11 @@ background:
       inverse:
         base:
           value: '{palette.background.2.value}'
+    message:
+      success:
+        //value: '{palette.success.value}'
+        value: '#06D8A0'
+      warning:
+        value: '{palette.warning.value}'
+      error:
+        value: '{palette.error.value}'

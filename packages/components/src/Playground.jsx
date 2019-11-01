@@ -14,7 +14,7 @@ import Button from './components/button';
 import Input from './components/input';
 // import ErrMsg from './components/err-msg';
 // import List from './components/list';
-// import Message from './components/message';
+import Message from './components/message';
 // import Option, {OptionGroup, CheckOption} from './components/option';
 // import Modal from './components/modal';
 // import List from './components/oldlist';
@@ -29,6 +29,7 @@ import Select from './components/select';
 // import Tooltip from './components/tooltip';
 // import Menu from './components/menu';
 // const { SubMenu, MenuItemGroup, Item } = Menu;
+import Link from './components/link';
 
 const defaultProps = {
   title: 'aaaaa'
@@ -37,6 +38,7 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
+    window.msg = Message;
 
     this._handleChange = (v) => {
       console.info('handleChange', v);
@@ -112,10 +114,10 @@ class App extends React.Component {
               <Select value='Group Select' style={{ width: 200 }}>
                 {
                   [...Array(3).keys()].map(i => (
-                    <Select.OptGroup label={'label: ' + i}>
+                    <Select.OptGroup label={'label: ' + i} key={`select-group-${i}`}>
                       {
                         [...Array(3).keys()].map(j => (
-                          <Select.Option value={i + '' + j}>{'item: ' + j}</Select.Option>
+                          <Select.Option key={`select-2-${i}-${j}`}>{'item: ' + j}</Select.Option>
                         ))
                       }
                     </Select.OptGroup>
@@ -139,6 +141,17 @@ class App extends React.Component {
                   ))
                 }
               </Select>
+            </div>
+          </div>
+          <div>
+            <h1>Link</h1>
+            <Link>Link</Link>
+            <br />
+            <Link disabled>Link Disabled</Link>
+            <div style={{ width: 300, backgroundColor: '#242E59', padding: 10 }}>
+              <Link inverse>Link</Link>
+              <br />
+              <Link inverse disabled>Link Disabled</Link>
             </div>
           </div>
         </div>

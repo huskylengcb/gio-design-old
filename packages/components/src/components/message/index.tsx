@@ -1,10 +1,9 @@
-import GIOIcon from '../icon';
 import * as React from 'react';
 import notification from 'rc-notification';
-import successIcon from '../../assets/images/success.png';
-import failureIcon from '../../assets/images/failure.png';
+import Link from '../link';
+import Icon from '@gio-design/icon';
 
-import './index.less';
+import './custom-style.less';
 
 const DURATION: {
   'SUCCESS': number,
@@ -55,7 +54,8 @@ const notice = (content: string, type: 'success' | 'error', customDuration?: num
       actionContent = (
         <span>
           <span>{content.substring(0, result[0])}</span>
-          <a className='gio-message-action' onClick={action}>{content.substring(result[0] + 1, result[1])}</a>
+          {/*<a className='gio-message-action' onClick={action}>{content.substring(result[0] + 1, result[1])}</a>*/}
+          <Link inverse className='gio-message-action' onClick={action}>{content.substring(result[0] + 1, result[1])}</Link>
           <span>{content.substring(result[1] + 1)}</span>
         </span>
       );
@@ -69,9 +69,9 @@ const notice = (content: string, type: 'success' | 'error', customDuration?: num
       onClose: close,
       duration,
       content: (
-        <div>
-          <span className='gio-message-notice-icon success'>
-            <img src={type === 'success' ? successIcon : failureIcon} alt={type} />
+        <div className={`gio-message-inner gio-message-${type}`}>
+          <span className='gio-message-notice-icon'>
+            {type === 'success' && (<Icon type='check-circle' width={18} height={18} />)}
           </span>
           {hasAction ? actionContent : content}
           {
@@ -80,7 +80,7 @@ const notice = (content: string, type: 'success' | 'error', customDuration?: num
                 className='gio-message-notice-close'
                 onClick={close}
               >
-                <GIOIcon name='gicon-close' size='small' />
+                <Icon type='close' />
               </span>
               :
               null

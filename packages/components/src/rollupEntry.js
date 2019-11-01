@@ -9,6 +9,7 @@ import Gap from './components/gap';
 import Greeting from './components/greeting';
 import Icon from './components/icon';
 import Input from './components/input';
+import Link from './components/link';
 import List from './components/list';
 import Menu from './components/menu';
 import Message from './components/message';
@@ -39,6 +40,7 @@ export {
   Greeting,
   Icon,
   Input,
+  Link,
   List,
   Menu,
   Message,

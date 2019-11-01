@@ -8,7 +8,8 @@ const defaultExternalArr = [
     'moment',
     'rc-notification',
     'classnames',
-    './custom-style.less'
+    './custom-style.less',
+    '@gio-design/icon'
 ];
 
 // 补充外部引用文件

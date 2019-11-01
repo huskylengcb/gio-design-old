@@ -1,0 +1,60 @@
+@import '~@gio-design/tokens/dist/tokens.less';
+
+.gio-message {
+  position: fixed;
+  z-index: 2147483647;
+
+  @height-gio-message: 35px;
+
+  &-notice {
+    position: relative;
+    margin-bottom: 5px;
+    padding: 0;
+    height: @height-gio-message;
+    line-height: @height-gio-message;
+    min-width: 300px;
+    text-align: center;
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+
+    a {
+      margin: 0 8px;
+    }
+
+    &-icon {
+      margin-right: 8px;
+      vertical-align: 1px;
+    }
+
+    &-content div div {
+      display: inline-block;
+    }
+
+    &-close {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  &-inner {
+    border-radius: @border-radius-message;
+  }
+
+  &-success {
+    background-color: @background-color-message-success;
+  }
+}

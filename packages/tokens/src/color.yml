@@ -36,12 +36,24 @@ color:
       hover:
         value: '{palette.font.4.value}'
   link:
-    base:
-      value: '{palette.indigo.6.value}'
-    hover:
-      value: '{palette.indigo.7.value}'
-    active:
-      value: '#222F73'
+    default:
+      base:
+        value: '{palette.primary.2.value}'
+      hover:
+        value: '{palette.primary.3.value}'
+      active:
+        value: '{palette.font.4.value}'
+      disabled:
+        value: '{palette.font.3.value}'
+    inverse:
+      base:
+        value: '{palette.line.2.value}'
+      hover:
+        value: '{palette.indigo.7.value}'
+      active:
+        value: '{palette.font.2.value}'
+      disabled:
+        value: '#DCE0F2'
   select:
     base:
       value: '{palette.font.3.value}'

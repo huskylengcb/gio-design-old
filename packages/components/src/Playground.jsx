@@ -30,6 +30,7 @@ import Select from './components/select';
 // import Menu from './components/menu';
 // const { SubMenu, MenuItemGroup, Item } = Menu;
 import Link from './components/link';
+import Pagination from './components/pagination';
 
 const defaultProps = {
   title: 'aaaaa'
@@ -155,6 +156,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+        <Pagination defaultCurrent={1} total={100}/>
         {/* <div>
           <Menu
             onClick={() => {}}

@@ -15,6 +15,7 @@ import Menu from './components/menu';
 import Message from './components/message';
 import Modal from './components/modal';
 import Option from './components/option';
+import Pagination from './components/pagination';
 import Popconfirm from './components/popconfirm';
 import Popover from './components/popover';
 import Progress from './components/progress';
@@ -46,6 +47,7 @@ export {
   Message,
   Modal,
   Option,
+  Pagination,
   Popconfirm,
   Popover,
   Progress,

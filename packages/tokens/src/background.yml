@@ -65,3 +65,10 @@ background:
         value: '{palette.warning.value}'
       error:
         value: '{palette.error.value}'
+    pagination:
+      base:
+        value: '{palette.background.2.value}'
+      hover:
+        value: '{palette.primary.2.value}'
+      active:
+        value: '{palette.primary.2.value}'

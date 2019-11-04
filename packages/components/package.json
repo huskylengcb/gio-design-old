@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/components",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "growingio react ui",
   "main": "build/gioDesign.es.js",
   "files": [
@@ -27,7 +27,7 @@
   ],
   "author": "fuhuan",
   "dependencies": {
-    "@gio-design/tokens": "^0.2.9",
+    "@gio-design/tokens": "^0.2.10",
     "@types/classnames": "^2.2.9",
     "@types/lodash": "^4.14.136",
     "@types/react": "^16.8.23",

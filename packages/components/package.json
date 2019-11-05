@@ -108,7 +108,7 @@
     "test"
   ],
   "publishConfig": {
-    "registry": "https://nexus.growingio.com/repository/npm-hosted/"
+    "registry": "https://repo.growingio.com/repository/npm-hosted/"
   },
-  "gitHead": "1407df8406411627880eab909eb20c73b949e677"
+  "gitHead": "d260cb4c033fc7ae18e8c8dd17d7854651948956"
 }

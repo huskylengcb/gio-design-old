@@ -11,6 +11,7 @@ const KVTable = ({ type, data }) => {
       <td>
         {/^#/.test(data[key]) ? <ColorBlock value={data[key]} /> : data[key]}
       </td>
+      <td>{data[key]}</td>
     </tr>
   ));
   return (
@@ -22,6 +23,7 @@ const KVTable = ({ type, data }) => {
           <tr style={{ height: 40 }}>
             <th>Less</th>
             <th>JS</th>
+            <th>Color</th>
             <th>Value</th>
           </tr>
         </thead>

@@ -1,11 +1,11 @@
 {
   "name": "playground",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "main": "index.html",
   "license": "MIT",
   "dependencies": {
-    "@gio-design/themes": "^0.1.10",
-    "@gio-design/tokens": "^0.2.10",
+    "@gio-design/themes": "^0.1.11",
+    "@gio-design/tokens": "^0.2.11",
     "bulma": "^0.7.5",
     "less": "^3.9.0",
     "react": "^16.9.0",

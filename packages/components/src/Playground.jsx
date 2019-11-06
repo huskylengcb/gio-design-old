@@ -31,6 +31,7 @@ import Select from './components/select';
 // const { SubMenu, MenuItemGroup, Item } = Menu;
 import Link from './components/link';
 import Pagination from './components/pagination';
+import Spin from './components/spin';
 
 const defaultProps = {
   title: 'aaaaa'
@@ -155,8 +156,15 @@ class App extends React.Component {
               <Link inverse disabled>Link Disabled</Link>
             </div>
           </div>
+          <div>
+            <h1>Pagination</h1>
+            <Pagination defaultCurrent={1} total={100}/>
+          </div>
+          <div>
+            <h1>Spin</h1>
+            <Spin />
+          </div>
         </div>
-        <Pagination defaultCurrent={1} total={100}/>
         {/* <div>
           <Menu
             onClick={() => {}}

@@ -22,6 +22,7 @@ import Progress from './components/progress';
 import Radio from './components/radio';
 import Select from './components/select';
 import SidePanel from './components/side-panel';
+import Spin from './components/spin';
 import Steps from './components/steps';
 import Switch from './components/switch';
 import Tag from './components/tag';
@@ -54,6 +55,7 @@ export {
   Radio,
   Select,
   SidePanel,
+  Spin,
   Steps,
   Switch,
   Tag,

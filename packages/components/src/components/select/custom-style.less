@@ -33,6 +33,10 @@
   &.ant-select-open .ant-select-selection {
     border-color: @border-color-select-base;
     box-shadow: 0 0 0 2px @secondary-color-20-pct;
+
+    .ant-select-arrow svg {
+      transform: rotate(180deg);
+    };
   }
 
   &.ant-select-focused .ant-select-selection,
@@ -49,9 +53,7 @@
     .scrollbar-mixin();
 
     &__rendered {
-      line-height: 28px;
-      margin-left: 7px;
-      margin-right: 7px;
+      margin: 0 8px;
     }
 
     &:hover {
@@ -79,9 +81,15 @@
     }
 
     .ant-select-arrow {
-      font-size: 16px;
-      top: 42%;
+      top: 50%;
+      transform: translateY(-55%);
+      margin: 0;
       color: @color-select-base;
+      font-size: 16px;
+
+      svg {
+        transition: transform 0.3s ease;
+      }
     }
   }
 
@@ -104,7 +112,16 @@
 
       &:focus {
         box-shadow: none;
+        background-color: @background-color-select-ghost-hover;
       }
+
+      &:hover {
+        background-color: @background-color-select-ghost-hover;
+      }
+    }
+
+    &.ant-select-focused .ant-select-selection {
+      background-color: @background-color-select-ghost-hover;
     }
   }
 }

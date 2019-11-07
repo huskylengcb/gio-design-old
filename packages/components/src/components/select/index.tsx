@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Select as AntSelect } from 'antd';
 import { SelectProps } from 'antd/lib/select';
 import classnames from 'classnames';
+import Icon from '@gio-design/icon';
 import isContain from '../../utils/pinyinHelper';
 import { blurActiveElement } from '../../utils/helpers';
 
@@ -74,6 +75,7 @@ export default class Select extends React.Component<Props, {}> {
         })}
         filterOption={filterOption}
         {..._props}
+        suffixIcon={<Icon type='down' />}
       >
         {children}
       </AntSelect>

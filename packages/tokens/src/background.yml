@@ -74,3 +74,7 @@ background:
         value: '{palette.primary.2.value}'
     spin:
       value: '{palette.primary.2.value}'
+    select:
+      ghost:
+        hover:
+          value: '{palette.background.4.value}'

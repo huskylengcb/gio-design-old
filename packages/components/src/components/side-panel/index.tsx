@@ -4,15 +4,17 @@ import Modal from '../modal';
 import './custom-style.less';
 
 interface SidePanelProps {
-  children: Element
-  content: Element
+  children?: Element
+  content: React.ReactNode
   visible: boolean
   width?: number
   style?: CSSProperties
   close: () => void
   getContainer?: () => HTMLElement | null
+  footer?: React.ReactNode
+  onOk?: () => void
+  onCancel?: () => void
 };
-
 
 const SidePanel = (props: SidePanelProps) => {
   return (
@@ -21,7 +23,7 @@ const SidePanel = (props: SidePanelProps) => {
         title='SidePanel'
         visible={props.visible}
         transitionName='rightIn'
-        footer={null}
+        footer={props.footer}
         closable={false}
         maskTransitionName='fade'
         mask={false}
@@ -30,6 +32,8 @@ const SidePanel = (props: SidePanelProps) => {
         wrapClassName='gio-side-panel-wrapper'
         className='gio-side-panel'
         getContainer={props.getContainer}
+        onOk={props.onOk}
+        onCancel={props.onCancel}
       >
         <div>
           <span className='btn-close' onClick={() => props.close()}>X</span>

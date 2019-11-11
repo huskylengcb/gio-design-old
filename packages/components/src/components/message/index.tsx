@@ -9,11 +9,26 @@ const DURATION: {
   'SUCCESS': number,
   'ERROR': number,
   'HASACTION': number
+  'WARNING': number
 } = {
   SUCCESS: 1,
   ERROR: 2,
-  HASACTION: 3
+  HASACTION: 3,
+  WARNING: 2
 };
+
+interface INameToValueMap<T>
+{
+  [key: string]: T;
+}
+
+const iconMap: INameToValueMap<string> = {
+  success: 'check-circle',
+  error: 'close-circle',
+  warning: 'warning-circle'
+}
+
+type NoticeType = 'success' | 'error' | 'warning'
 
 // 由于 gatsby 与 frontend-app 的 webpack 版本不兼容，在 gatsby 升级之前暂时采用这种写法
 const newInstance = notification.__esModule ? notification.default.newInstance : notification.newInstance;
@@ -24,9 +39,9 @@ newInstance({
   transitionName: 'move-up'
 }, (n: any) => notifier = n);
 
-const notice = (content: string, type: 'success' | 'error', customDuration?: number, shouldRenderCloseBtn: boolean = false) => {
+const notice = (content: string, type: NoticeType, customDuration?: number, shouldRenderCloseBtn: boolean = false) => {
   const key = Date.now();
-  let duration = DURATION[type.toUpperCase() as 'SUCCESS' | 'ERROR'];
+  let duration = DURATION[type.toUpperCase() as 'SUCCESS' | 'ERROR' | 'WARNING'];
   let shouldRenderCloseButton = shouldRenderCloseBtn;
   const result: number[] = [];
   for (let i = 0; i < content.length; i++) {
@@ -71,7 +86,7 @@ const notice = (content: string, type: 'success' | 'error', customDuration?: num
       content: (
         <div className={`gio-message-inner gio-message-${type}`}>
           <span className='gio-message-notice-icon'>
-            {type === 'success' && (<Icon type='check-circle' width={18} height={18} />)}
+            <Icon type={iconMap[type]} width={18} height={18} />
           </span>
           {hasAction ? actionContent : content}
           {
@@ -93,11 +108,12 @@ const notice = (content: string, type: 'success' | 'error', customDuration?: num
 
 const success = (content: string, duration?: number, shouldRenderCloseBtn?: boolean) => notice(content, 'success', duration, shouldRenderCloseBtn);
 const error = (content: string, duration?: number, shouldRenderCloseBtn?: boolean) => notice(content, 'error', duration, shouldRenderCloseBtn);
+const warning = (content: string, duration?: number, shouldRenderCloseBtn?: boolean) => notice(content, 'warning', duration, shouldRenderCloseBtn);
 const destory = () => {
   if (notifier) {
     notifier.destroy();
   }
 };
-const message = { success, error, destory };
+const message = { success, error, destory, warning };
 
 export default message;

@@ -77,6 +77,12 @@ yarn build
 (npx) lerna publish
 ```
 
+## 出现不能publish（put 401）的解决办法
+npm login --registry=https://repo.growingio.com/repository/npm-hosted/
+输入公司wifi账户名 密码 公司邮箱
+然后再执行
+npx lerna publish from-package --registry=https://repo.growingio.com/repository/npm-hosted/
+
 ## References
 
 [Lerna](https://lerna.js.org/)

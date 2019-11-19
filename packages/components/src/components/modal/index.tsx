@@ -41,6 +41,7 @@ export interface ModalProps {
   transitionName: string
   maskTransitionName: string
   mask: boolean
+  height?: number
 };
 
 const Modal: React.FC<ModalProps> = ({

@@ -7,6 +7,7 @@ interface SidePanelProps {
   content: React.ReactNode
   visible: boolean
   width?: number
+  height?: number
   style?: CSSProperties
   close: () => void
   getContainer?: () => HTMLElement | null
@@ -27,6 +28,7 @@ const SidePanel = (props: SidePanelProps) => {
         maskTransitionName='fade'
         mask={false}
         width={props.width}
+        height={props.height}
         style={props.style}
         wrapClassName='gio-side-panel-wrapper'
         className='gio-side-panel'

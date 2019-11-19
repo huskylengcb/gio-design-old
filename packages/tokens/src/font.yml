@@ -20,3 +20,6 @@ font:
       value: '32px'
     10:
       value: '42px'
+    button:
+      default:
+        value: '{font.size.3}'

@@ -2,6 +2,7 @@ import React, { ChangeEvent } from 'react';
 import { Input } from 'antd';
 import { SearchProps } from 'antd/lib/input';
 import classnames from 'classnames';
+import Icon from '@gio-design/icon';
 
 const SearchInput = Input.Search;
 
@@ -38,6 +39,7 @@ export default class Search extends React.Component<Props> {
           [`${className}`]: className
         }
       )}
+      suffix={<Icon size={18} type='search'/>}
     />
     )
   }

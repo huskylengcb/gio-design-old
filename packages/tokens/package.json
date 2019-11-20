@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/tokens",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
@@ -20,5 +20,5 @@
   "publishConfig": {
     "registry": "https://repo.growingio.com/repository/npm-hosted/"
   },
-  "gitHead": "d260cb4c033fc7ae18e8c8dd17d7854651948956"
+  "gitHead": "f566a1c268b2e1510ee6e4f2c201cb47ff770230"
 }

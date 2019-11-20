@@ -25,7 +25,7 @@ const baseStyle = {
 
 export interface IconProps {
   name: string;
-  size?: 'huge' | 'large' | 'middle' | 'small' | 'mediumLarge' | number;
+  size?: 'huge' | 'large' | 'middle' | 'small' | 'mediumLarge' | number | string;
   disablePointer?: boolean;
   valign?: string;
   fill?: string;
@@ -72,6 +72,11 @@ class Icon extends React.Component<IconProps> {
     if (isNumber(this.props.size)) {
       style.width = this.props.size + 'px';
       style.height = this.props.size + 'px';
+    }
+
+    if (typeof this.props.size === 'string' && (this.props.size as string).includes('%')) {
+      style.width = this.props.size
+      style.height = this.props.size
     }
 
     if (this.props.verticalAlign) {

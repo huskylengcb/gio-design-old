@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/themes",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "GrowingIO Design System Themes",
   "keywords": [
     "growingio",
@@ -29,7 +29,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
-    "@gio-design/tokens": "^0.2.18",
+    "@gio-design/tokens": "^0.2.19",
     "gulp": "^4.0.2",
     "gulp-merge-json": "^1.3.1",
     "gulp-rename": "^1.4.0",
@@ -37,5 +37,5 @@
     "gulp-yaml": "^2.0.4",
     "handlebars": "^4.1.2"
   },
-  "gitHead": "d260cb4c033fc7ae18e8c8dd17d7854651948956"
+  "gitHead": "f566a1c268b2e1510ee6e4f2c201cb47ff770230"
 }

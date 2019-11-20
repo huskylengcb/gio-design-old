@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/tokens",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
@@ -8,7 +8,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -r tmp ||: && npx gulp && npx style-dictionary build && npx tsc --declaration dist/index.ts"
+    "build": "rm -r tmp ||: && npx gulp && npx style-dictionary build && npx tsc --declaration dist/index.ts",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

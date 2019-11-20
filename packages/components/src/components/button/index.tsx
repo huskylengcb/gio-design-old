@@ -1,6 +1,7 @@
 import React from 'react';
 import { ButtonProps } from 'antd/lib/button';
 import { Button as AntButton } from 'antd';
+import Icon from './icon';
 import classnames from 'classnames';
 
 import 'antd/lib/button/style/index.css';
@@ -12,6 +13,7 @@ export interface Props extends ButtonProps {
 }
 
 class Button extends React.PureComponent<Props> {
+  public static Icon: any
   public render() {
     return (
       <AntButton
@@ -27,5 +29,7 @@ class Button extends React.PureComponent<Props> {
     )
   }
 }
+
+Button.Icon = Icon;
 
 export default Button;

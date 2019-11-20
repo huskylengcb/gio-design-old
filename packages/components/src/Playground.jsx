@@ -8,6 +8,7 @@ import 'brace/theme/github';
 // import Avatar from './components/avatar';
 // import Checkbox from './components/checkbox';
 import Button from './components/button';
+const IconButton = Button.Icon;
 // import Icon from './components/icon';
 // import DatePicker from './components/date-picker';
 // import Greeting from './components/greeting';
@@ -88,6 +89,12 @@ class App extends React.Component {
             <Button type='primary'>Primary</Button>
             <Button type='primary' disabled>Primary Disabled</Button>
             <Button type='primary' size='large'>Primary Large</Button>
+          </div>
+          <div>
+            <h1>IconButton</h1>
+            <IconButton type='filter' />
+            <IconButton type='filter' disabled />
+            <IconButton type='down' />
           </div>
           <div style={{ width: 300 }}>
             <h1>Input</h1>

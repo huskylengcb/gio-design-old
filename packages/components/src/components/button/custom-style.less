@@ -53,3 +53,24 @@ button[ant-click-animating-without-extra-node]:after {
 .ant-btn-lg {
   font-size: @font-size-button-default;
 }
+
+.gio-icon-button {
+  display: inline-block;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: @border-radius-medium;
+
+  &:not(&-disabled):hover {
+    box-shadow: 0 0 4px 0 rgba(163,173,200,0.94);
+  }
+
+  &-disabled {
+    opacity: @opacity-disabled;
+    cursor: not-allowed;
+  }
+}

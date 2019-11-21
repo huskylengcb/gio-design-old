@@ -118,6 +118,7 @@ class App extends React.Component {
               width={120}
               defaultMin={0}
               defaultMax={100}
+              onChange={(values) => console.info(values)}
             />
           </div>
           <div>

@@ -33,10 +33,15 @@ const Range: React.FC<Props> = ({
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const [min, max] = tempValues;
       const value = e.target.value;
+      let values;
       if (type === 'min') {
-        onChange([value, max], value, type);
+        values = [value, max];
+        setTempValues(values);
+        onChange(values, value, type);
       } else {
-        onChange([min, value], value, type);
+        values = [min, value];
+        setTempValues(values);
+        onChange(values, value, type);
       }
     }
 

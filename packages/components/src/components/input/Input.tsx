@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Input as AntInput } from 'antd';
-import { SearchProps, TextAreaProps } from 'antd/lib/input';
+import { SearchProps, TextAreaProps, GroupProps } from 'antd/lib/input';
+import { Props as RangeProps } from './Range';
 import classnames from 'classnames';
 import { InputNumberProps } from 'antd/lib/input-number';
 import { omit } from 'lodash';
@@ -20,6 +21,8 @@ class Input extends React.Component<InputProps> {
   public static Search: React.ClassType<SearchProps, any, any>
   public static TextArea: React.ClassType<TextAreaProps, any, any>
   public static InputNumber: React.ClassType<InputNumberProps, any, any>
+  public static Group: React.ClassType<GroupProps, any, any>
+  public static Range: React.ComponentType<RangeProps>
   public render() {
     const className = classnames(
       'gio-input',
@@ -40,4 +43,5 @@ class Input extends React.Component<InputProps> {
 }
 
 export const TextArea = AntInput.TextArea;
-export default Input;
+export const Group = AntInput.Group;
+export default Input

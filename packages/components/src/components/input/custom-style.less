@@ -1,5 +1,43 @@
 @import '~@gio-design/tokens/dist/tokens.less';
 
+.gio-input-range {
+  width: initial;
+
+  .gio-input,
+  .gio-input[disabled],
+  .gio-input:hover,
+  .gio-input:focus {
+    float: left;
+    width: 50px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  &-wrapper {
+    width: 101%;
+    border-radius: @border-radius-medium;
+    border: 1px solid @border-color-input-default-base;
+    transition: all 0.2s ease;
+
+    &:after {
+      content: ' ';
+      height: 0;
+      display: block;
+      clear: both;
+    }
+  }
+
+  input:hover ~ &-wrapper,
+  input:focus ~ &-wrapper {
+    box-shadow: @box-shadow-input-default-base;
+  }
+
+  input:focus ~ &-wrapper {
+    border-color: @border-color-input-default-active;
+  }
+}
+
 .gio-input input,
 .gio-input {
   /*.gio-input类名可以施加在一个span元素上，input是他的子元素，比如搜索输入框。也可以施加在一个input元素上，比如普通的输入框。 */

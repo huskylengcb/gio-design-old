@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Input, { InputProps } from './Input';
 
 export interface Props extends InputProps {
@@ -16,11 +16,6 @@ const labelStyle = {
   cursor: 'default'
 }
 
-const handleValuesChange = (type: 'min' | 'max', onChange: any) =>
-  (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.info(e.target.value);
-  }
-
 const Range: React.FC<Props> = ({
   values = [],
   size = 'small',
@@ -31,7 +26,20 @@ const Range: React.FC<Props> = ({
   onChange
 }) => {
   const [min, max] = values;
+  const [tempValues, setTempValues] = useState(values);
   const inputWidth = Math.max((width || 0) - labelStyle.width / 2, 50);
+
+  const handleChange = (type: 'min' | 'max') =>
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const [min, max] = tempValues;
+      const value = e.target.value;
+      if (type === 'min') {
+        onChange([value, max], value, type);
+      } else {
+        onChange([min, value], value, type);
+      }
+    }
+
   return (
     <Input.Group className='gio-input-range'>
       <Input
@@ -40,7 +48,7 @@ const Range: React.FC<Props> = ({
         placeholder={minPlaceholder}
         className='gio-input-range-min'
         style={{ width: inputWidth }}
-        onChange={handleValuesChange('min', onChange)}
+        onChange={handleChange('min')}
       />
       <Input
         size={size}
@@ -54,7 +62,7 @@ const Range: React.FC<Props> = ({
         placeholder={maxPlaceholder}
         className='gio-input-range-min'
         style={{ width: inputWidth }}
-        onChange={handleValuesChange('max', onChange)}
+        onChange={handleChange('max')}
       />
       <div className='gio-input-range-wrapper' />
     </Input.Group>

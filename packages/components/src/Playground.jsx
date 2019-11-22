@@ -10,7 +10,7 @@ import 'brace/theme/github';
 import Button from './components/button';
 const IconButton = Button.Icon;
 // import Icon from './components/icon';
-// import DatePicker from './components/date-picker';
+import DatePicker from './components/date-picker';
 // import Greeting from './components/greeting';
 import Input from './components/input';
 // import ErrMsg from './components/err-msg';
@@ -184,6 +184,16 @@ class App extends React.Component {
             <h1>Spin</h1>
             <Spin />
           </div>
+          <div>
+            <h1>DatePicker</h1>
+            <DatePicker
+              onChange={(moment) => {
+                console.info(moment.valueOf());
+              }}
+            >
+              <span>test</span>
+            </DatePicker>
+          </div>
         </div>
         {/* <div>
           <Menu
@@ -210,7 +220,6 @@ class App extends React.Component {
           </Menu>
         </div> */}
       </React.Fragment>
-
     );
   }
 }

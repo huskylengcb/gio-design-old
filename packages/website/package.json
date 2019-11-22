@@ -17,7 +17,7 @@
     "react-dom": "^16.10.2"
   },
   "dependencies": {
-    "@gio-design/components": "^0.4.19",
+    "@gio-design/components": "^0.4.20",
     "@gio-design/icon": "^0.0.24",
     "@gio-design/tokens": "^0.2.21"
   },

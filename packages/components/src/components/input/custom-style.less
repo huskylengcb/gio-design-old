@@ -130,3 +130,63 @@
     }
   }
 }
+
+.gio-input-number {
+  padding: 0;
+  outline: none;
+  border: 1px solid @border-color-input-default-base;
+  .ant-input-number-input-wrap {
+    border-radius: 4px;
+    outline: none;
+    padding: 0 11px;
+    input {
+      padding: 0px;
+    }
+  }
+  &-small {
+    height: 32px;
+    padding: 0 12px;
+  }
+
+  &[readOnly],
+  &-disabled {
+    pointer-events: none;
+  }
+
+  &[readOnly] {
+    opacity: @opacity-input-read-only;
+  }
+
+  &[disabled] {
+    color: @color-input-default-base;
+    background-color: #FFF;
+    opacity: @opacity-input-disabled;
+  }
+
+  &:hover {
+    border-color: @border-color-input-default-base;
+  }
+
+  &:focus,
+  &:active:not(:disabled) {
+    border-color: @border-color-input-default-active!important;
+  }
+
+  &.gio-input-disabled input {
+    opacity: @opacity-input-disabled;
+  }
+
+  &.gio-input-disabled,
+  &.gio-input-inverse {
+    .ant-input-number-input-wrap, input {
+      background-color: @background-color-input-inverse-base;
+    }
+  }
+}
+
+.ant-input-number {
+  &-focused {
+    box-shadow: @box-shadow-input-default-base;
+    border-color: @border-color-input-default-active!important;
+  }
+}

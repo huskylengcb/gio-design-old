@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import { InputNumberProps } from 'antd/lib/input-number';
 import { omit } from 'lodash';
 import 'antd/lib/input/style/index.css';
+import 'antd/lib/input-number/style/index.css';
 import './custom-style.less';
 export interface InputProps {
   className?: string;
@@ -38,5 +39,5 @@ class Input extends React.Component<InputProps> {
   }
 }
 
-export const TextArea = AntInput.TextArea
-export default Input
+export const TextArea = AntInput.TextArea;
+export default Input;

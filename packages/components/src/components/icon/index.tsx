@@ -23,6 +23,9 @@ const baseStyle = {
   verticalAlign: '-0.15em'
 };
 
+// attention!!!!! 这个已经废弃。
+// 新的在packages/icon/index.js
+
 export interface IconProps {
   name: string;
   size?: 'huge' | 'large' | 'middle' | 'small' | 'mediumLarge' | number | string;

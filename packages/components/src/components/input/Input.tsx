@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Input as AntInput } from 'antd';
 import { SearchProps, TextAreaProps } from 'antd/lib/input';
 import classnames from 'classnames';
+import { InputNumberProps } from 'antd/lib/input-number';
 import { omit } from 'lodash';
 import 'antd/lib/input/style/index.css';
 import './custom-style.less';
@@ -17,6 +18,7 @@ export interface InputProps {
 class Input extends React.Component<InputProps> {
   public static Search: React.ClassType<SearchProps, any, any>
   public static TextArea: React.ClassType<TextAreaProps, any, any>
+  public static InputNumber: React.ClassType<InputNumberProps, any, any>
   public render() {
     const className = classnames(
       'gio-input',

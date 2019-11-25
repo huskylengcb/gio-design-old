@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Input, { InputProps } from './Input';
+import classnames from 'classnames';
 
 export interface Props extends InputProps {
   values: string[],
@@ -23,7 +24,9 @@ const Range: React.FC<Props> = ({
   label = '-',
   minPlaceholder,
   maxPlaceholder,
-  onChange
+  onChange,
+  disabled,
+  className
 }) => {
   const [min, max] = values;
   const [tempValues, setTempValues] = useState(values);
@@ -46,7 +49,7 @@ const Range: React.FC<Props> = ({
     }
 
   return (
-    <Input.Group className='gio-input-range'>
+    <Input.Group className={classnames('gio-input-range', { 'gio-input-disabled': disabled, [`${className}`]: className})}>
       <Input
         value={min}
         size={size}
@@ -54,6 +57,7 @@ const Range: React.FC<Props> = ({
         className='gio-input-range-min'
         style={{ width: inputWidth }}
         onChange={handleChange('min')}
+        disabled={disabled}
       />
       <Input
         size={size}
@@ -68,6 +72,7 @@ const Range: React.FC<Props> = ({
         className='gio-input-range-min'
         style={{ width: inputWidth }}
         onChange={handleChange('max')}
+        disabled={disabled}
       />
       <div className='gio-input-range-wrapper' />
     </Input.Group>

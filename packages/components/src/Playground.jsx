@@ -111,9 +111,19 @@ class App extends React.Component {
             <div>Default <InputNumber min={0}/></div>
             <div>Large <InputNumber min={0} size='large'/></div>
             <div>Inverse <InputNumber min={0} size='large' inverse/></div>
-            <div>Disabled <InputNumber min={0} size='large' disabled/></div>
+            <div>Disabled <InputNumber min={0} size='large' value={2} disabled/></div>
             <h5>Range</h5>
+            default
             <Input.Range
+              values={[1, 100]}
+              width={120}
+              defaultMin={0}
+              defaultMax={100}
+              onChange={(values) => console.info(values)}
+            />
+            disabled
+            <Input.Range
+              disabled
               values={[1, 100]}
               width={120}
               defaultMin={0}

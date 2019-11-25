@@ -37,6 +37,14 @@
   input:focus ~ &-wrapper {
     border-color: @border-color-input-default-active;
   }
+
+  &.gio-input-disabled {
+    .gio-input-range-wrapper,
+    input {
+      color: #c3c3c3;
+      background-color: @palette-gray-3!important;
+    }
+  }
 }
 
 .gio-input input,
@@ -182,24 +190,9 @@
       padding: 0px;
     }
   }
-  &-small {
-    height: 32px;
-    padding: 0 12px;
-  }
-
-  &[readOnly],
-  &-disabled {
-    pointer-events: none;
-  }
 
   &[readOnly] {
     opacity: @opacity-input-read-only;
-  }
-
-  &[disabled] {
-    color: @color-input-default-base;
-    background-color: #FFF;
-    opacity: @opacity-input-disabled;
   }
 
   &:hover {
@@ -215,10 +208,16 @@
     opacity: @opacity-input-disabled;
   }
 
-  &.gio-input-disabled,
   &.gio-input-inverse {
     .ant-input-number-input-wrap, input {
       background-color: @background-color-input-inverse-base;
+    }
+  }
+
+  &.gio-input-disabled {
+    .ant-input-number-input-wrap, input {
+      color: #c3c3c3;
+      background-color: @palette-gray-3;
     }
   }
 }

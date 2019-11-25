@@ -64,6 +64,10 @@ class App extends React.Component {
     Greeting.info('aaa');
   }
 
+  onMinBlur(e) {
+    console.log('input-min-blur', e)
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -119,6 +123,7 @@ class App extends React.Component {
               width={120}
               defaultMin={0}
               defaultMax={100}
+              onMinBlur={(e) => this.onMinBlur(e)}
               onChange={(values) => console.info(values)}
             />
             disabled

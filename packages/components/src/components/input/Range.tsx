@@ -9,6 +9,8 @@ export interface Props extends InputProps {
   width?: number,
   label?: string;
   onChange?: (values: string[], value: string, type: 'min' | 'max') => void;
+  onMinBlur?: (e: any) => void;
+  onMaxBlur?: (e: any) => void;
 }
 
 const labelStyle = {
@@ -26,7 +28,9 @@ const Range: React.FC<Props> = ({
   maxPlaceholder,
   onChange,
   disabled,
-  className
+  className,
+  onMinBlur,
+  onMaxBlur
 }) => {
   const [min, max] = values;
   const [tempValues, setTempValues] = useState(values);
@@ -47,7 +51,7 @@ const Range: React.FC<Props> = ({
         onChange(values, value, type);
       }
     }
-
+  
   return (
     <Input.Group className={classnames('gio-input-range', { 'gio-input-disabled': disabled, [`${className}`]: className})}>
       <Input
@@ -58,6 +62,7 @@ const Range: React.FC<Props> = ({
         style={{ width: inputWidth }}
         onChange={handleChange('min')}
         disabled={disabled}
+        onBlur={onMinBlur}
       />
       <Input
         size={size}
@@ -73,6 +78,7 @@ const Range: React.FC<Props> = ({
         style={{ width: inputWidth }}
         onChange={handleChange('max')}
         disabled={disabled}
+        onBlur={onMaxBlur}
       />
       <div className='gio-input-range-wrapper' />
     </Input.Group>

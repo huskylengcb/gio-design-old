@@ -123,8 +123,16 @@
       }
     }
 
-    &.ant-select-focused .ant-select-selection {
-      background-color: @background-color-select-ghost-hover;
+    &.ant-select-focused {
+      .ant-select-selection {
+        background-color: @background-color-select-ghost-hover;
+      }
+    }
+
+    &.ant-select-disabled {
+      .ant-select-selection {
+        background-color: @palette-gray-3;
+      }
     }
   }
 }

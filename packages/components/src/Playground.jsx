@@ -23,7 +23,7 @@ import Message from './components/message';
 // import Popover from './components/popover';
 // import Progress from './components/progress';
 // import Radio from './components/radio';
-//import Select from './components/select';
+import Select from './components/select';
 // import Switch from './components/switch';
 // import Textarea from './components/textarea';
 // import TimePicker from './components/time-picker';
@@ -140,7 +140,7 @@ class App extends React.Component {
           <div>
             <h1>Select</h1>
             <div>
-              {/* <Select value='Select' style={{ width: 100 }}>
+              <Select value='Select' style={{ width: 100 }}>
                 {
                   [...Array(7).keys()].map(i => (
                     <Select.Option key={`select-1-${i}`} value={i}>{i}</Select.Option>
@@ -161,9 +161,9 @@ class App extends React.Component {
                     </Select.OptGroup>
                   ))
                 }
-              </Select> */}
+              </Select>
             </div>
-            {/* <div>
+            <div>
               <Select
                 value='Ghost'
                 style={{
@@ -179,7 +179,25 @@ class App extends React.Component {
                   ))
                 }
               </Select>
-            </div> */}
+            </div>
+            <div>
+              <Select
+                value='Ghost disabled'
+                disabled={true}
+                style={{
+                  minWidth: 85,
+                  maxWidth: 185
+                }}
+                dropdownStyle={{ width: '200px' }}
+                type='ghost'
+              >
+                {
+                  [...Array(7).keys()].map(i => (
+                    <Select.Option key={`select-1-${i}`} value={i}>{i}</Select.Option>
+                  ))
+                }
+              </Select>
+            </div>
           </div>
           <div>
             <h1>Link</h1>

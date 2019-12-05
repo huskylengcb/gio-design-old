@@ -57,6 +57,7 @@ const Range: React.FC<Props> = ({
       <Input
         value={min}
         size={size}
+        type='number'
         placeholder={minPlaceholder}
         className='gio-input-range-min'
         style={{ width: inputWidth }}
@@ -73,6 +74,7 @@ const Range: React.FC<Props> = ({
       <Input
         value={max}
         size={size}
+        type='number'
         placeholder={maxPlaceholder}
         className='gio-input-range-max'
         style={{ width: inputWidth }}

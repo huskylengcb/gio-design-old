@@ -25,7 +25,7 @@ export interface Props {
   footer?: React.ReactNode,
   pagination?: any,
   loading?: boolean | object,
-  rowKey?: string,
+  rowKey?: string | ((record: any, index: number) => string);
   rowSelection?: object,
   onRowClick?: (record: WithKey, index: number, event: any) => void,
   selectRow?: number,

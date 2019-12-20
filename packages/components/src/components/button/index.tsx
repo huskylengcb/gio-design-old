@@ -15,14 +15,17 @@ export interface Props extends ButtonProps {
 class Button extends React.PureComponent<Props> {
   public static Icon: any
   public render() {
+    const { type, className, ...rest } = this.props;
     return (
       <AntButton
-        {...this.props}
+        {...rest}
         className={
           classnames(
             'gio-button',
-            `gio-button-${this.props.type}`,
-            this.props.className
+            className,
+            {
+              [`gio-button-${type}`]: type
+            }
           )
         }
       />

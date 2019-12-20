@@ -55,7 +55,7 @@ exports[`Input renders with props correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "ant-input ant-input-sm gio-input gio-input--error small",
+      "class": "ant-input ant-input-sm gio-input gio-input-small gio-input--error",
       "type": "text",
       "value": "",
     },
@@ -106,7 +106,7 @@ exports[`Input renders with suffix correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "gio-input gio-input--error small ant-input-affix-wrapper ant-input-affix-wrapper-sm",
+      "class": "gio-input gio-input-small gio-input--error ant-input-affix-wrapper ant-input-affix-wrapper-sm",
     },
     "children": Array [
       Object {

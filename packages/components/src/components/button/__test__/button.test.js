@@ -17,11 +17,4 @@ describe('Button', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
-
-  it('renders withoutBg correctly', () => {
-    const wrapper = render(
-      <Button withoutBg tooltip='tooltip'>Follow</Button>
-    );
-    expect(wrapper).toMatchSnapshot();
-  });
 });

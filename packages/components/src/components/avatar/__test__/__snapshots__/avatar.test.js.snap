@@ -10,6 +10,7 @@ initialize {
       Object {
         "attribs": Object {
           "class": "ant-avatar-string",
+          "style": "opacity:0",
         },
         "children": Array [],
         "name": "span",
@@ -20,9 +21,11 @@ initialize {
         "type": "tag",
         "x-attribsNamespace": Object {
           "class": undefined,
+          "style": undefined,
         },
         "x-attribsPrefix": Object {
           "class": undefined,
+          "style": undefined,
         },
       },
     ],

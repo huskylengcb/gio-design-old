@@ -27,5 +27,4 @@ describe('Input', () => {
     );
     expect(testUnit).toMatchSnapshot();
   });
-
 });

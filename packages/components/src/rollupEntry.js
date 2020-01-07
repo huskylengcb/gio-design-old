@@ -14,6 +14,7 @@ import List from './components/list';
 import Menu from './components/menu';
 import Message from './components/message';
 import Modal from './components/modal';
+import NumberIcon from './components/number-icon';
 import Option from './components/option';
 import Pagination from './components/pagination';
 import Popconfirm from './components/popconfirm';
@@ -47,6 +48,7 @@ export {
   Menu,
   Message,
   Modal,
+  NumberIcon,
   Option,
   Pagination,
   Popconfirm,

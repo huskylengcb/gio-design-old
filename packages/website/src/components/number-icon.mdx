@@ -1,0 +1,38 @@
+---
+name: NumberIcon
+menu: Components
+---
+
+import { Playground } from "docz";
+import ModalDemo from "./ModalDemo";
+import NumberIcon from "@gio-design/components/lib/number-icon";
+import "@gio-design/components/lib/number-icon/style.css";
+
+# Modal
+
+## 简介
+
+用于展示数字的 Icon，1 - 8 都有默认的颜色和背景颜色，如果需要修改可以自行提供
+
+## 代码演示
+
+<Playground>
+  <NumberIcon number={1} />
+  <NumberIcon number={2} />
+  <NumberIcon number={3} />
+  <NumberIcon number={4} />
+  <NumberIcon number={5} />
+  <NumberIcon number={6} />
+  <NumberIcon number={7} />
+  <NumberIcon number={8} />
+</Playground>
+
+## API
+
+参数 说明 类型 默认值 版本
+
+| 参数            |    说明    |  类型  | 默认值 | 版本 |
+| --------------- | :--------: | :----: | :----: | ---: |
+| color           | 数字的颜色 | string |
+| backgroundColor |  背景颜色  | string |
+| number          |    数字    | number |

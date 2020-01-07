@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import './style/index.less'
 
 interface NumberIconProps {
-  color?: string,
+  color?: string
   backgroundColor?: string
   number: number
   className?: string

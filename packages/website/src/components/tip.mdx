@@ -1,0 +1,33 @@
+---
+name: Tip
+menu: Components
+---
+
+import { Playground } from 'docz'
+import Tip from '@gio-design/components/lib/tip'
+import '@gio-design/components/lib/tip/style.css'
+
+# Tip
+
+## 简介
+
+
+## Examples
+<Playground>
+  <Tip message='hello world' name='random' />
+  <br />
+  <Tip message='选中"不在提示"在点击"我知道了"，我就会永远的消失' name='random1' />
+  <br />
+  <Tip message={`你可以在localstorage 中找到我，key = gio-tip::name`} name='random2' />
+  <br />
+  <div style={{ width: '300px'}}>
+    <Tip message={`当我的长度很长，当前父亲框框容不下我的时候，我就会断行`} name='random3' />
+  </div>
+</Playground>
+
+## API
+
+| 参数            |    说明    |  类型  | 默认值 | 版本 |
+| --------------- | :--------: | :----: | :----: | ---: |
+| message           | 需展示的消息 | ReactNode |
+| name |  当前消息的名称，每个消息位都应该有唯一的名称  | string |

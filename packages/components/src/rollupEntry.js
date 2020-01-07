@@ -29,6 +29,7 @@ import Switch from './components/switch';
 import Tag from './components/tag';
 import Textarea from './components/textarea';
 import TimePicker from './components/time-picker';
+import Tip from './components/tip';
 import Tooltip from './components/tooltip';
 
 export {
@@ -63,5 +64,6 @@ export {
   Tag,
   Textarea,
   TimePicker,
+  Tip,
   Tooltip,
 };

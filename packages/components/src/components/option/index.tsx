@@ -47,7 +47,7 @@ class Option extends React.PureComponent<OptionProps> {
     );
   }
   private handleChange = () => {
-    this.props.onClick(this.props.value);
+    this.props.onClick && this.props.onClick(this.props.value);
   }
 }
 

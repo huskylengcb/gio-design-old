@@ -65,11 +65,12 @@ class Icon extends React.Component<IconProps> {
   }
 
   public render() {
-
+    const size: string = this.props.size as string
+    const valign: string = this.props.size as string
     const style = assign({}, baseStyle,
       (this.props.disablePointer ? {} : { cursor: 'pointer' }),
       (this.props.fill ? { fill: this.props.fill } : {}),
-      styleMap[this.props.size], styleMap[this.props.valign],
+      styleMap[size], styleMap[valign],
       this.props.svgStyle, this.props.disabled ? disabledStyle : {});
 
     if (isNumber(this.props.size)) {

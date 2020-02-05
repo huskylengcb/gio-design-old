@@ -1,5 +1,4 @@
 import React, {
-  SFC,
   ReactNode,
   PureComponent
 } from 'react';
@@ -15,15 +14,11 @@ interface P {
   placement?: TooltipPlacement
 }
 
-interface S {
-  tooltip: boolean
-}
-
 class Ellipsis extends PureComponent<P> {
   public state = {
     tooltip: false
   }
-  private textRef: HTMLSpanElement = null
+  private textRef: HTMLSpanElement | null = null
   public componentDidMount() {
     this.detectTooltip();
   }

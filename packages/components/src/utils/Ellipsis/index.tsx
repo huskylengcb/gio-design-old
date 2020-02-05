@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Tooltip } from 'antd';
-import pure from '../HOC/pure';
 import './index.less';
 
 interface P {
@@ -11,15 +10,11 @@ interface P {
   placement?: 'top' | 'left' | 'right' | 'bottom' | 'topLeft' | 'topRight' | 'bottomLeft' | 'bottomRight' | 'leftTop' | 'leftBottom' | 'rightTop' | 'rightBottom',
 }
 
-interface S {
-  tooltip: boolean
-}
-
 class Ellipsis extends React.PureComponent<P> {
   public state = {
     tooltip: false
   }
-  private textRef: HTMLSpanElement = null
+  private textRef: HTMLSpanElement | null = null
   public componentDidMount() {
     this.detectTooltip();
   }

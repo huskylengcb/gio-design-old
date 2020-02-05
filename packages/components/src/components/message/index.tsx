@@ -51,7 +51,7 @@ const notice = (content: string, type: NoticeType, customDuration?: number, shou
   }
   const hasAction = result.length === 2;
 
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const close = () => {
       notifier.removeNotice(key);
       resolve('close');
@@ -62,7 +62,7 @@ const notice = (content: string, type: NoticeType, customDuration?: number, shou
       resolve('action');
     };
 
-    let actionContent: React.ReactElement<any> = null;
+    let actionContent: React.ReactElement<any> | null = null;
     if (hasAction) {
       duration = DURATION.HASACTION;
       shouldRenderCloseButton = true;

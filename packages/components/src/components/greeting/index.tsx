@@ -19,7 +19,7 @@ notification.newInstance({
 const notice = (content: string) => {
   const key = Date.now();
 
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const close = () => {
       notifier.removeNotice(key);
       resolve('close');

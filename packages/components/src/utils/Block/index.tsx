@@ -1,7 +1,6 @@
 import * as React from 'react';
 import cn from 'classnames';
 import { noop } from 'lodash';
-import pure from '../HOC/pure';
 
 interface ClassDictionary {
   [id: string]: boolean | undefined | null

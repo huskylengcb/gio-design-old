@@ -14,6 +14,7 @@ const style = {
   margin: 0
 }
 
+const noop = () => {}
 const IconButton: React.FC<Props> = (props) => {
   const {
     title,
@@ -24,7 +25,7 @@ const IconButton: React.FC<Props> = (props) => {
   } = props;
   return (
     <span
-      onClick={!disabled && onClick}
+      onClick={!disabled && onClick || noop}
       className={classnames(
         'gio-icon-button',
         className,

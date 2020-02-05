@@ -45,10 +45,10 @@ export default class List extends React.Component<Props, {}> {
     pagination: {},
     loading: false,
     rowKey: 'key',
-    rowSelection: null,
+    rowSelection: undefined,
     scroll: {},
     size: 'default',
-    className: null
+    className: undefined
   };
 
   public getRowClickHandler = (record: WithKey, index: number, event: any) => {
@@ -57,11 +57,11 @@ export default class List extends React.Component<Props, {}> {
     }
   }
 
-  public getRowClassName = (record: WithKey, index: number) => {
+  public getRowClassName = (_: any, index: number) => {
     if (this.props.selectRow === index) {
       return 'select-row'
     }
-    return null
+    return ''
   }
 
   public onChange = (pagination: any, filters: any, sorter: any) => {

@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Modal as AntModal } from 'antd';
 import Button from '../button';
 import Icon from '../icon';
-import { noop } from 'lodash';
 import cn from 'classnames';
 
 import 'antd/lib/modal/style/index.css';

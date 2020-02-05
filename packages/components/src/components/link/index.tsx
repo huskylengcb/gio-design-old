@@ -18,8 +18,8 @@ const Link: React.FC<Props> = (props) => {
       {...rest}
       className={classnames(
         'gio-link',
+        className,
         {
-          [className]: className,
           'gio-link-inverse': inverse,
           'gio-link-disabled': disabled
         }

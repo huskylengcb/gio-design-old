@@ -8,7 +8,10 @@ interface TipProps {
   name: string;
 }
 
-const Tip: React.FC<TipProps> = ({ message, name }) => {
+const Tip: React.FC<TipProps> = ({ 
+  message,
+  name
+}) => {
   name = `gio-tip::${name}`
   const [vanish, setVanish] = React.useState(false);
   const [visible, setVisible] = React.useState(localStorage.getItem(name) !== 'true');
@@ -20,7 +23,10 @@ const Tip: React.FC<TipProps> = ({ message, name }) => {
     setVisible(false)
   }, [vanish])
 
-  return visible && (
+  if (!visible) {
+    return null
+  }
+  return (
     <div className='gio-tip'>
       <div className='gio-tip__message'>{message}</div>
       <div className='gio-tip__operate'>

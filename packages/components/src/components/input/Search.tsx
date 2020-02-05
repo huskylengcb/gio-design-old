@@ -12,10 +12,11 @@ interface Props extends SearchProps {
 
 export default class Search extends React.Component<Props> {
   public static defaultProps: Partial<Props> = {
-    onSearch: (v: string) => void 0
+    onSearch: () => void 0
   }
 
-  public handleSearch = (e: ChangeEvent<HTMLInputElement>) => this.props.onSearch(e.target.value);
+  public handleSearch = (e: ChangeEvent<HTMLInputElement>) => 
+    this.props.onSearch && this.props.onSearch(e.target.value);
 
   public render() {
     const {

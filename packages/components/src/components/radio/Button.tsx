@@ -8,10 +8,7 @@ export default  class Button extends RButton {
   public render() {
     const element = super.render();
     return  React.cloneElement(element, {
-      className: classnames(`gio-radio-button`, {
-         [this.props.className]: !!this.props.className,
-         [element.props.className]: !!element.props.className
-      })
+      className: classnames(`gio-radio-button`, this.props.className, element.props.className)
     });
   }
 }

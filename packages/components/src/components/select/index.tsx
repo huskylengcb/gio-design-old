@@ -39,7 +39,7 @@ export default class Select extends React.Component<Props, {}> {
       ...props
     } = this.props;
 
-    let _props = {...props, onChange, onSelect};
+    let _props = { ...props, onChange, onSelect };
 
     if (isAutoBlurAfterSelect) {
       const blurAfterOnChange = (...args: any[]) => {
@@ -56,23 +56,21 @@ export default class Select extends React.Component<Props, {}> {
         }
       };
 
-      _props = {...props, onChange: blurAfterOnChange, onSelect: blurAfterOnSelect};
+      _props = { ...props, onChange: blurAfterOnChange, onSelect: blurAfterOnSelect };
     }
 
     return (
       <AntSelect
         className={
           classnames(
-            'gio-select',
+            'gio-select', 
+            className,
             {
               [`gio-select-${type}`]: type,
-              [className]: !!className
             }
           )
         }
-        dropdownClassName={classnames('gio-select-dropdown', {
-          [dropdownClassName]: !!dropdownClassName
-        })}
+        dropdownClassName={classnames('gio-select-dropdown', dropdownClassName)}
         filterOption={filterOption}
         {..._props}
         suffixIcon={<Icon type='down' />}

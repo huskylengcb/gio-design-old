@@ -19,6 +19,8 @@ const labelStyle = {
   cursor: 'default'
 }
 
+const noop = () => {}
+
 const Range: React.FC<Props> = ({
   values = [],
   size = 'small',
@@ -26,7 +28,7 @@ const Range: React.FC<Props> = ({
   label = '-',
   minPlaceholder,
   maxPlaceholder,
-  onChange,
+  onChange = noop,
   disabled,
   className,
   onMinBlur,

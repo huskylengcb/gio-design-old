@@ -10,7 +10,7 @@ interface SidePanelProps {
   height?: number
   style?: CSSProperties
   close: () => void
-  getContainer?: () => HTMLElement | null
+  getContainer?: () => HTMLElement
   footer?: React.ReactNode
   onOk?: () => void
   onCancel?: () => void

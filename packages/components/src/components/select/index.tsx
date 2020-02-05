@@ -24,8 +24,10 @@ const filterOption = (input: string, child: any): boolean => {
 };
 
 export default class Select extends React.Component<Props, {}> {
-  public static OptGroup: any
-  public static Option: any
+  public static OptGroup: any;
+  public static Option: any;
+  public static blur: void;
+  public static focus: void;
 
   public render() {
     const {
@@ -83,3 +85,5 @@ export default class Select extends React.Component<Props, {}> {
 
 Select.OptGroup = AntSelect.OptGroup;
 Select.Option = AntSelect.Option;
+Select.blur = (AntSelect as any).blur;
+Select.focus = (AntSelect as any).focus;

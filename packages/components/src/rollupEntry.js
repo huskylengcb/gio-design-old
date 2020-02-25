@@ -31,6 +31,7 @@ import Textarea from './components/textarea';
 import TimePicker from './components/time-picker';
 import Tip from './components/tip';
 import Tooltip from './components/tooltip';
+import Upload from './components/upload';
 
 export {
   Avatar,
@@ -66,4 +67,5 @@ export {
   TimePicker,
   Tip,
   Tooltip,
+  Upload,
 };

@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@gio-design/components": "^0.4.31",
-    "@gio-design/icon": "^0.0.26",
+    "@gio-design/icon": "^0.0.27",
     "@gio-design/tokens": "^0.2.21"
   },
   "private": true

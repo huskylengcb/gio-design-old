@@ -26,11 +26,13 @@ import SidePanel from './components/side-panel';
 import Spin from './components/spin';
 import Steps from './components/steps';
 import Switch from './components/switch';
+import Table from './components/table';
 import Tag from './components/tag';
 import Textarea from './components/textarea';
 import TimePicker from './components/time-picker';
 import Tip from './components/tip';
 import Tooltip from './components/tooltip';
+import Upload from './components/upload';
 
 export {
   Avatar,
@@ -61,9 +63,11 @@ export {
   Spin,
   Steps,
   Switch,
+  Table,
   Tag,
   Textarea,
   TimePicker,
   Tip,
   Tooltip,
+  Upload,
 };

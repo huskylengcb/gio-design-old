@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/icon",
-  "version": "0.0.26",
+  "version": "0.0.32",
   "description": "GrowingIO Design System Icons",
   "keywords": [
     "gio-desing",
@@ -43,5 +43,5 @@
   "dependencies": {
     "radium": "^0.25.2"
   },
-  "gitHead": "a8c69eb61d77b069b7d263b9c3fe8d25ce818230"
+  "gitHead": "aa39d6271caa0b0b47839fa519708efa5f593665"
 }

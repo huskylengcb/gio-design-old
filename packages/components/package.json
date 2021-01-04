@@ -36,7 +36,7 @@
     "classnames": "^2.2.6",
     "lodash": "^4.17.14",
     "moment": "^2.24.0",
-    "pinyin-match": "^1.0.8",
+    "pinyin-match": "^1.1.7",
     "rc-calendar": "^9.15.4",
     "rc-notification": "^3.3.1",
     "react": "^16.8.6",
@@ -110,5 +110,5 @@
   "publishConfig": {
     "registry": "https://repo.growingio.com/repository/npm-hosted/"
   },
-  "gitHead": "c2737b3f69bc97408e7625a4f5ec15e646fecedb"
+  "gitHead": "bfb402f374926a940e3f5e981d4875433acc5f28"
 }

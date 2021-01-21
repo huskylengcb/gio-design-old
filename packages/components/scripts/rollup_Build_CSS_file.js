@@ -32,7 +32,7 @@ function generateInputConfig(name) {
 
   // 找出每一个组件引用过的ant样式
   let externalStyle = [];
-  searchStyleImportDeep(path.resolve(`src/components/${name}`), externalStyle);
+  searchStyleImportDeep(path.resolve(`src/components/${name}`), externalStyle, name);
   externalStyle = Array.from(new Set(externalStyle));
 
   return {

@@ -95,7 +95,7 @@ function getAllGioComponentNames() {
   });
 }
 
-function searchStyleImportDeep(address, antStyleImportArr) {
+function searchStyleImportDeep(address, antStyleImportArr, filename) {
   const filenames = fs.readdirSync(path.resolve(address));
   filenames.map((name) => {
     if (!searchExclude.includes(name)) {
@@ -109,6 +109,12 @@ function searchStyleImportDeep(address, antStyleImportArr) {
           const lines = fs.readFileSync(path.resolve(address) + '/' + name).toString().split("\n");
           // antStyleImportArr是一个文件中所有的ant样式引用
           const arr = checkAntImport(lines);
+          if(!!filename) {
+            const regexp = new RegExp(`gio-${filename}`,'g')
+            console.log(regexp, 'regexp')
+            const newLines = lines.join('\n').replace(regexp, `gio-${filename}-old`)
+            fs.writeFileSync(path.resolve(address) + '/' + name, newLines)
+          }
           if (arr.length > 0) {
             arr.map((item) => {
               antStyleImportArr.push(item);

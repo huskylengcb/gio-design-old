@@ -20,7 +20,7 @@ const Checkbox: React.SFC<CheckboxProps> = ({
 }) => {
   return (
     <AntCheckbox
-      className={cn(className, 'gio-checkbox')}
+      className={cn(className, 'gio-checkbox-old')}
       {...props}
     />
   );

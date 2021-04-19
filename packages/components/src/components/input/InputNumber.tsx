@@ -19,10 +19,10 @@ export default class InputNumber extends React.Component<Props> {
     <AntInputNumber
       {...props}
       className={classnames(
-        'gio-input-number',
+        'gio-input-old-number',
         {
-          'gio-input-inverse': inverse,
-          'gio-input-disabled': disabled,
+          'gio-input-old-inverse': inverse,
+          'gio-input-old-disabled': disabled,
           [`${className}`]: className
         }
       )}

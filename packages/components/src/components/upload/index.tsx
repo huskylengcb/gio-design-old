@@ -14,7 +14,7 @@ const Upload = (props: PropsType) => {
     <AntdUpload {...props}
       className={
         classnames(
-          'gio-upload',
+          'gio-upload-old',
           props.className
         )
       }

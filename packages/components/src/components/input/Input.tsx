@@ -25,12 +25,12 @@ class Input extends React.Component<InputProps> {
   public static Range: React.ComponentType<RangeProps>
   public render() {
     const className = classnames(
-      'gio-input',
+      'gio-input-old',
       this.props.className || '',
       {
-        [`gio-input-${this.props.size}`]: this.props.size,
-        'gio-input--error': this.props.error,
-        'gio-input-inverse': this.props.inverse
+        [`gio-input-old-${this.props.size}`]: this.props.size,
+        'gio-input-old--error': this.props.error,
+        'gio-input-old-inverse': this.props.inverse
       }
     )
     return (

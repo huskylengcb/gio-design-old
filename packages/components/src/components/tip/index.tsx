@@ -12,7 +12,7 @@ const Tip: React.FC<TipProps> = ({
   message,
   name
 }) => {
-  name = `gio-tip::${name}`
+  name = `gio-tip-old::${name}`
   const [vanish, setVanish] = React.useState(false);
   const [visible, setVisible] = React.useState(localStorage.getItem(name) !== 'true');
 
@@ -27,14 +27,14 @@ const Tip: React.FC<TipProps> = ({
     return null
   }
   return (
-    <div className='gio-tip'>
-      <div className='gio-tip__message'>{message}</div>
-      <div className='gio-tip__operate'>
-        <Checkbox checked={vanish} className='gio-tip__checkbox' onChange={e => setVanish(e.target.checked)} />
+    <div className='gio-tip-old'>
+      <div className='gio-tip-old__message'>{message}</div>
+      <div className='gio-tip-old__operate'>
+        <Checkbox checked={vanish} className='gio-tip-old__checkbox' onChange={e => setVanish(e.target.checked)} />
         &nbsp;
         <span>不再提示</span>
         &nbsp;
-        <a className='gio-tip__a' href='javascript:void(0)' onClick={hide}>
+        <a className='gio-tip-old__a' href='javascript:void(0)' onClick={hide}>
           我知道了
         </a>
       </div>

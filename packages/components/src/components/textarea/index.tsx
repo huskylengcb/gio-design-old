@@ -17,7 +17,7 @@ class Input extends React.Component<InputProps, {}> {
     return (
       <TextArea
         {...this.props}
-        className={`gio-textarea ${this.props.className}`}
+        className={`gio-textarea-old ${this.props.className}`}
       />);
   }
 }

@@ -23,9 +23,9 @@ class Gap extends React.Component<GapProps> {
     height = `${height}${typeof height === 'number' ? 'px' : ''}`;
 
     return this.props.height ? (
-      <div className='gio-gap' style={{ height }} />
+      <div className='gio-gap-old' style={{ height }} />
     ) : (
-      <span className='gio-gap' style={{ display: 'inline-block', width, height, float: this.props.float }} />
+      <span className='gio-gap-old' style={{ display: 'inline-block', width, height, float: this.props.float }} />
     );
   }
 }

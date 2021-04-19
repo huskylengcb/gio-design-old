@@ -17,11 +17,11 @@ const Link: React.FC<Props> = (props) => {
     <a
       {...rest}
       className={classnames(
-        'gio-link',
+        'gio-link-old',
         className,
         {
-          'gio-link-inverse': inverse,
-          'gio-link-disabled': disabled
+          'gio-link-old-inverse': inverse,
+          'gio-link-old-disabled': disabled
         }
       )}
       href={disabled ? undefined : href}

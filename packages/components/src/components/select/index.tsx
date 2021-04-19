@@ -65,14 +65,14 @@ export default class Select extends React.Component<Props, {}> {
       <AntSelect
         className={
           classnames(
-            'gio-select', 
+            'gio-select-old', 
             className,
             {
-              [`gio-select-${type}`]: type,
+              [`gio-select-old-${type}`]: type,
             }
           )
         }
-        dropdownClassName={classnames('gio-select-dropdown', dropdownClassName)}
+        dropdownClassName={classnames('gio-select-old-dropdown', dropdownClassName)}
         filterOption={filterOption}
         {..._props}
         suffixIcon={<Icon type='down' />}

@@ -30,8 +30,8 @@ const SidePanel = (props: SidePanelProps) => {
         width={props.width}
         height={props.height}
         style={props.style}
-        wrapClassName='gio-side-panel-wrapper'
-        className='gio-side-panel'
+        wrapClassName='gio-side-panel-old-wrapper'
+        className='gio-side-panel-old'
         getContainer={props.getContainer}
         onOk={props.onOk}
         onCancel={props.onCancel}

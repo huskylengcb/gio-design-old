@@ -32,11 +32,11 @@ export default class Search extends React.Component<Props> {
       onChange={this.handleSearch}
       onSearch={void 0}
       className={classnames(
-        'gio-input',
-        'gio-input-search',
+        'gio-input-old',
+        'gio-input-old-search',
         {
-          'gio-input-inverse': inverse,
-          'gio-input-disabled': disabled,
+          'gio-input-old-inverse': inverse,
+          'gio-input-old-disabled': disabled,
           [`${className}`]: className
         }
       )}

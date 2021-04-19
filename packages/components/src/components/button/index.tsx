@@ -21,10 +21,10 @@ class Button extends React.PureComponent<Props> {
         {...rest}
         className={
           classnames(
-            'gio-button',
+            'gio-button-old',
             className,
             {
-              [`gio-button-${type}`]: type
+              [`gio-button-old-${type}`]: type
             }
           )
         }

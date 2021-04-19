@@ -8,7 +8,7 @@ export default class Group extends RGroup {
   public render() {
     const element = super.render();
     return React.cloneElement(element, {
-      className: classnames(`gio-radio-group`, this.props.className,
+      className: classnames(`gio-radio-old-group`, this.props.className,
         element.props.className, {
         small: this.props.size === 'small'
       })

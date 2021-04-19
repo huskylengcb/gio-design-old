@@ -55,13 +55,13 @@ const Range: React.FC<Props> = ({
     }
   
   return (
-    <Input.Group className={classnames('gio-input-range', { 'gio-input-disabled': disabled, [`${className}`]: className})}>
+    <Input.Group className={classnames('gio-input-old-range', { 'gio-input-old-disabled': disabled, [`${className}`]: className})}>
       <Input
         value={min}
         size={size}
         type='number'
         placeholder={minPlaceholder}
-        className='gio-input-range-min'
+        className='gio-input-old-range-min'
         style={{ width: inputWidth }}
         onChange={handleChange('min')}
         disabled={disabled}
@@ -78,13 +78,13 @@ const Range: React.FC<Props> = ({
         size={size}
         type='number'
         placeholder={maxPlaceholder}
-        className='gio-input-range-max'
+        className='gio-input-old-range-max'
         style={{ width: inputWidth }}
         onChange={handleChange('max')}
         disabled={disabled}
         onBlur={onMaxBlur}
       />
-      <div className='gio-input-range-wrapper' />
+      <div className='gio-input-old-range-wrapper' />
     </Input.Group>
   );
 }

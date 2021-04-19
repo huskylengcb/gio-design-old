@@ -87,13 +87,13 @@ class Icon extends React.Component<IconProps> {
       style.verticalAlign = this.props.verticalAlign;
     }
     // icon所对应的svg
-    const iconSvg = <svg className={classnames('gio-icon', 'gio-' + this.props.name, this.props.svgClassName)} style={style}><use xlinkHref={'#' + this.props.name} /></svg>;
+    const iconSvg = <svg className={classnames('gio-icon-old', 'gio-' + this.props.name, this.props.svgClassName)} style={style}><use xlinkHref={'#' + this.props.name} /></svg>;
     return (
       <span
         {...omit(this.props, 'svgStyle', 'disablePointer', 'valign')}
         onClick={this.props.disabled ?  noop : this.props.onClick}
         style={this.props.style || {}}
-        className={classnames('gio-icon-wrapper', this.props.className, 'x')}
+        className={classnames('gio-icon-old-wrapper', this.props.className, 'x')}
       >
         {iconSvg}
       </span>

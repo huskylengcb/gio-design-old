@@ -109,10 +109,11 @@ function searchStyleImportDeep(address, antStyleImportArr, filename) {
           const lines = fs.readFileSync(path.resolve(address) + '/' + name).toString().split("\n");
           // antStyleImportArr是一个文件中所有的ant样式引用
           const arr = checkAntImport(lines);
-          if(!!filename) {
+          const file = lines.join('\n')
+          if(!!filename && !file.includes(`gio-${filename}-old`)) {
             const regexp = new RegExp(`gio-${filename}`,'g')
             console.log(regexp, 'regexp')
-            const newLines = lines.join('\n').replace(regexp, `gio-${filename}-old`)
+            const newLines = file.replace(regexp, `gio-${filename}-old`)
             fs.writeFileSync(path.resolve(address) + '/' + name, newLines)
           }
           if (arr.length > 0) {

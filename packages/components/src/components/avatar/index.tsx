@@ -16,7 +16,7 @@ interface IAvatarProps {
 // console.info(styles)
 const Avatar = (props: IAvatarProps) => React.cloneElement(<AntdAvatar />, {
   ...props,
-  className: classNames(props.className, 'gio-avatar')
+  className: classNames(props.className, 'gio-avatar-old')
 });
 
 export default Avatar;

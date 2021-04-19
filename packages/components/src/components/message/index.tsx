@@ -35,7 +35,7 @@ const newInstance = notification.__esModule ? notification.default.newInstance :
 
 let notifier: any = null;
 newInstance({
-  prefixCls: 'gio-message',
+  prefixCls: 'gio-message-old',
   transitionName: 'move-up'
 }, (n: any) => notifier = n);
 
@@ -69,8 +69,8 @@ const notice = (content: string, type: NoticeType, customDuration?: number, shou
       actionContent = (
         <span>
           <span>{content.substring(0, result[0])}</span>
-          {/*<a className='gio-message-action' onClick={action}>{content.substring(result[0] + 1, result[1])}</a>*/}
-          <Link inverse className='gio-message-action' onClick={action}>{content.substring(result[0] + 1, result[1])}</Link>
+          {/*<a className='gio-message-old-action' onClick={action}>{content.substring(result[0] + 1, result[1])}</a>*/}
+          <Link inverse className='gio-message-old-action' onClick={action}>{content.substring(result[0] + 1, result[1])}</Link>
           <span>{content.substring(result[1] + 1)}</span>
         </span>
       );
@@ -84,15 +84,15 @@ const notice = (content: string, type: NoticeType, customDuration?: number, shou
       onClose: close,
       duration,
       content: (
-        <div className={`gio-message-inner gio-message-${type}`}>
-          <span className='gio-message-notice-icon'>
+        <div className={`gio-message-old-inner gio-message-old-${type}`}>
+          <span className='gio-message-old-notice-icon'>
             <Icon type={iconMap[type]} width={18} height={18} />
           </span>
           {hasAction ? actionContent : content}
           {
             shouldRenderCloseButton ?
               <span
-                className='gio-message-notice-close'
+                className='gio-message-old-notice-close'
                 onClick={close}
               >
                 <Icon type='close' />

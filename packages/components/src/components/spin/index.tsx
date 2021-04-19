@@ -13,7 +13,7 @@ const Spin: React.FC<Props> = (props) => (
   <AntSpin
     {...props}
     className={classnames(
-      'gio-spin', props.className
+      'gio-spin-old', props.className
     )}
   />
 );

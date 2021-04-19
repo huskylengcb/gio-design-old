@@ -76,7 +76,7 @@ export default class List extends React.Component<Props, {}> {
         {this.props.header}
         <Table
           className={cn(
-            'gio-list',
+            'gio-list-old',
             this.props.className)}
           columns={this.props.columns}
           dataSource={this.props.dataSource}

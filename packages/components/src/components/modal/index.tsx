@@ -63,7 +63,7 @@ const Modal: React.FC<ModalProps> = ({
 }) => {
   const locale = props.locale;
   const footer = (
-    <div className='gio-modal-footer'>
+    <div className='gio-modal-old-footer'>
       {
         showCancel && (
           <Button
@@ -85,8 +85,8 @@ const Modal: React.FC<ModalProps> = ({
       </Button>
     </div>
   );
-  const cls = cn('gio-modal', className, {
-    ['gio-modal--overflow-y-scroll']: overflowY === 'scroll'
+  const cls = cn('gio-modal-old', className, {
+    ['gio-modal-old--overflow-y-scroll']: overflowY === 'scroll'
   });
   return (
     <AntModal
@@ -103,9 +103,9 @@ const Modal: React.FC<ModalProps> = ({
         minWidth, ...style
       }}
     >
-      <div className='gio-modal__step-container'>
-        {backable && <div className='gio-modal__step-back'><Icon name='gicon-arrow-left' onClick={onBack} /></div>}
-        <div className='gio-modal__step-body'>{props.children}</div>
+      <div className='gio-modal-old__step-container'>
+        {backable && <div className='gio-modal-old__step-back'><Icon name='gicon-arrow-left' onClick={onBack} /></div>}
+        <div className='gio-modal-old__step-body'>{props.children}</div>
       </div>
     </AntModal>
   );

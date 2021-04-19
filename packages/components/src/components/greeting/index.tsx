@@ -4,14 +4,14 @@ import GIOIcon from '../icon';
 import './index.less';
 
 // const notifier = notification.newInstance({
-//   prefixCls: 'gio-greeting',
+//   prefixCls: 'gio-greeting-old',
 //   transitionName: 'move-up',
 //   delay: 3000
 // }, () => {});
 
 let notifier: any = null;
 notification.newInstance({
-  prefixCls: 'gio-greeting',
+  prefixCls: 'gio-greeting-old',
   transitionName: 'move-up',
   delay: 3000
 }, (n: any) => notifier = n);
@@ -29,10 +29,10 @@ const notice = (content: string) => {
       onClose: close,
       content: (
         <div>
-          <span className='gio-greeting-notice-icon'>
+          <span className='gio-greeting-old-notice-icon'>
             <GIOIcon name='gicon-coffee' size='large' fill='#fff'/>
           </span>
-          <span className='gio-greeting-tip'>{content}</span>
+          <span className='gio-greeting-old-tip'>{content}</span>
         </div>
       )
     });

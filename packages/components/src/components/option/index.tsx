@@ -31,12 +31,12 @@ class Option extends React.PureComponent<OptionProps> {
           onClick={this.handleChange}
           left={15}
           classNames={[
-            'gio-option',
+            'gio-option-old',
             {
-              ['gio-option--checked']: checked
+              ['gio-option-old--checked']: checked
             },
             {
-              ['gio-option--diabled']: disabled
+              ['gio-option-old--diabled']: disabled
             }
           ]}
         >

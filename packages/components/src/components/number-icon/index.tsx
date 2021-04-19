@@ -27,7 +27,7 @@ const NumberIcon: React.FC<NumberIconProps> =  ({
   color = '#fff'
 }) => {
   return (
-    <div className={classnames('gio-number-icon', className)} style={{ backgroundColor, color }}>{number}</div>
+    <div className={classnames('gio-number-icon-old', className)} style={{ backgroundColor, color }}>{number}</div>
   )
 }
 

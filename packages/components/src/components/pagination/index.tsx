@@ -14,8 +14,8 @@ const Pagination = (props: PropsType) => (
   <AtndPagination {...props}
   className={
     classnames(
-      'gio-pagination',
-      `gio-pagination-${props.type}`,
+      'gio-pagination-old',
+      `gio-pagination-old-${props.type}`,
       props.className
     )
   }

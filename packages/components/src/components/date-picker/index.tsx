@@ -27,10 +27,10 @@ const DatePicker: React.FC<Props> = ({
 
   return (
     <AntDatePicker
-      className={classnames('gio-date-picker', className)}
+      className={classnames('gio-date-picker-old', className)}
       placeholder={placeholder}
       allowClear={allowClear}
-      suffixIcon={<Icon type='calendar' className='gio-date-picker-icon' />}
+      suffixIcon={<Icon type='calendar' className='gio-date-picker-old-icon' />}
       onChange={handleChange}
       {...rest}
     />

@@ -1,6 +1,6 @@
 {
   "name": "@gio-design/themes",
-  "version": "0.1.21",
+  "version": "1.2.0",
   "description": "GrowingIO Design System Themes",
   "keywords": [
     "growingio",
@@ -17,13 +17,6 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://repo.growingio.com/repository/npm-hosted/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "ssh://vcs-user@codes.growingio.com/diffusion/259/gio-design.git"
-  },
   "scripts": {
     "build": "gulp",
     "test": "echo \"Error: run tests from root\" && exit 1"
@@ -36,6 +29,5 @@
     "gulp-replace": "^1.0.0",
     "gulp-yaml": "^2.0.4",
     "handlebars": "^4.1.2"
-  },
-  "gitHead": "f566a1c268b2e1510ee6e4f2c201cb47ff770230"
+  }
 }

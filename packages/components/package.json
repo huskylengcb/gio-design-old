@@ -1,6 +1,6 @@
 {
   "name": "@gio-design-old/components",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "growingio react ui",
   "main": "build/gioDesign.es.js",
   "files": [
@@ -106,9 +106,5 @@
   },
   "pre-commit": [
     "test"
-  ],
-  "publishConfig": {
-    "registry": "https://repo.growingio.com/repository/npm-hosted/"
-  },
-  "gitHead": "a375866c107e8438eb461ac1e6a3e24581b4e6fe"
+  ]
 }

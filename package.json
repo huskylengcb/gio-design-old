@@ -1,8 +1,7 @@
 {
   "name": "growingio-design-system",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "index.js",
-  "repository": "ssh://vcs-user@codes.growingio.com/diffusion/259/gio-design.git",
   "author": "Zhang Yuxiang <zhangyuxiang@growingio.com>",
   "private": false,
   "workspaces": {
@@ -14,8 +13,6 @@
       "**/@gio-design/tokens/**",
       "**/@gio-design/themes",
       "**/@gio-design/themes/**",
-      "**/@gio-design/react-svg-icon-generator/**",
-      "website/"
     ]
   },
   "license": "MIT",
@@ -34,7 +31,6 @@
     "build:themes": "yarn workspace @gio-design/themes build",
     "build:icon": "yarn workspace @gio-design/icon build",
     "build:components": "yarn workspace @gio-design/components build",
-    "build:icon-generator": "yarn workspace @gio-design/react-svg-icon-generator build",
-    "publish": "npx lerna publish --registry https://nexus.growingio.com/repository/npm-hosted"
+    "build:icon-generator": "yarn workspace @gio-design/react-svg-icon-generator build"
   }
 }

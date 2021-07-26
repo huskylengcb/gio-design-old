@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "ssh://vcs-user@codes.growingio.com/diffusion/259/gio-design.git",
   "author": "Zhang Yuxiang <zhangyuxiang@growingio.com>",
-  "private": "false",
+  "private": false,
   "workspaces": {
     "packages": [
       "packages/*"

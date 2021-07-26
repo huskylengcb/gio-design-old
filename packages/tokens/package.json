@@ -1,8 +1,9 @@
 {
-  "name": "@gio-design/tokens",
+  "name": "@gio-design-old/tokens",
   "version": "1.2.0",
   "main": "dist/index.js",
   "license": "MIT",
+  "private": false,
   "files": [
     "README.md",
     "dist"
@@ -16,5 +17,9 @@
     "gulp-yaml": "^2.0.4",
     "style-dictionary": "^2.8.2",
     "typescript": "^3.6.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

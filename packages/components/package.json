@@ -1,6 +1,6 @@
 {
   "name": "@gio-design-old/components",
-  "version": "0.4.48",
+  "version": "1.0.0",
   "description": "growingio react ui",
   "main": "build/gioDesign.es.js",
   "files": [

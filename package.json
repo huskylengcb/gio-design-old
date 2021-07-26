@@ -12,7 +12,7 @@
       "**/@gio-design/tokens",
       "**/@gio-design/tokens/**",
       "**/@gio-design/themes",
-      "**/@gio-design/themes/**",
+      "**/@gio-design/themes/**"
     ]
   },
   "license": "MIT",

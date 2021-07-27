@@ -1,7 +1,7 @@
 import * as React from 'react';
 import notification from 'rc-notification';
 import Link from '../link';
-import Icon from '@gio-design/icon';
+import Icon from '@gio-design-old/icon';
 
 import './custom-style.less';
 

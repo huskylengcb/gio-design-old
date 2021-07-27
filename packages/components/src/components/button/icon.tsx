@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '@gio-design/icon';
+import Icon from '@gio-design-old/icon';
 import classnames from 'classnames';
 
 interface Props {

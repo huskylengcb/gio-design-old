@@ -29,7 +29,7 @@
     "build:website": "yarn workspace website build",
     "build:tokens": "yarn workspace @gio-design/tokens build",
     "build:themes": "yarn workspace @gio-design/themes build",
-    "build:icon": "yarn workspace @gio-design/icon build",
+    "build:icon": "yarn workspace @gio-design-old/icon build",
     "build:components": "yarn workspace @gio-design/components build",
     "build:icon-generator": "yarn workspace @gio-design/react-svg-icon-generator build"
   }

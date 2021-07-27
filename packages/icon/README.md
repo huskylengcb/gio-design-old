@@ -3,7 +3,7 @@
 ## Usage
 
 ```
-import Icon from '@gio-design/icon';
+import Icon from '@gio-design-old/icon';
 
 ...
 <Icon type='android' />

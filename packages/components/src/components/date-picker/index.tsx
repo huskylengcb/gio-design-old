@@ -1,7 +1,7 @@
 import React from 'react';
 import { DatePicker as AntDatePicker } from 'antd';
 import classnames from 'classnames';
-import Icon from '@gio-design/icon';
+import Icon from '@gio-design-old/icon';
 import { Moment } from 'moment';
 import { DatePickerProps } from 'antd/lib/date-picker/interface';
 

@@ -9,7 +9,7 @@ const defaultExternalArr = [
     'rc-notification',
     'classnames',
     './custom-style.less',
-    '@gio-design/icon'
+    '@gio-design-old/icon'
 ];
 
 // 补充外部引用文件

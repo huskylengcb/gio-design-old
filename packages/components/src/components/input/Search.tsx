@@ -2,7 +2,7 @@ import React, { ChangeEvent } from 'react';
 import { Input } from 'antd';
 import { SearchProps } from 'antd/lib/input';
 import classnames from 'classnames';
-import Icon from '@gio-design/icon';
+import Icon from '@gio-design-old/icon';
 
 const SearchInput = Input.Search;
 

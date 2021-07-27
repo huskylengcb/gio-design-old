@@ -6,7 +6,7 @@ const sizeMap = {
   normal: 14,
   large: 18,
   // for compatibility
-  mediumLarge: 16, 
+  mediumLarge: 16,
   middle: 14,
   huge: 24
 }

@@ -6,15 +6,16 @@ module.exports = {
   resolve: {
     extensions: [ '.ts', '.tsx', '.js', '.jsx', '.json', '.less' ]
   },
+
   module: {
     rules: [
       {
-        test: /\.(tsx|js|ts)/,
+        test: /\.(js|mjs|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader'
-          }
+          },
         ]
       },
       {
